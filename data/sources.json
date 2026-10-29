@@ -99,6 +99,38 @@
       ]
     },
     {
+      "id": "aikhenvald-2012",
+      "type": "book",
+      "authors": [
+        "Aikhenvald, Alexandra Y."
+      ],
+      "year": 2012,
+      "title": "The Languages of the Amazon",
+      "publisher": "Oxford University Press",
+      "place": "Oxford",
+      "doi": "10.1093/acprof:oso/9780199593569.001.0001",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "aissen-2017",
+      "type": "book",
+      "editors": [
+        "Aissen, Judith",
+        "England, Nora C.",
+        "Zavala Maldonado, Roberto"
+      ],
+      "year": 2017,
+      "title": "The Mayan Languages",
+      "publisher": "Routledge",
+      "place": "London",
+      "doi": "10.4324/9781315192345",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "allen-2013",
       "type": "book",
       "authors": [
@@ -245,6 +277,27 @@
       ]
     },
     {
+      "id": "bloomfield-1946",
+      "type": "chapter",
+      "authors": [
+        "Bloomfield, Leonard"
+      ],
+      "year": 1946,
+      "title": "Algonquian",
+      "editors": [
+        "Hoijer, Harry"
+      ],
+      "booktitle": "Linguistic Structures of Native America",
+      "pages": "85–129",
+      "publisher": "Viking Fund",
+      "place": "New York",
+      "note": "The reconstruction of Proto-Algonquian that showed the comparative method works for unwritten languages.",
+      "topics": [
+        "families",
+        "methods"
+      ]
+    },
+    {
       "id": "blust-2013",
       "type": "book",
       "authors": [
@@ -303,6 +356,58 @@
       ]
     },
     {
+      "id": "bouckaert-bowern-atkinson-2018",
+      "type": "article",
+      "authors": [
+        "Bouckaert, Remco R.",
+        "Bowern, Claire",
+        "Atkinson, Quentin D."
+      ],
+      "year": 2018,
+      "title": "The origin and expansion of Pama–Nyungan languages across Australia",
+      "journal": "Nature Ecology & Evolution",
+      "volume": "2",
+      "pages": "741–749",
+      "doi": "10.1038/s41559-018-0489-3",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "bowern-atkinson-2012",
+      "type": "article",
+      "authors": [
+        "Bowern, Claire",
+        "Atkinson, Quentin"
+      ],
+      "year": 2012,
+      "title": "Computational phylogenetics and the internal structure of Pama-Nyungan",
+      "journal": "Language",
+      "volume": "88",
+      "issue": "4",
+      "pages": "817–845",
+      "doi": "10.1353/lan.2012.0081",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "browne-2002",
+      "type": "book",
+      "authors": [
+        "Browne, Gerald M."
+      ],
+      "year": 2002,
+      "title": "A Grammar of Old Nubian",
+      "publisher": "Lincom Europa",
+      "place": "Munich",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "buck-1949",
       "type": "book",
       "authors": [
@@ -332,6 +437,22 @@
       "topics": [
         "grammar",
         "sound"
+      ]
+    },
+    {
+      "id": "campbell-1997",
+      "type": "book",
+      "authors": [
+        "Campbell, Lyle"
+      ],
+      "year": 1997,
+      "title": "American Indian Languages: The Historical Linguistics of Native America",
+      "publisher": "Oxford University Press",
+      "place": "Oxford",
+      "doi": "10.1093/oso/9780195094275.001.0001",
+      "topics": [
+        "families",
+        "methods"
       ]
     },
     {
@@ -407,6 +528,20 @@
       ]
     },
     {
+      "id": "comrie-1981",
+      "type": "book",
+      "authors": [
+        "Comrie, Bernard"
+      ],
+      "year": 1981,
+      "title": "The Languages of the Soviet Union",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "dahl-1979",
       "type": "article",
       "authors": [
@@ -454,6 +589,53 @@
       ]
     },
     {
+      "id": "diller-2008",
+      "type": "book",
+      "editors": [
+        "Diller, Anthony V. N.",
+        "Edmondson, Jerold A.",
+        "Luo, Yongxian"
+      ],
+      "year": 2008,
+      "title": "The Tai–Kadai Languages",
+      "publisher": "Routledge",
+      "place": "London",
+      "doi": "10.4324/9780203641873",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "dixon-2002",
+      "type": "book",
+      "authors": [
+        "Dixon, R. M. W."
+      ],
+      "year": 2002,
+      "title": "Australian Languages: Their Nature and Development",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511486869",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "dixon-aikhenvald-1999",
+      "type": "book",
+      "editors": [
+        "Dixon, R. M. W.",
+        "Aikhenvald, Alexandra Y."
+      ],
+      "year": 1999,
+      "title": "The Amazonian Languages",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "dryer-haspelmath-2013",
       "type": "web",
       "editors": [
@@ -482,6 +664,26 @@
       "place": "Stockholm",
       "topics": [
         "grammar"
+      ]
+    },
+    {
+      "id": "estigarribia-2017",
+      "type": "chapter",
+      "authors": [
+        "Estigarribia, Bruno"
+      ],
+      "year": 2017,
+      "title": "A grammar sketch of Paraguayan Guarani",
+      "editors": [
+        "Estigarribia, Bruno",
+        "Pinta, Justin"
+      ],
+      "booktitle": "Guarani Linguistics in the 21st Century",
+      "publisher": "Brill",
+      "place": "Leiden",
+      "doi": "10.1163/9789004322578_003",
+      "topics": [
+        "families"
       ]
     },
     {
@@ -535,6 +737,24 @@
       ]
     },
     {
+      "id": "fortescue-2010",
+      "type": "book",
+      "authors": [
+        "Fortescue, Michael",
+        "Jacobson, Steven",
+        "Kaplan, Lawrence"
+      ],
+      "year": 2010,
+      "title": "Comparative Eskimo Dictionary with Aleut Cognates",
+      "edition": "2nd",
+      "publisher": "Alaska Native Language Center",
+      "place": "Fairbanks",
+      "topics": [
+        "families",
+        "reference"
+      ]
+    },
+    {
       "id": "fortson-2010",
       "type": "book",
       "authors": [
@@ -548,6 +768,21 @@
       "topics": [
         "families",
         "sound"
+      ]
+    },
+    {
+      "id": "frajzyngier-shay-2012",
+      "type": "book",
+      "editors": [
+        "Frajzyngier, Zygmunt",
+        "Shay, Erin"
+      ],
+      "year": 2012,
+      "title": "The Afroasiatic Languages",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "families"
       ]
     },
     {
@@ -597,6 +832,68 @@
       "note": "Classification and locations of the world’s languages.",
       "topics": [
         "reference"
+      ]
+    },
+    {
+      "id": "goddard-1996",
+      "type": "book",
+      "editors": [
+        "Goddard, Ives"
+      ],
+      "year": 1996,
+      "title": "Handbook of North American Indians, Vol. 17: Languages",
+      "publisher": "Smithsonian Institution",
+      "place": "Washington, DC",
+      "topics": [
+        "families",
+        "reference"
+      ]
+    },
+    {
+      "id": "goddard-bragdon-1988",
+      "type": "book",
+      "authors": [
+        "Goddard, Ives",
+        "Bragdon, Kathleen J."
+      ],
+      "year": 1988,
+      "title": "Native Writings in Massachusett",
+      "publisher": "American Philosophical Society",
+      "place": "Philadelphia",
+      "doi": "10.70249/9798893982541",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "gorelova-2002",
+      "type": "book",
+      "authors": [
+        "Gorelova, Liliya M."
+      ],
+      "year": 2002,
+      "title": "Manchu Grammar",
+      "publisher": "Brill",
+      "place": "Leiden",
+      "doi": "10.1163/9789047401148",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "granberry-vescelius-2004",
+      "type": "book",
+      "authors": [
+        "Granberry, Julian",
+        "Vescelius, Gary S."
+      ],
+      "year": 2004,
+      "title": "Languages of the Pre-Columbian Antilles",
+      "publisher": "University of Alabama Press",
+      "place": "Tuscaloosa",
+      "doi": "10.2307/jj.30346802",
+      "topics": [
+        "families"
       ]
     },
     {
@@ -677,6 +974,21 @@
       ]
     },
     {
+      "id": "gueldemann-2018",
+      "type": "book",
+      "editors": [
+        "Güldemann, Tom"
+      ],
+      "year": 2018,
+      "title": "The Languages and Linguistics of Africa",
+      "publisher": "De Gruyter Mouton",
+      "place": "Berlin",
+      "doi": "10.1515/9783110421668",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "gzella-2015",
       "type": "book",
       "authors": [
@@ -723,6 +1035,39 @@
       ]
     },
     {
+      "id": "haviland-1974",
+      "type": "article",
+      "authors": [
+        "Haviland, John B."
+      ],
+      "year": 1974,
+      "title": "A last look at Cook’s Guugu-Yimidhirr word list",
+      "journal": "Oceania",
+      "volume": "44",
+      "issue": "3",
+      "pages": "216–232",
+      "doi": "10.1002/j.1834-4461.1974.tb01803.x",
+      "topics": [
+        "families",
+        "meaning"
+      ]
+    },
+    {
+      "id": "heine-nurse-2000",
+      "type": "book",
+      "editors": [
+        "Heine, Bernd",
+        "Nurse, Derek"
+      ],
+      "year": 2000,
+      "title": "African Languages: An Introduction",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "helsinki-corpus",
       "type": "web",
       "authors": [
@@ -739,6 +1084,20 @@
       "topics": [
         "methods",
         "reference"
+      ]
+    },
+    {
+      "id": "hewitt-2004",
+      "type": "book",
+      "authors": [
+        "Hewitt, B. George"
+      ],
+      "year": 2004,
+      "title": "Introduction to the Study of the Languages of the Caucasus",
+      "publisher": "Lincom Europa",
+      "place": "Munich",
+      "topics": [
+        "families"
       ]
     },
     {
@@ -887,6 +1246,37 @@
       ]
     },
     {
+      "id": "janhunen-2003",
+      "type": "book",
+      "editors": [
+        "Janhunen, Juha"
+      ],
+      "year": 2003,
+      "title": "The Mongolic Languages",
+      "publisher": "Routledge",
+      "place": "London",
+      "doi": "10.4324/9780203987919",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "jenny-sidwell-2015",
+      "type": "book",
+      "editors": [
+        "Jenny, Mathias",
+        "Sidwell, Paul"
+      ],
+      "year": 2015,
+      "title": "The Handbook of Austroasiatic Languages",
+      "publisher": "Brill",
+      "place": "Leiden",
+      "doi": "10.1163/9789004283572",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "jespersen-1905",
       "type": "book",
       "authors": [
@@ -979,6 +1369,20 @@
         "sound",
         "grammar",
         "methods"
+      ]
+    },
+    {
+      "id": "kane-1989",
+      "type": "book",
+      "authors": [
+        "Kane, Daniel"
+      ],
+      "year": 1989,
+      "title": "The Sino-Jurchen Vocabulary of the Bureau of Interpreters",
+      "publisher": "Indiana University Research Institute for Inner Asian Studies",
+      "place": "Bloomington",
+      "topics": [
+        "families"
       ]
     },
     {
@@ -1301,6 +1705,22 @@
       ]
     },
     {
+      "id": "malotki-1983",
+      "type": "book",
+      "authors": [
+        "Malotki, Ekkehart"
+      ],
+      "year": 1983,
+      "title": "Hopi Time: A Linguistic Analysis of the Temporal Concepts in the Hopi Language",
+      "publisher": "Mouton",
+      "place": "Berlin",
+      "doi": "10.1515/9783110822816",
+      "topics": [
+        "families",
+        "meaning"
+      ]
+    },
+    {
       "id": "martinet-1955",
       "type": "book",
       "authors": [
@@ -1313,6 +1733,20 @@
       "topics": [
         "sound",
         "foundations"
+      ]
+    },
+    {
+      "id": "masica-1991",
+      "type": "book",
+      "authors": [
+        "Masica, Colin P."
+      ],
+      "year": 1991,
+      "title": "The Indo-Aryan Languages",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "families"
       ]
     },
     {
@@ -1344,6 +1778,21 @@
       "topics": [
         "society",
         "meaning"
+      ]
+    },
+    {
+      "id": "meeuwis-1998",
+      "type": "book",
+      "authors": [
+        "Meeuwis, Michael"
+      ],
+      "year": 1998,
+      "title": "Lingala",
+      "publisher": "Lincom Europa",
+      "place": "Munich",
+      "topics": [
+        "families",
+        "contact"
       ]
     },
     {
@@ -1425,6 +1874,34 @@
       ]
     },
     {
+      "id": "mithun-1999",
+      "type": "book",
+      "authors": [
+        "Mithun, Marianne"
+      ],
+      "year": 1999,
+      "title": "The Languages of Native North America",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "montgomery-anderson-2015",
+      "type": "book",
+      "authors": [
+        "Montgomery-Anderson, Brad"
+      ],
+      "year": 2015,
+      "title": "Cherokee Reference Grammar",
+      "publisher": "University of Oklahoma Press",
+      "place": "Norman",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "moseley-2010",
       "type": "book",
       "editors": [
@@ -1454,6 +1931,25 @@
         "reference"
       ],
       "usedFor": "World map coastlines"
+    },
+    {
+      "id": "nunez-sweetser-2006",
+      "type": "article",
+      "authors": [
+        "Núñez, Rafael E.",
+        "Sweetser, Eve"
+      ],
+      "year": 2006,
+      "title": "With the future behind them: Convergent evidence from Aymara language and gesture in the crosslinguistic comparison of spatial construals of time",
+      "journal": "Cognitive Science",
+      "volume": "30",
+      "issue": "3",
+      "pages": "401–450",
+      "doi": "10.1207/s15516709cog0000_62",
+      "topics": [
+        "meaning",
+        "families"
+      ]
     },
     {
       "id": "nurse-hinnebusch-1993",
@@ -1521,6 +2017,24 @@
       ]
     },
     {
+      "id": "oshannessy-2005",
+      "type": "article",
+      "authors": [
+        "O’Shannessy, Carmel"
+      ],
+      "year": 2005,
+      "title": "Light Warlpiri: A new language",
+      "journal": "Australian Journal of Linguistics",
+      "volume": "25",
+      "issue": "1",
+      "pages": "31–57",
+      "doi": "10.1080/07268600500110472",
+      "topics": [
+        "contact",
+        "families"
+      ]
+    },
+    {
       "id": "osthoff-brugmann-1878",
       "type": "book",
       "authors": [
@@ -1554,6 +2068,42 @@
       "topics": [
         "meaning",
         "methods"
+      ]
+    },
+    {
+      "id": "palmer-2018",
+      "type": "book",
+      "editors": [
+        "Palmer, Bill"
+      ],
+      "year": 2018,
+      "title": "The Languages and Linguistics of the New Guinea Area: A Comprehensive Guide",
+      "publisher": "De Gruyter Mouton",
+      "place": "Berlin",
+      "doi": "10.1515/9783110295252",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "pawley-hammarstrom-2018",
+      "type": "chapter",
+      "authors": [
+        "Pawley, Andrew",
+        "Hammarström, Harald"
+      ],
+      "year": 2018,
+      "title": "The Trans New Guinea family",
+      "editors": [
+        "Palmer, Bill"
+      ],
+      "booktitle": "The Languages and Linguistics of the New Guinea Area: A Comprehensive Guide",
+      "pages": "21–195",
+      "publisher": "De Gruyter Mouton",
+      "place": "Berlin",
+      "doi": "10.1515/9783110295252-002",
+      "topics": [
+        "families"
       ]
     },
     {
@@ -1601,6 +2151,20 @@
       "topics": [
         "foundations",
         "sound"
+      ]
+    },
+    {
+      "id": "ratliff-2010",
+      "type": "book",
+      "authors": [
+        "Ratliff, Martha"
+      ],
+      "year": 2010,
+      "title": "Hmong–Mien Language History",
+      "publisher": "Pacific Linguistics",
+      "place": "Canberra",
+      "topics": [
+        "families"
       ]
     },
     {
@@ -1776,6 +2340,36 @@
       ]
     },
     {
+      "id": "shibatani-1990",
+      "type": "book",
+      "authors": [
+        "Shibatani, Masayoshi"
+      ],
+      "year": 1990,
+      "title": "The Languages of Japan",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "sidwell-jenny-2021",
+      "type": "book",
+      "editors": [
+        "Sidwell, Paul",
+        "Jenny, Mathias"
+      ],
+      "year": 2021,
+      "title": "The Languages and Linguistics of Mainland Southeast Asia: A Comprehensive Guide",
+      "publisher": "De Gruyter Mouton",
+      "place": "Berlin",
+      "doi": "10.1515/9783110558142",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "sturtevant-1947",
       "type": "book",
       "authors": [
@@ -1855,6 +2449,22 @@
       ]
     },
     {
+      "id": "thurgood-1999",
+      "type": "book",
+      "authors": [
+        "Thurgood, Graham"
+      ],
+      "year": 1999,
+      "title": "From Ancient Cham to Modern Dialects: Two Thousand Years of Language Contact and Change",
+      "series": "Oceanic Linguistics Special Publication 28",
+      "publisher": "University of Hawai‘i Press",
+      "place": "Honolulu",
+      "topics": [
+        "families",
+        "contact"
+      ]
+    },
+    {
       "id": "thurgood-lapolla-2003",
       "type": "book",
       "editors": [
@@ -1917,6 +2527,20 @@
       ]
     },
     {
+      "id": "troy-1994",
+      "type": "book",
+      "authors": [
+        "Troy, Jakelin"
+      ],
+      "year": 1994,
+      "title": "The Sydney Language",
+      "publisher": "Jakelin Troy, with the Australian Dictionaries Project and AIATSIS",
+      "place": "Canberra",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "trubetzkoy-1930",
       "type": "chapter",
       "authors": [
@@ -1948,6 +2572,38 @@
       "doi": "10.1017/S0047404500000488",
       "topics": [
         "society"
+      ]
+    },
+    {
+      "id": "urcid-2001",
+      "type": "book",
+      "authors": [
+        "Urcid Serrano, Javier"
+      ],
+      "year": 2001,
+      "title": "Zapotec Hieroglyphic Writing",
+      "publisher": "Dumbarton Oaks",
+      "place": "Washington, DC",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "vajda-2010",
+      "type": "article",
+      "authors": [
+        "Vajda, Edward J."
+      ],
+      "year": 2010,
+      "title": "A Siberian link with Na-Dene languages",
+      "journal": "Anthropological Papers of the University of Alaska, New Series",
+      "volume": "5",
+      "issue": "1–2",
+      "pages": "33–99",
+      "note": "In the special issue The Dene–Yeniseian Connection, ed. by James Kari & Ben A. Potter.",
+      "topics": [
+        "families",
+        "methods"
       ]
     },
     {
@@ -2136,6 +2792,26 @@
       ]
     },
     {
+      "id": "wilmshurst-2011",
+      "type": "article",
+      "authors": [
+        "Wilmshurst, Janet M.",
+        "Hunt, Terry L.",
+        "Lipo, Carl P.",
+        "Anderson, Atholl J."
+      ],
+      "year": 2011,
+      "title": "High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "108",
+      "issue": "5",
+      "pages": "1815–1820",
+      "doi": "10.1073/pnas.1015876108",
+      "topics": [
+        "families"
+      ]
+    },
+    {
       "id": "woodard-2004",
       "type": "book",
       "editors": [
@@ -2164,6 +2840,22 @@
         "reference"
       ],
       "usedFor": "World map coastlines"
+    },
+    {
+      "id": "young-morgan-1987",
+      "type": "book",
+      "authors": [
+        "Young, Robert W.",
+        "Morgan, William"
+      ],
+      "year": 1987,
+      "title": "The Navajo Language: A Grammar and Colloquial Dictionary",
+      "edition": "Revised",
+      "publisher": "University of New Mexico Press",
+      "place": "Albuquerque",
+      "topics": [
+        "families"
+      ]
     },
     {
       "id": "zhang-2019",

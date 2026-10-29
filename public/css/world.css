@@ -301,3 +301,5 @@ body.has-dialog { overflow: hidden; }
   .world-stage.panel-open .w-zoom { right: 12px; visibility: hidden; }
   .places button { grid-template-columns: 96px 1fr; }
 }
+
+.index-subfamily { margin: 10px 8px 2px 26px; font-size: 12px; font-weight: 650; color: var(--ink-2); }

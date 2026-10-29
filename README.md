@@ -3,9 +3,9 @@
 An interactive web app about how languages change, in two sections:
 
 - **Concept map**: 88 concepts and 203 typed connections, arranged around Edward Sapir’s idea of *drift*. It covers sound change, grammar change, meaning and vocabulary, causes, social spread, outcomes, methods and key thinkers. Many concepts include an animated **word journey** (*nescius* → *nice*, *hlāf-weard* → *lord*, *cantābō* → *chanterai* → *je vais chanter*).
-- **World map**: 127 languages placed in space and time, from Proto-Indo-European (c. 4500 BCE) to today. Drag the time slider or press play to watch languages appear, split into daughters, spread with migrations and conquests, and fall silent. A layer shows each language’s word for *night*, so you can follow Proto-Indo-European *\*nókʷts* as it drifts into *nox*, *nuit*, *Nacht*, *noć* and *natë*.
+- **World map**: 233 languages placed in space and time, from Proto-Indo-European (c. 4500 BCE) to today, on every inhabited continent: Indo-European and the Near East, plus the families of the Americas, Africa, South and Southeast Asia, Siberia and the Caucasus, Australia, New Guinea and the Pacific. Drag the time slider or press play to watch languages appear, split into daughters, spread with migrations and conquests, and fall silent. A layer shows each language’s word for *night*, so you can follow Proto-Indo-European *\*nókʷts* as it drifts into *nox*, *nuit*, *Nacht*, *noć* and *natë*.
 
-Every concept and language cites its sources. The **bibliography** lists 129 references, and each DOI has been checked against Crossref.
+Every concept and language cites its sources. The **bibliography** lists 172 references, and each DOI has been checked against Crossref.
 
 ## Running it
 
@@ -90,6 +90,7 @@ The server validates all three data files at startup, including the references b
 - `kind: "proto"` marks a reconstructed language. `relation` can be `contact` (a creole and its lexifier) or `revival`.
 - `places` adds expansions over time. Use `until` when a place was lost, `homeUntil` when the homeland was left, and `chain: true` for a migration that moves from place to place (as with Romani).
 - `via` bends a descent line through waypoints (Malagasy via Borneo).
+- `family` is one of the eight colour groups. Languages in the `other` group name their real family in `familyName` (for example `"Pama–Nyungan"` or `"Language isolate"`), and the index groups them under it.
 - `night.cognate` is `true`/`false` for Indo-European languages (descended from \*nókʷts or not), and `null` for other families.
 
 **Sources** (`data/sources.json`): `type` is `book`, `article`, `chapter`, `web` or `newspaper`, with authors or editors, year, title and `topics`. Add a `doi` or `url` where one exists.

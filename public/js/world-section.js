@@ -266,7 +266,7 @@ export class WorldSection {
 
     c.append(...[
       el('div', { class: 'eyebrow' }, el('span', { class: 'swatch is-lang', 'aria-hidden': 'true' }),
-        [l.familyName || fam.label, l.branch].filter(Boolean).join(' · ')),
+        [...new Set([l.familyName || fam.label, l.branch].filter(Boolean))].join(' · ')),
       el('h2', { id: 'w-panel-title', tabindex: '-1' }, l.name),
       el('div', { class: 'era' }, l.era),
       el('div', { class: 'status-row' },
@@ -400,22 +400,33 @@ export class WorldSection {
   // ---------- Index ----------
 
   buildIndex(container) {
-    for (const f of this.data.families) {
-      const items = this.data.languages.filter((l) => l.family === f.id).sort((a, b) => a.name.localeCompare(b.name));
-      container.append(
-        el('h3', { class: `fam-${f.id}` }, el('span', { class: 'swatch', 'aria-hidden': 'true' }), f.label),
-        el('ul', {}, items.map((l) =>
-          el('li', {},
-            el('button', {
-              type: 'button', class: `fam-${l.family}`, 'data-id': l.id, 'aria-current': String(l.id === this.selected),
-              onclick: () => {
-                this.select(l.id, { source: 'index' });
-                if (this.app.isNarrow()) this.app.setDrawerOpen(false);
-              },
-            }, l.name, el('small', { class: 'index-era' }, l.era)),
-          ),
-        )),
+    const item = (l) =>
+      el('li', {},
+        el('button', {
+          type: 'button', class: `fam-${l.family}`, 'data-id': l.id, 'aria-current': String(l.id === this.selected),
+          onclick: () => {
+            this.select(l.id, { source: 'index' });
+            if (this.app.isNarrow()) this.app.setDrawerOpen(false);
+          },
+        }, l.name, el('small', { class: 'index-era' }, l.era)),
       );
+    for (const f of this.data.families) {
+      const items = this.data.languages.filter((l) => l.family === f.id);
+      container.append(el('h3', { class: `fam-${f.id}` }, el('span', { class: 'swatch', 'aria-hidden': 'true' }), f.label));
+      // The colour groups can hold several real families (notably "Other"):
+      // list those under their own sub-headings.
+      const byName = new Map();
+      for (const l of items) {
+        const key = l.familyName || '';
+        if (!byName.has(key)) byName.set(key, []);
+        byName.get(key).push(l);
+      }
+      const names = [...byName.keys()].sort((a, b) => a.localeCompare(b));
+      for (const name of names) {
+        const list = byName.get(name).sort((a, b) => a.name.localeCompare(b.name));
+        if (name && names.length > 1) container.append(el('h4', { class: 'index-subfamily' }, name));
+        container.append(el('ul', {}, list.map(item)));
+      }
     }
   }
 
