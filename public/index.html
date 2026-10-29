@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Linguistic Drift Map</title>
+  <meta name="description" content="An interactive conceptual map of linguistic drift: how languages change in sound, grammar and meaning, why they change, and how we know.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/theme-init.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#index-drawer">Skip to concept index</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="5.5"></circle>
+        <circle cx="5" cy="9" r="3"></circle>
+        <circle cx="27" cy="8" r="2.5"></circle>
+        <circle cx="25" cy="26" r="3"></circle>
+        <circle cx="7" cy="25" r="2.5"></circle>
+        <path d="M16 16 5 9M16 16l11-8M16 16l9 10M16 16 7 25"></path>
+      </svg>
+      <div>
+        <h1>Linguistic Drift</h1>
+        <p class="tagline">A conceptual map of how languages change</p>
+      </div>
+    </div>
+
+    <div class="search" role="search">
+      <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"></circle><path d="m13 13 4 4"></path></svg>
+      <input id="search" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Search concepts or words (try “nice”)"
+             aria-label="Search concepts and example words"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+      <kbd class="search-kbd" aria-hidden="true">/</kbd>
+      <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+    </div>
+
+    <nav class="actions" aria-label="Map tools">
+      <button id="btn-tour" class="btn btn-primary" type="button">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4.5v11l9-5.5z"></path></svg>
+        <span>Guided tour</span>
+      </button>
+      <button id="btn-index" class="btn" type="button" aria-controls="index-drawer" aria-expanded="false">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 5h12M4 10h12M4 15h12"></path></svg>
+        <span>Index</span>
+      </button>
+      <button id="btn-timeline" class="btn" type="button" aria-controls="timeline" aria-pressed="true">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 10h16M5 7v6M10 6v8M15 8v4"></path></svg>
+        <span>Timeline</span>
+      </button>
+      <button id="btn-theme" class="btn btn-icon" type="button" aria-label="Switch to dark theme">
+        <svg class="icon-moon" viewBox="0 0 20 20" aria-hidden="true"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5"></circle><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.3 4.3l1.4 1.4M14.3 14.3l1.4 1.4M4.3 15.7l1.4-1.4M14.3 5.7l1.4-1.4"></path></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main class="stage" id="stage">
+    <svg id="map" class="map" role="application" aria-label="Concept map of linguistic drift. Use the index for a keyboard-accessible list of concepts.">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path class="arrow-head" d="M0 1 9 5 0 9z"></path>
+        </marker>
+        <marker id="arrow-hl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path class="arrow-head-hl" d="M0 1 9 5 0 9z"></path>
+        </marker>
+      </defs>
+      <g class="layer-territories"></g>
+      <g class="layer-links"></g>
+      <g class="layer-nodes"></g>
+      <g class="layer-labels"></g>
+    </svg>
+
+    <div class="loading" id="loading">Laying out the map…</div>
+
+    <section class="legend" id="legend" aria-label="Legend and filters">
+      <button class="legend-toggle" id="legend-toggle" type="button" aria-expanded="true" aria-controls="legend-body">
+        Legend &amp; filters
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg>
+      </button>
+      <div class="legend-body" id="legend-body">
+        <p class="legend-hint">Click a category to hide or show it.</p>
+        <ul class="legend-categories" id="legend-categories"></ul>
+        <ul class="legend-relations" id="legend-relations"></ul>
+      </div>
+    </section>
+
+    <div class="zoom-controls" role="group" aria-label="Zoom">
+      <button id="zoom-in" class="btn btn-icon" type="button" aria-label="Zoom in"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"></path></svg></button>
+      <button id="zoom-out" class="btn btn-icon" type="button" aria-label="Zoom out"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12"></path></svg></button>
+      <button id="zoom-fit" class="btn btn-icon" type="button" aria-label="Fit map to screen"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"></path></svg></button>
+    </div>
+
+    <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+
+    <div class="welcome" id="welcome" hidden>
+      <h2>Languages never stand still</h2>
+      <p>This map connects the kinds of change languages undergo, the forces behind them, and the ideas linguists use to study them.</p>
+      <ul>
+        <li><strong>Click</strong> a concept to read about it and step through word histories.</li>
+        <li><strong>Drag</strong> to pan, <strong>scroll</strong> or pinch to zoom, drag a node to move it.</li>
+        <li><strong>Search</strong> for a concept or a word like <em>nice</em>, <em>bird</em> or <em>apron</em>.</li>
+      </ul>
+      <div class="welcome-actions">
+        <button class="btn btn-primary" type="button" id="welcome-tour">Take the guided tour</button>
+        <button class="btn" type="button" id="welcome-close">Explore on my own</button>
+      </div>
+    </div>
+
+    <div class="tour-card" id="tour-card" hidden aria-live="polite">
+      <div class="tour-progress"><span id="tour-step"></span><div class="tour-bar"><div id="tour-bar-fill"></div></div></div>
+      <p id="tour-text"></p>
+      <div class="tour-actions">
+        <button class="btn" type="button" id="tour-prev">Back</button>
+        <button class="btn btn-primary" type="button" id="tour-next">Next</button>
+        <button class="btn btn-ghost" type="button" id="tour-exit">End tour</button>
+      </div>
+    </div>
+
+    <aside class="panel" id="panel" aria-label="Concept details" hidden>
+      <button class="panel-close btn btn-icon" id="panel-close" type="button" aria-label="Close details">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"></path></svg>
+      </button>
+      <div class="panel-scroll" id="panel-content"></div>
+    </aside>
+
+    <aside class="drawer" id="index-drawer" aria-label="Concept index" hidden tabindex="-1">
+      <div class="drawer-head">
+        <h2>Concept index</h2>
+        <button class="btn btn-icon" id="index-close" type="button" aria-label="Close index">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"></path></svg>
+        </button>
+      </div>
+      <div class="drawer-body" id="index-list"></div>
+    </aside>
+  </main>
+
+  <section class="timeline" id="timeline" aria-label="Timeline">
+    <div class="timeline-head">
+      <h2>Timeline</h2>
+      <p>Dated changes in languages, and milestones in the study of them. The axis is compressed toward the distant past.</p>
+    </div>
+    <svg id="timeline-svg" class="timeline-svg" role="img" aria-label="Timeline of language changes and ideas about change"></svg>
+  </section>
+
+  <noscript><p class="noscript">This map needs JavaScript. The underlying data is available at <a href="/api/map">/api/map</a>.</p></noscript>
+</body>
+</html>
