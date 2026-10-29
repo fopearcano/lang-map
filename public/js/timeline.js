@@ -1,15 +1,6 @@
 import { svgEl } from './dom.js';
+import { fraction } from './timescale.js';
 
-// Piecewise-linear time scale: the distant past is compressed so that the
-// crowded 19th–21st centuries get room.
-const STOPS = [
-  [-4500, 0],
-  [-1000, 0.07],
-  [1000, 0.2],
-  [1700, 0.36],
-  [1850, 0.47],
-  [2030, 1],
-];
 const TICKS = [-4000, -2000, 1, 500, 1000, 1500, 1700, 1800, 1850, 1900, 1950, 2000];
 const TRACKS = [
   { id: 'language', label: 'In languages', y: 30 },
@@ -19,15 +10,6 @@ const LEFT = 112;
 const RIGHT = 16;
 const AXIS_Y = 110;
 const ROW = 15;
-
-function fraction(year) {
-  for (let i = 1; i < STOPS.length; i++) {
-    const [y0, f0] = STOPS[i - 1];
-    const [y1, f1] = STOPS[i];
-    if (year <= y1) return f0 + ((Math.max(year, y0) - y0) / (y1 - y0)) * (f1 - f0);
-  }
-  return 1;
-}
 
 function formatYear(y) {
   if (y < 0) return `${-y} BCE`;

@@ -2,13 +2,14 @@
   "name": "lang-map",
   "version": "1.0.0",
   "private": true,
-  "description": "An interactive conceptual map of linguistic drift: how languages change in sound, grammar and meaning.",
+  "description": "An interactive conceptual map of linguistic drift and a world map of languages through time.",
   "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch-path=server.js --watch-path=lib --watch-path=data server.js",
-    "test": "node --test"
+    "test": "node --test",
+    "build:land": "node scripts/build-land.mjs"
   },
   "engines": {
     "node": ">=18.11"

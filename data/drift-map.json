@@ -32,6 +32,7 @@
       "era": "Term coined 1921",
       "aliases": ["language change", "drift", "historical linguistics", "diachronic change"],
       "summary": "The slow, cumulative and often directional change of a language across generations. Nobody decides it, yet it seems to follow a course.",
+      "sources": ["sapir-1921", "campbell-2013", "hock-joseph-2009"],
       "body": "Edward Sapir introduced “drift” in Language (1921) to describe how the countless small variations in everyday speech are not random. The ones that accumulate tend to move in a consistent direction. English, for example, has spent more than a thousand years moving away from a heavily inflected language with free word order toward one that relies on fixed word order and invariable words. Sapir also noticed parallel drift: related languages making the same change independently long after they split, as with the umlaut plurals of English foot/feet and German Fuß/Füße. Today the word is used broadly for any long-term change in sound, grammar, meaning or vocabulary. Linguists still debate how much of that direction comes from the structure of language itself and how much from social forces.",
       "quote": { "text": "Language moves down time in a current of its own making. It has a drift.", "source": "Edward Sapir, Language (1921), ch. 7" },
       "examples": [
@@ -43,12 +44,14 @@
     { "id": "sound-change", "label": "Sound change", "category": "sound", "kind": "hub",
       "aliases": ["phonological change", "phonetic change", "sound law"],
       "summary": "Systematic shifts in pronunciation. Because they usually apply to every word with the right sound in the right position, they leave regular correspondences behind.",
+      "sources": ["campbell-2013", "hock-joseph-2009", "joseph-janda-2003"],
       "body": "Sound change is the most visible and best-understood kind of drift. It can be unconditioned, where a sound changes everywhere, or conditioned, where it changes only next to certain sounds or in certain positions. Many changes are phonetically gradual in a speaker’s mouth but spread unevenly through a community. Because writing systems are conservative, spelling often preserves pronunciations that disappeared centuries ago." },
 
     { "id": "regularity", "label": "Regularity hypothesis", "category": "sound", "kind": "concept",
       "era": "1878", "year": 1878, "track": "idea",
       "aliases": ["Neogrammarian hypothesis", "exceptionlessness", "Ausnahmslosigkeit der Lautgesetze"],
       "summary": "“Sound laws admit no exceptions”: a sound change applies to every word in which its conditions are met.",
+      "sources": ["osthoff-brugmann-1878", "campbell-2013", "labov-1994"],
       "body": "The Neogrammarians of Leipzig made exceptionlessness the founding principle of historical linguistics, stating it in Osthoff and Brugmann’s 1878 manifesto. Apparent exceptions had to be explained by another regular law (as Verner had done), by borrowing from another dialect or language, or by analogy. The principle is what makes the comparative method work, because only regular change produces systematic correspondences between languages.",
       "examples": [
         { "from": "Latin pater, piscis, pēs", "to": "English father, fish, foot", "note": "*p → f in every inherited word, not just some" }
@@ -58,6 +61,7 @@
       "era": "1st millennium BCE (est.)", "year": -500, "track": "language",
       "aliases": ["First Germanic Sound Shift", "Erste Lautverschiebung", "Rask’s rule"],
       "summary": "A three-step chain shift of consonants that set the Germanic languages apart from the rest of Indo-European.",
+      "sources": ["grimm-1822", "rask-1818", "ringe-2006", "fortson-2010"],
       "body": "In Proto-Germanic, voiceless stops became fricatives (*p t k → f θ h), voiced stops became voiceless (*b d g → p t k), and breathy-voiced stops became plain voiced (*bʰ dʰ gʰ → b d g). Rasmus Rask noticed the correspondences in 1818 and Jacob Grimm set them out systematically in 1822. Latin, Greek and Sanskrit did not undergo the shift, which is why English pairs native words with borrowed learned ones: father beside paternal, tooth beside dental, heart beside cardiac.",
       "examples": [
         { "from": "Latin pater", "to": "English father", "note": "*p → f" },
@@ -79,6 +83,7 @@
       "era": "1875 (published 1877)", "year": 1877, "track": "idea",
       "aliases": ["grammatischer Wechsel", "grammatical alternation"],
       "summary": "Explained the main exceptions to Grimm’s Law by the position of the ancient Indo-European accent.",
+      "sources": ["verner-1877", "ringe-2006", "fortson-2010"],
       "body": "Some Germanic words had voiced consonants where Grimm’s Law predicted voiceless fricatives. Karl Verner showed that the fricatives produced by Grimm’s Law became voiced whenever the Proto-Indo-European accent did not fall on the immediately preceding syllable. It was a triumph for the regularity hypothesis: the “exceptions” were a second regular law. Its traces survive as alternations inside English words.",
       "examples": [
         { "from": "Sanskrit pitā́ · bhrā́tā", "to": "Gothic fadar · brōþar", "note": "Accent after the t gives d; accent before it gives þ" },
@@ -91,6 +96,7 @@
       "era": "c. 1400–1700", "year": 1400, "track": "language",
       "aliases": ["GVS", "English vowel shift"],
       "summary": "Every long vowel of Middle English moved up a step. The two highest could rise no further, so they became diphthongs.",
+      "sources": ["jespersen-1909", "baugh-cable-2013", "labov-1994"],
       "body": "Between Chaucer and the 18th century, English long vowels were raised: /aː/ moved toward /eː/, /eː/ to /iː/, /oː/ to /uː/, while /iː/ and /uː/ broke into the diphthongs /aɪ/ and /aʊ/. Spelling was being fixed by printers (Caxton’s press opened in 1476) while the shift was under way, so English spellings record pre-shift values. That is why English vowel letters stand for different sounds than in most European languages. Otto Jespersen gave the shift its name.",
       "examples": [
         { "from": "ME bite /biːt/", "to": "bite /baɪt/", "note": "high vowel → diphthong" },
@@ -110,6 +116,7 @@
       "era": "c. 6th–8th century CE", "year": 600, "track": "language",
       "aliases": ["Second Germanic Sound Shift", "Zweite Lautverschiebung", "Benrath line"],
       "summary": "A later shift of p, t, k in southern German dialects. It separates German from English and Dutch, and it fades out gradually toward the north.",
+      "sources": ["fortson-2010", "campbell-2013", "schmidt-1872"],
       "body": "After the Germanic languages had split, southern dialects turned p, t, k into affricates or fricatives depending on position. The change reached Alpine dialects fully but thinned out northward, leaving a band of isoglosses across Germany. The best known is the Benrath line, between northern maken and southern machen ‘make’. This staggered geography is a textbook argument for the wave model of change.",
       "examples": [
         { "from": "English apple", "to": "German Apfel", "note": "p → pf" },
@@ -122,6 +129,7 @@
     { "id": "chain-shift", "label": "Chain shifts", "category": "sound", "kind": "concept",
       "era": "theorised 1955", "year": 1955, "track": "idea", "aliases": ["push chain", "drag chain", "pull chain"],
       "summary": "Linked changes in which one sound moves and its neighbours follow, so the system keeps its contrasts instead of merging.",
+      "sources": ["martinet-1955", "labov-1994"],
       "body": "André Martinet described two kinds. In a drag (pull) chain, one sound moves away and a neighbour drifts into the gap it leaves. In a push chain, one sound encroaches on another’s space and pushes it out. Chain shifts are evidence that sound change is shaped by the system as a whole, and not only by individual sounds.",
       "examples": [
         { "from": "Grimm’s Law", "to": "three linked consonant moves", "note": "Each series moves into the space the previous one vacated" },
@@ -132,6 +140,7 @@
       "era": "20th century –", "year": 1950, "track": "language",
       "aliases": ["NCS", "Inland North", "Great Lakes accent"],
       "summary": "A chain shift in progress in the cities around the US Great Lakes, observed as it happened.",
+      "sources": ["labov-yaeger-steiner-1972", "labov-ash-boberg-2006"],
       "body": "Across the Inland North (Chicago, Detroit, Cleveland, Buffalo, Rochester and more), short vowels rotated: /æ/ rose and became a glide, /ɑ/ moved forward into the space it left, and /ɔ/, /ʌ/ and /ɛ/ followed. Labov, Yaeger and Steiner described it in 1972. Recent studies find younger speakers in several cities backing away from it, so this is a drift that may be reversing.",
       "examples": [
         { "from": "block", "to": "sounds like “black” to outsiders", "note": "/ɑ/ fronted" },
@@ -142,6 +151,7 @@
     { "id": "lenition", "label": "Lenition", "category": "sound", "kind": "concept",
       "aliases": ["weakening", "voicing", "spirantisation", "flapping"],
       "summary": "Consonants weaken, typically between vowels: stops become fricatives or approximants, and sometimes disappear.",
+      "sources": ["campbell-2013", "penny-2002"],
       "body": "A common lenition path runs from a voiceless stop to a voiced stop, then a fricative, then an approximant, and finally to nothing. Western Romance languages went a long way down it, and American English flapping is a smaller modern case. Lenition is usually explained by articulatory economy: less effort is spent on a closure between two open vowels.",
       "examples": [
         { "from": "Latin vīta", "to": "Spanish vida [ˈbiða]", "note": "t → d → ð" },
@@ -153,6 +163,7 @@
     { "id": "assimilation", "label": "Assimilation", "category": "sound", "kind": "concept",
       "aliases": ["coarticulation", "gemination"],
       "summary": "Neighbouring sounds become more alike, which makes speech easier to produce.",
+      "sources": ["campbell-2013", "hock-joseph-2009"],
       "body": "Assimilation can be partial (sharing place or voicing) or total (becoming identical). It can work forward or backward. It is one of the most frequent kinds of sound change, and it usually starts as coarticulation in fast speech before it becomes the norm.",
       "examples": [
         { "from": "Latin octō", "to": "Italian otto", "note": "kt → tt" },
@@ -164,6 +175,7 @@
     { "id": "metathesis", "label": "Metathesis", "category": "sound", "kind": "concept",
       "aliases": ["sound swap"],
       "summary": "Sounds swap places, often r or l with a neighbouring vowel.",
+      "sources": ["blevins-garrett-1998", "campbell-2013"],
       "body": "Metathesis can be sporadic (one word) or regular (a whole class of words). Juliette Blevins and Andrew Garrett argued that many cases start from perception: cues for sounds like r and l stretch across neighbouring vowels, so listeners can place them in the wrong position.",
       "examples": [
         { "from": "Old English brid", "to": "bird", "note": "r and i swap" },
@@ -175,6 +187,7 @@
     { "id": "merger", "label": "Mergers", "category": "sound", "kind": "concept",
       "aliases": ["phonemic merger", "cot–caught", "pin–pen", "Garde’s principle"],
       "summary": "Two distinct sounds collapse into one, and words that used to differ become homophones.",
+      "sources": ["labov-1994", "wedel-2013"],
       "body": "Mergers spread readily and are almost never undone. Garde’s principle holds that once words have merged, speakers cannot reliably separate them again, because nothing tells them which words had which sound. Wedel, Kaplan and Jackson (2013) found that sounds which distinguish many word pairs are less likely to merge, which suggests the system protects useful contrasts.",
       "examples": [
         { "from": "meet ≠ meat", "to": "meet = meat", "note": "Early Modern English merger" },
@@ -186,6 +199,7 @@
     { "id": "tonogenesis", "label": "Tonogenesis", "category": "sound", "kind": "concept",
       "aliases": ["birth of tone", "tone"],
       "summary": "Tone systems are born when a lost consonant contrast leaves its imprint on the pitch of the vowel.",
+      "sources": ["haudricourt-1954", "campbell-2013"],
       "body": "Consonants affect pitch slightly: voiced consonants lower it, and some final consonants raise or creak it. When the consonant contrast itself disappears, the pitch difference can become the only cue, and so it becomes distinctive. André-Georges Haudricourt (1954) showed that the tones of Vietnamese grew out of lost final consonants. Punjabi is still developing tones in the same way.",
       "examples": [
         { "from": "Pre-Vietnamese final *-ʔ, *-h", "to": "rising and falling tones", "note": "Haudricourt’s analysis" },
@@ -196,6 +210,7 @@
       "era": "1969", "year": 1969, "track": "idea",
       "aliases": ["word-by-word change", "Wang"],
       "summary": "A sound change can spread through the vocabulary one word at a time instead of everywhere at once.",
+      "sources": ["wang-1969", "labov-1994"],
       "body": "William S.-Y. Wang (1969) argued that some changes are phonetically abrupt but lexically gradual: they move through the lexicon word by word, and can be left unfinished, leaving a residue of unchanged words. This challenged Neogrammarian regularity. The usual resolution is that both kinds of change exist. Gradual, low-level phonetic changes tend to be regular, while abrupt changes between categories tend to diffuse word by word.",
       "examples": [
         { "from": "blood, flood", "to": "/ʌ/", "note": "Long /uː/ shortened early, then lowered" },
@@ -206,12 +221,14 @@
     { "id": "grammar-change", "label": "Grammatical change", "category": "grammar", "kind": "hub",
       "aliases": ["morphosyntactic change", "syntactic change", "morphological change"],
       "summary": "Drift in how words are built and put together: endings, word order and grammatical words.",
+      "sources": ["harris-campbell-1995", "campbell-2013"],
       "body": "Grammatical change usually follows sound change and reanalysis. Endings worn down by sound change stop doing their job, other strategies (word order, prepositions, auxiliaries) take over, and those strategies in turn grammaticalise and wear down. This is the domain where Sapir saw drift most clearly." },
 
     { "id": "synthetic-analytic", "label": "From synthetic to analytic", "category": "grammar", "kind": "concept",
       "era": "c. 1000–1400 (English)", "year": 1100, "track": "language",
       "aliases": ["loss of case", "deflexion", "loss of inflection", "typological drift"],
       "summary": "English, like Latin on its way to Romance, lost most of its case endings and came to rely on word order and prepositions.",
+      "sources": ["sapir-1921", "baugh-cable-2013"],
       "body": "Old English nouns had four cases and three genders, and the definite article declined with them. Unstressed final syllables weakened to a schwa and then vanished. Contact with Old Norse, which shared roots with English but had different endings, probably sped this up. Once endings stopped marking who did what to whom, word order became fixed. This is the long English drift that Sapir described.",
       "examples": [
         { "from": "OE se stān (nom.) · þone stān (acc.)", "to": "the stone · the stone", "note": "Case on the article and noun is lost" },
@@ -222,6 +239,7 @@
     { "id": "analogy", "label": "Analogy", "category": "grammar", "kind": "concept",
       "aliases": ["analogical levelling", "analogical extension", "regularisation", "Sturtevant’s paradox"],
       "summary": "Speakers reshape irregular forms on the model of regular patterns, which tidies grammar one word at a time.",
+      "sources": ["sturtevant-1947", "campbell-2013", "hock-joseph-2009"],
       "body": "Levelling removes alternations inside a paradigm. Extension spreads a pattern to new words, and sometimes spreads an irregular one. Analogy is the counterweight to sound change, as Sturtevant’s paradox puts it: sound change is regular but produces irregularity, while analogy is irregular but produces regularity. Frequent forms resist it, which is why the most common verbs are the most irregular.",
       "examples": [
         { "from": "OE helpan, healp, hulpon, holpen", "to": "help, helped, helped", "note": "Levelling to the regular -ed pattern" },
@@ -232,6 +250,7 @@
     { "id": "grammaticalization", "label": "Grammaticalization", "category": "grammar", "kind": "concept",
       "era": "named 1912", "year": 1912, "track": "idea", "aliases": ["grammaticalisation", "unidirectionality", "cline of grammaticality"],
       "summary": "Content words turn into grammatical words, then clitics, then affixes. Meaning bleaches and form shrinks on the way.",
+      "sources": ["meillet-1912", "hopper-traugott-2003"],
       "body": "Antoine Meillet coined the term in 1912. The typical path runs from content word to function word to clitic to affix, and change mostly runs in that direction (the unidirectionality hypothesis), although there are disputed counter-examples. Frequency drives it: repeated phrases get reduced and reanalysed as single units. Hopper and Traugott’s Grammaticalization (1993) made it a central topic of the field.",
       "examples": [
         { "from": "be going to (motion)", "to": "gonna (future)", "note": "Movement → intention → future" },
@@ -248,6 +267,7 @@
     { "id": "reanalysis", "label": "Reanalysis", "category": "grammar", "kind": "concept",
       "aliases": ["rebracketing", "metanalysis", "back-formation", "juncture loss"],
       "summary": "Hearers assign a new structure to the same string of sounds. Nothing changes on the surface until the new structure is extended.",
+      "sources": ["harris-campbell-1995", "hopper-traugott-2003", "campbell-2013"],
       "body": "Reanalysis is invisible when it happens. Its effects appear only when speakers use the new analysis productively. It is the engine of much grammaticalization, and of many word-level changes where a boundary moves or a singular is heard as a plural.",
       "examples": [
         { "from": "a napron", "to": "an apron", "note": "The n moves to the article" },
@@ -266,6 +286,7 @@
       "era": "described 1917", "year": 1917, "track": "idea",
       "aliases": ["negative cycle", "negation", "ne … pas"],
       "summary": "Negation weakens, gets reinforced by a new word, the reinforcer takes over, and the cycle starts again.",
+      "sources": ["jespersen-1917", "dahl-1979"],
       "body": "Otto Jespersen (1917) noticed that negative markers tend to wear down phonetically and get propped up by an emphatic word. Over time the emphasiser becomes the real negator and the old marker disappears. Östen Dahl named the pattern “Jespersen’s Cycle” in 1979. English and French have each gone round it at least once.",
       "examples": [
         { "from": "Old French jeo ne di", "to": "je ne dis pas → je dis pas", "note": "pas ‘step’ reinforces, then replaces, ne" },
@@ -281,6 +302,7 @@
     { "id": "word-order", "label": "Word-order change", "category": "grammar", "kind": "concept",
       "aliases": ["OV to VO", "verb-second", "V2", "SOV", "SVO"],
       "summary": "English moved from verb-final subordinate clauses and verb-second main clauses to fixed subject–verb–object order.",
+      "sources": ["harris-campbell-1995", "lightfoot-1979", "dryer-haspelmath-2013"],
       "body": "Old English put the verb second in main clauses (as German still does) and often last in subordinate clauses. As case endings eroded, these orders became ambiguous, and subject–verb–object became the rule in Middle English. Proto-Indo-European is usually reconstructed as verb-final, so the English change is part of a much longer drift.",
       "examples": [
         { "from": "OE Þā cōm hē", "to": "Then he came", "note": "Verb-second is lost" },
@@ -291,6 +313,7 @@
       "era": "c. 1500–1700", "year": 1500, "track": "language",
       "aliases": ["periphrastic do", "dummy do"],
       "summary": "Questions and negatives came to require an auxiliary do, which replaced the older pattern of inverting the main verb.",
+      "sources": ["ellegard-1953", "kroch-1989"],
       "body": "Alvar Ellegård’s 1953 counts showed periphrastic do rising along an S-curve through the 16th century. Anthony Kroch (1989) showed that it rose at the same rate in every context, which supports the idea that a single change of grammar was spreading. Whether Celtic contact helped start it is still debated.",
       "examples": [
         { "from": "Know you not?", "to": "Don’t you know?", "note": "Questions" },
@@ -301,6 +324,7 @@
       "era": "c. 1250–1700", "year": 1600, "track": "language",
       "aliases": ["T–V distinction", "thou", "ye", "y’all", "singular they", "pronouns"],
       "summary": "English lost its singular/familiar thou. The old plural object form you took over everywhere, and new plurals rose to fill the gap.",
+      "sources": ["baugh-cable-2013", "oed"],
       "body": "Following French usage, Middle English began using plural ye/you as a polite singular. That gave thou social meaning (intimacy, or contempt) until it dropped out of standard speech by about 1700, surviving in dialects, prayer and verse. The subject/object pair ye/you also collapsed into you. With no distinct plural left, speakers built new ones. Singular they, attested since the 14th century, is another long-running pronoun drift.",
       "examples": [
         { "from": "thou art / you are", "to": "you are", "note": "The polite form generalises" },
@@ -319,6 +343,7 @@
       "era": "1891", "year": 1891, "track": "idea",
       "aliases": ["linguistic cycle", "spiral", "Gabelentz", "isolating", "agglutinating", "fusional"],
       "summary": "Languages may spiral from isolating to agglutinating to fusional, and back to isolating as endings erode.",
+      "sources": ["gabelentz-1891", "hopper-traugott-2003"],
       "body": "Georg von der Gabelentz (1891) pictured grammar as a spiral. Free words fuse into affixes, affixes erode, and new free words step in. Strong claims that whole languages cycle through types are disputed, but small cycles are well attested, especially in the future tense and in negation.",
       "examples": [
         { "from": "Latin cantābō (synthetic)", "to": "cantāre habeō (analytic)", "note": "First turn" },
@@ -334,11 +359,13 @@
     { "id": "semantic-change", "label": "Semantic change", "category": "meaning", "kind": "hub",
       "aliases": ["meaning change", "semantic shift", "semantic drift"],
       "summary": "Words keep their form but their meanings move: wider, narrower, better, worse, or across to a related idea.",
+      "sources": ["traugott-dasher-2002", "campbell-2013"],
       "body": "Meaning change is the least predictable part of drift, but it follows recurring paths. Metaphor and metonymy are the main vehicles. Context matters: a meaning that is often implied by a word gradually becomes part of what the word means. Elizabeth Traugott and Richard Dasher called this “invited inference”." },
 
     { "id": "broadening", "label": "Broadening", "category": "meaning", "kind": "concept",
       "aliases": ["widening", "generalisation", "extension"],
       "summary": "A word comes to cover a wider range of things than it used to.",
+      "sources": ["campbell-2013", "etymonline"],
       "body": "Broadening often happens when a specific term is used for the general category until the specific sense fades. It frequently goes together with the narrowing of an older general word, as dog widened while hound narrowed.",
       "examples": [
         { "from": "OE docga ‘a powerful breed of dog’", "to": "dog ‘any dog’", "note": "Replaced hund as the general word" },
@@ -354,6 +381,7 @@
     { "id": "narrowing", "label": "Narrowing", "category": "meaning", "kind": "concept",
       "aliases": ["specialisation", "restriction"],
       "summary": "A general word comes to mean something more specific.",
+      "sources": ["campbell-2013", "etymonline", "oed"],
       "body": "Narrowing is common when a borrowed or newer word takes over the general sense and leaves the old word with only one niche. German cognates often preserve the older, wider meanings.",
       "examples": [
         { "from": "OE dēor ‘animal’ (German Tier)", "to": "deer", "note": "One kind of animal" },
@@ -370,6 +398,7 @@
     { "id": "amelioration", "label": "Amelioration", "category": "meaning", "kind": "concept",
       "aliases": ["elevation", "melioration"],
       "summary": "A word’s meaning becomes more positive over time.",
+      "sources": ["etymonline", "oed", "campbell-2013"],
       "body": "Amelioration is less common than pejoration. It often affects words for social rank, as service to a lord became honourable, and words whose negative edge wears away through ironic or affectionate use.",
       "examples": [
         { "from": "OE cniht ‘boy, servant’ (German Knecht)", "to": "knight", "note": "Servant → noble warrior" },
@@ -388,6 +417,7 @@
     { "id": "pejoration", "label": "Pejoration", "category": "meaning", "kind": "concept",
       "aliases": ["deterioration", "degeneration"],
       "summary": "A word’s meaning becomes more negative over time.",
+      "sources": ["etymonline", "oed"],
       "body": "Pejoration often affects words for social inferiors, outsiders and women. Contempt for the group gets absorbed into the word itself. Euphemisms are especially prone to it.",
       "examples": [
         { "from": "Latin villānus ‘farmhand on an estate’", "to": "villain", "note": "Peasant → scoundrel" },
@@ -406,6 +436,7 @@
     { "id": "metaphor-metonymy", "label": "Metaphor & metonymy", "category": "meaning", "kind": "concept",
       "aliases": ["metaphor", "metonymy", "synecdoche", "figurative extension"],
       "summary": "Meanings jump by resemblance (metaphor) or by association (metonymy), and the figurative sense becomes the ordinary one.",
+      "sources": ["traugott-dasher-2002", "campbell-2013", "etymonline"],
       "body": "Metaphor maps one domain onto another: to grasp an idea, a computer mouse. Metonymy slides to something closely associated: the Crown for the monarchy, a board for the people who sit at it. Most abstract vocabulary began as concrete metaphor.",
       "examples": [
         { "from": "grasp (with the hand)", "to": "grasp (an idea)", "note": "Metaphor: understanding is holding" },
@@ -421,6 +452,7 @@
     { "id": "bleaching", "label": "Semantic bleaching", "category": "meaning", "kind": "concept",
       "aliases": ["intensifiers", "desemanticisation", "weakening of meaning"],
       "summary": "Heavy use drains a word of its full meaning. This happens most often to intensifiers, which keep needing replacements.",
+      "sources": ["hopper-traugott-2003", "oed"],
       "body": "Intensifiers lose force through overuse, so each generation reaches for fresh ones. Bleaching is also a core part of grammaticalization: going to loses its sense of motion before it can mark the future.",
       "examples": [
         { "from": "Old French verai ‘true’", "to": "very", "note": "Truth → mere intensity" },
@@ -432,6 +464,7 @@
       "era": "named 1994", "year": 1994, "track": "idea",
       "aliases": ["euphemism", "taboo replacement"],
       "summary": "A polite replacement for a taboo word picks up the taboo itself, so it has to be replaced in turn.",
+      "sources": ["pinker-1994"],
       "body": "Steven Pinker named the effect in 1994. A new euphemism is fresh only until it becomes the ordinary word for the thing, at which point it carries all of the thing’s associations. Words for bodily functions, death, illness and disability turn over especially fast.",
       "examples": [
         { "from": "privy → water closet → toilet", "to": "bathroom → restroom", "note": "Each word for the room wears out" }
@@ -446,6 +479,7 @@
     { "id": "subjectification", "label": "Subjectification", "category": "meaning", "kind": "concept",
       "era": "1989", "year": 1989, "track": "idea", "aliases": ["invited inference", "pragmatic strengthening"],
       "summary": "Meanings drift from describing the world toward expressing the speaker’s view of it.",
+      "sources": ["traugott-1989", "traugott-dasher-2002"],
       "body": "Elizabeth Closs Traugott showed that words often move from concrete, external meanings to internal, evaluative and speaker-based ones. An inference that a word often invites, such as reading cause into ‘after’, gradually becomes part of what the word means.",
       "examples": [
         { "from": "while ‘during the time that’", "to": "while ‘although’", "note": "Time → concession" },
@@ -456,12 +490,14 @@
     { "id": "lexical-change", "label": "Lexical change", "category": "meaning", "kind": "hub",
       "aliases": ["vocabulary change", "neologism", "word birth", "word death"],
       "summary": "Words are born, borrowed, reshaped and retired, so the vocabulary turns over far faster than the grammar.",
+      "sources": ["campbell-2013", "baugh-cable-2013"],
       "body": "Vocabulary is the most open and most socially sensitive part of a language. New words arrive through borrowing, compounding, blending and many other processes. Old words become archaic or survive only in fixed phrases. Core vocabulary such as body parts, low numbers and pronouns changes much more slowly than the rest." },
 
     { "id": "borrowing", "label": "Borrowing", "category": "meaning", "kind": "concept",
       "era": "after 1066 (Norman French)", "year": 1066, "track": "language",
       "aliases": ["loanwords", "Norman Conquest", "French influence", "Norse influence"],
       "summary": "Words are taken over from other languages, usually from cultures with prestige or power, or with new things to name.",
+      "sources": ["baugh-cable-2013", "thomason-kaufman-1988"],
       "body": "After the Norman Conquest, French became the language of England’s ruling class for about three centuries, and thousands of its words entered English, especially for government, law, food and fashion. Old Norse contact earlier went deeper: English borrowed even the pronouns they, them and their. The most frequent everyday words in English remain Germanic.",
       "examples": [
         { "from": "cow, swine, sheep (English farmers)", "to": "beef, pork, mutton (French tables)", "note": "The animal and the meat" },
@@ -472,6 +508,7 @@
     { "id": "calque", "label": "Calques", "category": "meaning", "kind": "concept",
       "aliases": ["loan translation"],
       "summary": "Borrowing the structure of a word or phrase and translating its parts, instead of borrowing its sounds.",
+      "sources": ["campbell-2013", "hock-joseph-2009"],
       "body": "Calques let a language import a concept while keeping its own word stock. The term “loanword” is itself a calque of German Lehnwort.",
       "examples": [
         { "from": "English skyscraper", "to": "French gratte-ciel · German Wolkenkratzer · Spanish rascacielos", "note": "‘Scrape’ + ‘sky/cloud’, part for part" },
@@ -482,6 +519,7 @@
     { "id": "word-formation", "label": "New coinages", "category": "meaning", "kind": "concept",
       "aliases": ["blending", "clipping", "back-formation", "acronym", "compounding", "neologism"],
       "summary": "Languages also build new words from their own material: by blending, clipping, back-formation and acronyms.",
+      "sources": ["baugh-cable-2013", "oed"],
       "body": "These processes are constantly at work. Many coinages fade quickly. Those that fill a real gap become ordinary words, and their origins are soon forgotten.",
       "examples": [
         { "from": "smoke + fog (1905)", "to": "smog", "note": "Blend" },
@@ -493,6 +531,7 @@
     { "id": "folk-etymology", "label": "Folk etymology", "category": "meaning", "kind": "concept",
       "aliases": ["popular etymology", "reanalysis by association"],
       "summary": "An opaque word is reshaped to look like familiar words that seem to explain it.",
+      "sources": ["campbell-2013", "etymonline"],
       "body": "When speakers no longer recognise a word’s parts, they swap in parts that make sense to them. Folk etymology is reanalysis guided by meaning, and it is especially common with borrowings and with words whose components have died out.",
       "examples": [
         { "from": "Old French crevice", "to": "crayfish", "note": "It lives in water, so it must be a fish" },
@@ -508,6 +547,7 @@
     { "id": "lexical-replacement", "label": "Lexical replacement", "category": "meaning", "kind": "concept",
       "aliases": ["word death", "obsolescence", "archaism"],
       "summary": "Old words are pushed out by borrowings or new formations, sometimes leaving fossils in compounds and idioms.",
+      "sources": ["pagel-2007", "campbell-2013", "buck-1949"],
       "body": "Replacement happens even in core vocabulary, though more slowly the more frequent a word is. Displaced words often survive in fixed expressions, place names or dialects.",
       "examples": [
         { "from": "OE wer ‘man’", "to": "werewolf", "note": "Survives only in a compound" },
@@ -518,11 +558,13 @@
     { "id": "mechanisms", "label": "Why languages drift", "category": "mechanism", "kind": "hub",
       "aliases": ["causes of language change", "motivations", "mechanisms"],
       "summary": "Drift has many interacting causes: physiology, perception, frequency, how children learn, contact between languages, and social meaning.",
+      "sources": ["weinreich-labov-herzog-1968", "campbell-2013"],
       "body": "No single cause explains language change. Internal factors (how speech is produced, perceived, processed and learned) explain why certain changes are natural and recur across languages. External and social factors explain why a particular change starts in a particular place and spreads. The puzzle of timing — why here and now, and not elsewhere — is known as the actuation problem." },
 
     { "id": "least-effort", "label": "Articulatory economy", "category": "mechanism", "kind": "concept",
       "era": "1949 (Zipf)", "aliases": ["ease of articulation", "principle of least effort", "reduction", "erosion"],
       "summary": "Speakers tend to reduce effort, especially in predictable and frequent material, so words erode over time.",
+      "sources": ["zipf-1949", "hock-joseph-2009"],
       "body": "George Kingsley Zipf framed a general principle of least effort in 1949. In speech, effort reduction shows up as assimilation, lenition, vowel reduction and the loss of unstressed syllables. Listeners pull the other way, because they need contrasts to stay audible. Drift is partly the long-run balance between the two.",
       "examples": [
         { "from": "probably", "to": "prolly", "note": "Fast-speech reduction" },
@@ -539,6 +581,7 @@
       "era": "1981", "year": 1981, "track": "idea",
       "aliases": ["misperception", "hypocorrection", "hypercorrection", "Ohala"],
       "summary": "Some changes start in perception, when listeners misparse a sound or attribute a feature to the wrong segment.",
+      "sources": ["ohala-1981"],
       "body": "John Ohala (1981) argued that listeners normally undo the effects of coarticulation, and that sound change happens when they fail to. Hypocorrection takes a contextual effect as part of the target sound. Hypercorrection “corrects” a feature that was really there. This explains why some changes recur independently across unrelated languages.",
       "examples": [
         { "from": "Latin bonum", "to": "French bon [bɔ̃]", "note": "The nasal consonant is lost and its nasality is reassigned to the vowel" }
@@ -548,6 +591,7 @@
       "era": "2007 (quantified)", "year": 2007, "track": "idea",
       "aliases": ["usage-based", "Bybee", "word frequency", "irregular verbs"],
       "summary": "Frequent words reduce faster in sound but resist analogy, which is why the most common verbs stay irregular.",
+      "sources": ["bybee-2007", "lieberman-2007", "pagel-2007"],
       "body": "Joan Bybee showed that repetition does two things. It automates and shortens phonetic forms, and it entrenches irregular forms in memory. Lieberman and colleagues (2007) found that English irregular verbs regularise at a rate inversely proportional to the square root of their frequency: a verb used 100 times less often regularises 10 times as fast. Pagel and colleagues (2007) found that frequent words are also replaced more slowly over millennia.",
       "examples": [
         { "from": "be, have, go, do", "to": "still irregular", "note": "Frequency protects them" },
@@ -558,6 +602,7 @@
     { "id": "acquisition", "label": "Generational transmission", "category": "mechanism", "kind": "concept",
       "aliases": ["child language acquisition", "abduction", "incrementation", "imperfect learning"],
       "summary": "Each generation rebuilds the language from the speech it hears. Small differences in the rebuilt grammar add up to change.",
+      "sources": ["andersen-1973", "lightfoot-1979", "labov-2007"],
       "body": "Children never receive a grammar directly. They infer one from the data around them. Henning Andersen (1973) described change by abduction: learners can arrive at a grammar that fits the data but differs from their parents’ grammar. Labov stresses incrementation instead, where children and adolescents push a change already in progress further with each cohort. The two views disagree about whether change starts in children or in adolescent and adult social use.",
       "examples": [
         { "from": "a napron (parents’ structure)", "to": "an apron (learners’ structure)", "note": "Same sounds, different analysis" }
@@ -566,6 +611,7 @@
     { "id": "functional-pressure", "label": "System pressure", "category": "mechanism", "kind": "concept",
       "era": "1955", "aliases": ["functional load", "homophony avoidance", "contrast preservation", "economy"],
       "summary": "The sound system as a whole shapes change: contrasts that do a lot of work tend to be preserved.",
+      "sources": ["martinet-1955", "wedel-2013"],
       "body": "André Martinet argued that sound systems tend toward balanced, economical inventories, and that sounds avoid collapsing when their contrast distinguishes many words. Quantitative work (Wedel, Kaplan and Jackson 2013) supports this. Sounds that distinguish more word pairs are less likely to merge.",
       "examples": [
         { "from": "a gap in the vowel space", "to": "a neighbour moves in", "note": "A drag chain" }
@@ -574,6 +620,7 @@
     { "id": "contact", "label": "Language contact", "category": "mechanism", "kind": "concept",
       "era": "1953 / 1988", "aliases": ["bilingualism", "interference", "Thomason and Kaufman", "Weinreich"],
       "summary": "When speakers of different languages interact, words, sounds and even grammar can transfer between them.",
+      "sources": ["weinreich-1953", "thomason-kaufman-1988", "thomason-2001"],
       "body": "Uriel Weinreich’s Languages in Contact (1953) and Thomason and Kaufman (1988) laid out what transfers under which conditions. Casual contact moves words. Intense, long-term bilingualism can move sounds and grammar. When a whole population shifts to a new language, features of the old one often carry over.",
       "examples": [
         { "from": "Old Norse and Old English", "to": "they, take, sky, egg", "note": "Close contact in the Danelaw" },
@@ -583,6 +630,7 @@
     { "id": "substrate", "label": "Substrate & superstrate", "category": "mechanism", "kind": "concept",
       "aliases": ["substratum", "superstratum", "adstratum", "Celtic hypothesis", "shift-induced interference"],
       "summary": "A language that people abandon leaves traces in the one they adopt (substrate). A dominant language leaves traces from above (superstrate).",
+      "sources": ["thomason-kaufman-1988", "thomason-2001"],
       "body": "Substrate effects arise from language shift: adults learning a new language carry over sounds and structures, and their children keep them. The retroflex consonants of Indo-Aryan languages are widely attributed to a Dravidian substrate. Irish English has constructions modelled on Irish. Whether Celtic shaped English grammar, the Celtic hypothesis, is still debated.",
       "examples": [
         { "from": "Irish tá mé tar éis ithe", "to": "Irish English I’m after eating", "note": "‘I have just eaten’, calqued from Irish" },
@@ -593,11 +641,13 @@
     { "id": "social-spread", "label": "How change spreads", "category": "social", "kind": "hub",
       "aliases": ["diffusion", "sociolinguistics", "propagation"],
       "summary": "An innovation becomes a change only when a community takes it up. That depends on who uses it and what it signals.",
+      "sources": ["weinreich-labov-herzog-1968", "labov-1994"],
       "body": "Sociolinguistics turned language change from a historical inference into something that can be watched as it happens. Weinreich, Labov and Herzog (1968) set out its research programme: change is orderly heterogeneity. Variation is structured, socially meaningful, and passed along through social networks." },
 
     { "id": "variation", "label": "Variation", "category": "social", "kind": "concept",
       "era": "1958", "aliases": ["orderly heterogeneity", "linguistic variable", "-ing / -in’"],
       "summary": "Every change starts as variation, but not every variation becomes a change. Some variants stay stable for centuries.",
+      "sources": ["fischer-1958", "weinreich-labov-herzog-1968"],
       "body": "John Fischer (1958) found that New England children chose -ing or -in’ according to gender, class and formality. Variation is structured, not free. Sociolinguists treat a linguistic variable as the basic unit: competing ways of saying the same thing. Change happens when one variant’s share rises steadily across the community.",
       "examples": [
         { "from": "walking", "to": "walkin’", "note": "A stable variable since at least the 17th century" }
@@ -607,6 +657,7 @@
       "era": "1989 (constant rate)", "year": 1989, "track": "idea",
       "aliases": ["logistic curve", "constant rate hypothesis", "Kroch"],
       "summary": "Changes start slowly, accelerate through the middle, and slow down as the last holdouts give way.",
+      "sources": ["kroch-1989", "ellegard-1953"],
       "body": "When the share of an innovative variant is plotted over time, the result is usually a logistic, S-shaped curve. Anthony Kroch’s constant rate hypothesis (1989) observed that when a grammatical change shows up in several contexts, it rises at the same rate in all of them, which is evidence that one underlying change is spreading.",
       "examples": [
         { "from": "do-support, 1400–1700", "to": "a classic S-curve", "note": "Ellegård’s counts, reanalysed by Kroch" }
@@ -615,6 +666,7 @@
     { "id": "above-below", "label": "Change from above & below", "category": "social", "kind": "concept",
       "aliases": ["change from above", "change from below", "awareness", "women lead change"],
       "summary": "Some changes are conscious imports of a prestige form (from above). Most rise unnoticed within the community (from below).",
+      "sources": ["labov-1990", "labov-1994"],
       "body": "In Labov’s framework, “above” and “below” refer to social awareness, not class. Changes from below are typically led by women, and by people in the middle of the class hierarchy who are upwardly mobile. Changes from above often come with hypercorrection in careful speech.",
       "examples": [
         { "from": "post-vocalic r in New York City", "to": "change from above", "note": "A prestige norm that is consciously imitated" },
@@ -625,6 +677,7 @@
       "era": "1966 / 1972", "year": 1966, "track": "idea",
       "aliases": ["overt prestige", "covert prestige", "hypercorrection", "department store study"],
       "summary": "Variants carry social value. Overt prestige pulls speakers toward the standard; covert prestige pulls them toward local, non-standard forms.",
+      "sources": ["labov-1966", "trudgill-1972"],
       "body": "Labov’s 1966 department-store study in New York asked staff for something on the “fourth floor” and found that pronouncing the r tracked the store’s status: most at Saks, less at Macy’s, least at S. Klein. Peter Trudgill (1972) found that men in Norwich reported using more non-standard forms than they actually did. Local speech has its own prestige.",
       "examples": [
         { "from": "Saks → Macy’s → S. Klein", "to": "less and less r in ‘fourth floor’", "note": "Pronunciation tracks the status of the store" }
@@ -634,6 +687,7 @@
       "era": "1963", "year": 1963, "track": "idea",
       "aliases": ["centralisation", "identity", "Labov 1963"],
       "summary": "Labov’s first study: islanders exaggerated an old vowel feature to set themselves apart from summer tourists.",
+      "sources": ["labov-1963"],
       "body": "On Martha’s Vineyard, the diphthongs in right and house were becoming more centralised ([rəɪt], [həʊs]). The change was strongest among the up-island fishermen of Chilmark, and among younger people who meant to stay on the island. It was a change driven by local identity, and it showed that social meaning can drive sound change.",
       "examples": [
         { "from": "right [raɪt]", "to": "[rəɪt]", "note": "Centralised: an islander’s marker" },
@@ -643,6 +697,7 @@
     { "id": "apparent-time", "label": "Apparent & real time", "category": "social", "kind": "concept",
       "aliases": ["apparent time", "real time", "age grading", "panel study", "trend study"],
       "summary": "Comparing generations at a single moment lets researchers watch change in progress, checked against studies repeated years later.",
+      "sources": ["labov-1994", "sankoff-blondeau-2007"],
       "body": "The apparent-time construct assumes adults’ speech stays roughly stable, so older speakers represent earlier stages of the language. Real-time restudies test this. Trend studies re-sample a community; panel studies follow the same people. Sankoff and Blondeau’s Montreal panel showed that some adults do change later in life. Age grading, where young people use a feature and drop it with age, can masquerade as change.",
       "examples": [
         { "from": "grandparents vs grandchildren", "to": "a snapshot of change in progress", "note": "Apparent time" }
@@ -651,6 +706,7 @@
     { "id": "social-networks", "label": "Social networks", "category": "social", "kind": "concept",
       "era": "1980 / 1985", "aliases": ["weak ties", "network density", "Milroy", "Belfast"],
       "summary": "Close-knit networks hold onto local norms. Loose, weak ties let innovations travel between groups.",
+      "sources": ["milroy-1980", "milroy-milroy-1985"],
       "body": "Lesley Milroy’s study of Belfast (1980) showed that speakers in dense, multiplex networks kept vernacular forms. James and Lesley Milroy (1985) argued that innovations spread through weak ties: people at the edges of several groups who carry new forms between them.",
       "examples": [
         { "from": "dense working-class networks", "to": "vernacular is preserved", "note": "Belfast" },
@@ -661,6 +717,7 @@
       "era": "1968", "year": 1968, "track": "idea",
       "aliases": ["actuation", "five problems", "Weinreich Labov Herzog", "Empirical Foundations"],
       "summary": "Why does a change start in this language, at this time, and not in another with the same conditions?",
+      "sources": ["weinreich-labov-herzog-1968"],
       "body": "Weinreich, Labov and Herzog’s “Empirical Foundations for a Theory of Language Change” (1968) set five problems: constraints (what changes are possible), transition (how change moves step by step), embedding (how it fits into the language and the society), evaluation (how speakers perceive it) and actuation (why it starts). Actuation is still the hardest of the five.",
       "examples": [
         { "from": "the same phonetic conditions", "to": "change in one community but not another", "note": "The puzzle" }
@@ -670,6 +727,7 @@
       "era": "1980s –", "year": 1982, "track": "language",
       "aliases": ["be like", "quotative", "Tagliamonte", "D’Arcy"],
       "summary": "A new way to report speech and thought that spread across the English-speaking world within a few decades.",
+      "sources": ["tagliamonte-darcy-2004"],
       "body": "And she was like, “No way!” Quotative be like is first noticed in American English in the early 1980s. It spread rapidly to young speakers in Canada, Britain, Australia and New Zealand, and has since become a default way to report speech. Sali Tagliamonte and Alexandra D’Arcy tracked its spread, which followed an S-curve and was led by young women. It is a rare chance to watch grammaticalization from the start.",
       "examples": [
         { "from": "She said, “No way!”", "to": "She was like, “No way!”", "note": "Can report a thought or attitude, not only words" }
@@ -679,6 +737,7 @@
       "era": "1476 · 1635 · 1755", "year": 1476, "track": "language",
       "aliases": ["prescriptivism", "academies", "printing", "spelling", "Johnson’s Dictionary", "Académie française"],
       "summary": "Printing presses, dictionaries and academies fix a written norm. They slow drift in writing but rarely stop it in speech.",
+      "sources": ["baugh-cable-2013"],
       "body": "Caxton’s press (1476), the Académie française (1635) and Johnson’s Dictionary (1755) each helped freeze a standard. Because English spelling settled while its vowels were still shifting, writing and speech have drifted apart ever since. Prescriptive rules, such as using whom or not splitting infinitives, can slow a change in formal registers, but everyday speech usually continues on its way.",
       "examples": [
         { "from": "spelling fixed c. 1500", "to": "knight, through, bite", "note": "Spellings record pronunciations that have since changed" }
@@ -688,6 +747,7 @@
       "era": "2000s –", "year": 2005, "track": "language",
       "aliases": ["internet language", "lol", "emoji", "because X", "texting", "online"],
       "summary": "Written conversation online is a new arena for familiar processes: abbreviation, grammaticalization and rapid spread through weak ties.",
+      "sources": ["mcculloch-2019", "ads-2014"],
       "body": "Informal writing now has many of the dynamics of speech. Abbreviations like lol have bleached from ‘laughing out loud’ into softeners and tone markers. Gretchen McCulloch’s Because Internet (2019) documents how punctuation, capitalisation and emoji have taken on the role of tone of voice. The American Dialect Society chose “because” as its 2013 Word of the Year for the new “because + noun” construction.",
       "examples": [
         { "from": "lol ‘laughing out loud’", "to": "lol (softener, tone marker)", "note": "Bleaching" },
@@ -697,11 +757,13 @@
     { "id": "outcomes", "label": "Where drift leads", "category": "outcome", "kind": "hub",
       "aliases": ["results of language change", "divergence", "convergence"],
       "summary": "Given time, drift turns dialects into separate languages and languages into families. Contact can also pull unrelated languages together.",
+      "sources": ["campbell-2013", "thomason-kaufman-1988"],
       "body": "When communities separate, their drifts diverge, and mutual intelligibility erodes within one or two thousand years. When communities mix, languages converge, borrow heavily, or give birth to new ones. Languages also die, usually because speakers shift to another language rather than because the language itself wears out." },
 
     { "id": "dialect-continuum", "label": "Dialect continuum", "category": "outcome", "kind": "concept",
       "aliases": ["dialect chain", "isogloss", "West Germanic continuum", "Romance continuum"],
       "summary": "A chain of local varieties, each intelligible to its neighbours, while the two ends of the chain cannot understand each other.",
+      "sources": ["campbell-poser-2008", "schmidt-1872", "weinreich-1945"],
       "body": "Before national standards, much of Europe spoke in continua. Local dialects shaded from Dutch through Low German into High German, and from Portuguese through Spanish, Occitan and Italian. Where the line between “language” and “dialect” falls is often a political decision. As Max Weinreich’s well-known quip puts it, a language is a dialect with an army and navy.",
       "examples": [
         { "from": "Dutch maken · Low German maken", "to": "High German machen", "note": "The Benrath line cuts through the continuum" }
@@ -711,6 +773,7 @@
       "era": "c. 500–900 CE (Romance)", "year": 700, "track": "language",
       "aliases": ["language split", "Romance languages", "Vulgar Latin", "mutual unintelligibility"],
       "summary": "Separated communities drift independently until one language has become many.",
+      "sources": ["adams-2007", "ledgeway-maiden-2016"],
       "body": "Spoken Latin, spread across a fragmenting empire, drifted locally until by the 9th century writers recognised that their speech was no longer Latin (the Strasbourg Oaths of 842 are an early written record of the change). Old English is similarly unintelligible to modern speakers: “Hwæt! Wē Gār-Dena in gēar-dagum…” opens Beowulf.",
       "examples": [
         { "from": "Latin caballus ‘nag’", "to": "French cheval · Spanish caballo · Italian cavallo · Portuguese cavalo · Romanian cal", "note": "One word, five drifts" },
@@ -727,6 +790,7 @@
       "era": "PIE c. 4500–2500 BCE (est.)", "year": -4000, "track": "language",
       "aliases": ["Indo-European", "Proto-Indo-European", "PIE", "proto-language", "cognates"],
       "summary": "Languages that descend from a common ancestor form a family. Indo-European, the best studied, spans Iceland to Bengal.",
+      "sources": ["jones-1788", "mallory-adams-2006", "fortson-2010"],
       "body": "Indo-European includes about 450 living languages and the first languages of nearly half the world’s population. Its reconstructed ancestor, Proto-Indo-European, was probably spoken around 4500–2500 BCE. The Pontic–Caspian steppe is the leading candidate homeland; Anatolia is the main alternative. Cognates, words inherited from the common ancestor, reveal the family through regular sound correspondences, not surface resemblance.",
       "examples": [
         { "from": "PIE *ph₂tḗr", "to": "Sanskrit pitár · Greek patḗr · Latin pater · Gothic fadar", "note": "Cognates" },
@@ -737,6 +801,7 @@
       "era": "named 1928", "year": 1928, "track": "idea",
       "aliases": ["linguistic area", "convergence area", "Balkan Sprachbund", "areal feature"],
       "summary": "Neighbouring languages, related or not, converge on shared features through long contact.",
+      "sources": ["trubetzkoy-1930", "thomason-2001"],
       "body": "Nikolai Trubetzkoy coined the term in 1928. In the Balkans, Romanian, Bulgarian, Macedonian, Albanian and Greek come from different branches of Indo-European, yet they share features through centuries of multilingualism. Convergence is drift that runs across family trees instead of down them.",
       "examples": [
         { "from": "Romanian lupul · Bulgarian vălkăt · Albanian ujku", "to": "‘the wolf’ with the article after the noun", "note": "Postposed definite article" },
@@ -746,6 +811,7 @@
     { "id": "pidgin-creole", "label": "Pidgins & creoles", "category": "outcome", "kind": "concept",
       "aliases": ["pidgin", "creole", "creolisation", "Tok Pisin", "Haitian Creole"],
       "summary": "Contact languages born from necessity. A pidgin becomes a creole when children acquire it as their first language.",
+      "sources": ["velupillai-2015", "thomason-kaufman-1988"],
       "body": "Pidgins arise when groups without a shared language need to communicate, often in trade and on plantations. Their vocabulary comes mostly from a dominant language and their grammar is simplified. When a generation grows up speaking one natively, it becomes a creole and develops full grammatical complexity, often within a generation or two. Tok Pisin, now an official language of Papua New Guinea, made this transition.",
       "examples": [
         { "from": "Tok Pisin haus sik", "to": "‘hospital’ (house + sick)", "note": "Compounding from English words" },
@@ -755,6 +821,7 @@
     { "id": "language-shift", "label": "Language shift & death", "category": "outcome", "kind": "concept",
       "era": "1777 · 1974", "aliases": ["language death", "endangerment", "revitalisation", "Cornish", "Manx"],
       "summary": "Languages die when their communities switch to another language. Some are later revived.",
+      "sources": ["austin-sallabank-2011", "moseley-2010"],
       "body": "Language death is usually social, not structural: parents stop passing a language on. Roughly 40% of the world’s approximately 7,000 languages are considered endangered. Cornish lost its last traditional speakers around the late 18th century (Dolly Pentreath, d. 1777, is the traditional symbol), and Manx lost its last native speaker, Ned Maddrell, in 1974. Both have since been revived by learners.",
       "examples": [
         { "from": "Manx (last native speaker 1974)", "to": "revived; taught in schools on the Isle of Man", "note": "Revitalisation" }
@@ -763,12 +830,14 @@
     { "id": "study", "label": "How drift is studied", "category": "method", "kind": "hub",
       "aliases": ["historical linguistics", "methods", "reconstruction"],
       "summary": "Methods for detecting and reconstructing change, from 19th-century comparison of cognates to modern statistics on large corpora.",
+      "sources": ["campbell-2013", "campbell-poser-2008", "joseph-janda-2003"],
       "body": "Historical linguists reconstruct unwritten ancestors from regular correspondences, model how languages split and interact, and increasingly use corpora and computational phylogenetics. Sociolinguists study change in progress. The two traditions meet in the uniformitarian principle: the forces at work today also operated in the past." },
 
     { "id": "synchrony-diachrony", "label": "Synchrony vs diachrony", "category": "method", "kind": "concept",
       "era": "1916", "year": 1916, "track": "idea",
       "aliases": ["synchronic", "diachronic", "Course in General Linguistics"],
       "summary": "Saussure separated the study of a language as a system at one moment (synchrony) from the study of how it changes (diachrony).",
+      "sources": ["saussure-1916"],
       "body": "In the Course in General Linguistics, compiled by his students from lecture notes and published in 1916, Saussure compared language to a game of chess. Each position can be described on its own terms, whatever moves led to it. Drift is diachronic, but every stage of a drifting language is a complete synchronic system. Sociolinguistics later argued that variation links the two: change in progress is visible in synchrony.",
       "examples": [
         { "from": "was / were (synchronic irregularity)", "to": "Verner’s Law (diachronic explanation)", "note": "One fact seen from two angles" }
@@ -777,6 +846,7 @@
     { "id": "comparative-method", "label": "Comparative method", "category": "method", "kind": "concept",
       "aliases": ["reconstruction", "sound correspondences", "proto-language", "cognates"],
       "summary": "Reconstructing an unrecorded ancestor by comparing regular sound correspondences across its descendants.",
+      "sources": ["campbell-2013", "fortson-2010", "saussure-1879"],
       "body": "Because sound change is regular, cognates show systematic correspondences, such as Latin p matching Germanic f. From these, linguists infer the ancestral sound and the changes leading to each daughter language. The method has reconstructed Proto-Indo-European, Proto-Bantu, Proto-Austronesian and many other unrecorded ancestors. It was validated when the later decipherment of Hittite turned up laryngeal consonants that Saussure had predicted.",
       "examples": [
         { "from": "Sanskrit pitár · Latin pater · Gothic fadar", "to": "PIE *ph₂tḗr", "note": "Reconstruction from regular correspondences" }
@@ -785,6 +855,7 @@
     { "id": "internal-reconstruction", "label": "Internal reconstruction", "category": "method", "kind": "concept",
       "aliases": ["alternations", "morphophonemics"],
       "summary": "Inferring earlier stages from irregular alternations inside a single language.",
+      "sources": ["campbell-2013", "hock-joseph-2009"],
       "body": "Alternations within a paradigm often fossilise an older regular sound change. By assuming that the alternation was once regular, linguists can project an earlier form even without related languages to compare.",
       "examples": [
         { "from": "German Tag [taːk] · Tage [taːɡə]", "to": "underlying /g/; final devoicing", "note": "An earlier *g is reconstructed" },
@@ -795,6 +866,7 @@
       "era": "1853", "year": 1853, "track": "idea",
       "aliases": ["Stammbaum", "Stammbaumtheorie", "Schleicher", "cladistics"],
       "summary": "Languages descend from ancestors by splitting, like branches of a tree.",
+      "sources": ["schleicher-1853", "campbell-poser-2008"],
       "body": "August Schleicher drew the first Indo-European family tree in 1853, a few years before Darwin’s Origin of Species. The model captures divergence well. It handles poorly the spread of changes across branches, borrowing, and dialect continua, which is where the wave model comes in.",
       "examples": [
         { "from": "Proto-Indo-European", "to": "Germanic · Italic · Indo-Iranian · Hellenic · …", "note": "Branching" }
@@ -804,6 +876,7 @@
       "era": "1872", "year": 1872, "track": "idea",
       "aliases": ["Wellentheorie", "Johannes Schmidt", "isoglosses", "areal diffusion"],
       "summary": "Innovations spread outward from a centre like ripples, and their boundaries (isoglosses) overlap without lining up.",
+      "sources": ["schmidt-1872", "campbell-poser-2008"],
       "body": "Johannes Schmidt (1872) observed that shared features among Indo-European branches overlap in ways that no single tree can capture. Each change spreads across its own territory, so the boundaries crosscut each other. Today the tree and wave models are seen as complementary: trees for clean splits, waves for continua and contact.",
       "examples": [
         { "from": "High German consonant shift", "to": "a fan of isoglosses (the Rhenish fan)", "note": "Each word shifted across its own territory" }
@@ -813,6 +886,7 @@
       "era": "1950s", "year": 1952, "track": "idea",
       "aliases": ["lexicostatistics", "Swadesh list", "Swadesh", "basic vocabulary"],
       "summary": "An attempt to date language splits from the proportion of core vocabulary that two languages still share.",
+      "sources": ["swadesh-1952", "lees-1953", "bergsland-vogt-1962"],
       "body": "Morris Swadesh proposed that basic vocabulary, such as body parts, low numbers and pronouns, is replaced at a roughly constant rate, so the percentage of shared cognates would work as a clock. The assumption failed. Icelandic, for example, retains far more than the formula predicts. The Swadesh list survives as a tool, and the idea of dating splits returned in statistically richer form.",
       "examples": [
         { "from": "100- or 200-word core lists", "to": "a percentage of shared cognates", "note": "A constant rate was assumed" }
@@ -822,6 +896,7 @@
       "era": "2003 –", "year": 2003, "track": "idea",
       "aliases": ["Bayesian phylogenetics", "Gray and Atkinson", "cognate databases"],
       "summary": "Bayesian methods borrowed from biology build and date language trees from large cognate databases, allowing rates to vary.",
+      "sources": ["gray-atkinson-2003", "bouckaert-2012", "chang-2015"],
       "body": "Gray and Atkinson (2003) applied Bayesian phylogenetics to Indo-European cognate data and obtained an early date that supported the Anatolian hypothesis. Bouckaert and colleagues (2012) reached a similar result. Chang and colleagues (2015), using ancestry constraints from ancient languages, found a younger date consistent with the steppe hypothesis. The methods allow rates of change to vary, which addresses glottochronology’s main flaw, but the results are sensitive to how the models are built.",
       "examples": [
         { "from": "cognate presence/absence matrices", "to": "dated trees with uncertainty", "note": "Methods borrowed from evolutionary biology" }
@@ -831,6 +906,7 @@
       "era": "1991 · 2011", "year": 2011, "track": "idea",
       "aliases": ["corpus linguistics", "Google Books Ngram", "culturomics", "Helsinki Corpus"],
       "summary": "Large, dated collections of text make it possible to measure drift directly, not only infer it.",
+      "sources": ["helsinki-corpus", "michel-2011", "ellegard-1953"],
       "body": "Structured historical corpora such as the Helsinki Corpus of English Texts (1991) made it possible to count the rise of variants across centuries. Mass digitisation (Google Books Ngram, Michel and colleagues, 2011) brought billions of words to the task. Written records lag speech and over-represent formal registers, so corpus evidence is strongest when combined with other kinds.",
       "examples": [
         { "from": "counts of do vs no-do, 1400–1700", "to": "the S-curve of do-support", "note": "Measured, not inferred" }
@@ -839,72 +915,84 @@
     { "id": "thinkers", "label": "Key thinkers", "category": "scholar", "kind": "hub",
       "aliases": ["scholars", "linguists", "people"],
       "summary": "A few of the people whose ideas organise this map, from 18th-century philology to modern sociolinguistics.",
+      "sources": ["campbell-2013", "campbell-poser-2008"],
       "body": "The study of drift moved from comparing ancient texts (Jones, Grimm, the Neogrammarians), through structuralist theory (Saussure, Sapir, Martinet), to watching change in progress in living communities (Labov and the variationist tradition)." },
 
     { "id": "william-jones", "label": "William Jones", "category": "scholar", "kind": "person",
       "era": "1746–1794", "year": 1786, "track": "idea",
       "aliases": ["Sir William Jones", "Sanskrit", "Third Anniversary Discourse"],
       "summary": "His 1786 lecture in Calcutta proposed that Sanskrit, Greek and Latin sprang from a common source.",
+      "sources": ["jones-1788"],
       "body": "Speaking to the Asiatic Society of Bengal, Jones observed that Sanskrit bears to Greek and Latin “a stronger affinity … than could possibly have been produced by accident”, and suggested that Gothic, Celtic and Persian belonged to the same family. Others had noticed similarities before him, but his lecture is the usual starting point of comparative Indo-European linguistics." },
 
     { "id": "jacob-grimm", "label": "Jacob Grimm", "category": "scholar", "kind": "person",
       "era": "1785–1863", "year": 1822, "track": "idea",
       "aliases": ["Grimm", "Rasmus Rask", "Deutsche Grammatik", "Brothers Grimm"],
       "summary": "Philologist (and collector of fairy tales) who systematised the Germanic consonant shift in 1822.",
+      "sources": ["grimm-1822", "rask-1818"],
       "body": "In the second edition of his Deutsche Grammatik (1822), Grimm set out the correspondences between Germanic consonants and those of Latin, Greek and Sanskrit, building on Rasmus Rask’s 1818 observations. He thought of them as broad tendencies; it was the Neogrammarians who later recast them as exceptionless laws." },
 
     { "id": "karl-verner", "label": "Karl Verner", "category": "scholar", "kind": "person",
       "era": "1846–1896",
       "aliases": ["Verner"],
       "summary": "Danish linguist who explained the exceptions to Grimm’s Law by the position of the ancient accent.",
+      "sources": ["verner-1877"],
       "body": "Verner’s paper “Eine Ausnahme der ersten Lautverschiebung” (An exception to the First Sound Shift), published in 1877, showed that the Germanic consonant alternations followed the accent of Sanskrit and Greek. It was a decisive demonstration that sound change is regular when its conditions are correctly identified." },
 
     { "id": "neogrammarians", "label": "The Neogrammarians", "category": "scholar", "kind": "person",
       "era": "Leipzig, 1870s",
       "aliases": ["Junggrammatiker", "Brugmann", "Osthoff", "Leskien", "Hermann Paul"],
       "summary": "A group of young Leipzig scholars who made regular sound change and analogy the basis of historical linguistics.",
+      "sources": ["osthoff-brugmann-1878"],
       "body": "Karl Brugmann, Hermann Osthoff, August Leskien, Hermann Paul and their colleagues insisted that sound laws operate without exception, and that the remaining irregularities come from analogy and borrowing. Their programme, set out in Osthoff and Brugmann’s 1878 preface, still underlies the comparative method." },
 
     { "id": "saussure", "label": "Ferdinand de Saussure", "category": "scholar", "kind": "person",
       "era": "1857–1913",
       "aliases": ["Saussure", "laryngeal theory", "Mémoire"],
       "summary": "Separated synchronic from diachronic linguistics. As a young man he also predicted lost Indo-European sounds that were later confirmed.",
+      "sources": ["saussure-1879", "saussure-1916", "hrozny-1915"],
       "body": "In his 1879 Mémoire, Saussure inferred from vowel alternations that Proto-Indo-European had sounds that had vanished from all its known descendants. The decipherment of Hittite in the 20th century confirmed them as laryngeal consonants. His posthumous Course in General Linguistics (1916) founded structural linguistics." },
 
     { "id": "sapir", "label": "Edward Sapir", "category": "scholar", "kind": "person",
       "era": "1884–1939", "year": 1921, "track": "idea",
       "aliases": ["Sapir", "Language (1921)"],
       "summary": "American linguist and anthropologist who named and theorised linguistic drift.",
+      "sources": ["sapir-1921"],
       "body": "In Language: An Introduction to the Study of Speech (1921), Sapir argued that individual variations are not random. The ones that win out move in a direction already latent in the language’s structure. He used English as his case: the levelling of whom to who, the spread of fixed word order, and the drift from inflection toward invariable words." },
 
     { "id": "jespersen", "label": "Otto Jespersen", "category": "scholar", "kind": "person",
       "era": "1860–1943",
       "aliases": ["Jespersen"],
       "summary": "Danish grammarian of English who named the Great Vowel Shift and described the negative cycle.",
+      "sources": ["jespersen-1905", "jespersen-1909", "jespersen-1917"],
       "body": "Jespersen’s Modern English Grammar (1909 onward) gave the Great Vowel Shift its name. Negation in English and Other Languages (1917) described the cycle that now bears his name. He saw much drift as progress toward greater simplicity and efficiency. That view is no longer widely held, but his data are still in use." },
 
     { "id": "meillet", "label": "Antoine Meillet", "category": "scholar", "kind": "person",
       "era": "1866–1936",
       "aliases": ["Meillet"],
       "summary": "French Indo-Europeanist who coined “grammaticalization” in 1912.",
+      "sources": ["meillet-1912"],
       "body": "In “L’évolution des formes grammaticales” (1912), Meillet described how autonomous words turn into grammatical markers, and treated this as one of the two great mechanisms of grammatical change, alongside analogy." },
 
     { "id": "martinet", "label": "André Martinet", "category": "scholar", "kind": "person",
       "era": "1908–1999",
       "aliases": ["Martinet", "Économie des changements phonétiques"],
       "summary": "French functionalist who explained chain shifts by system pressure and economy.",
+      "sources": ["martinet-1955"],
       "body": "Économie des changements phonétiques (1955) argued that sound systems are shaped by a tension between the need to communicate and the tendency to minimise effort. That tension produces push and drag chains, and it explains why contrasts that do a lot of work resist merger." },
 
     { "id": "labov", "label": "William Labov", "category": "scholar", "kind": "person",
       "era": "1927–2024",
       "aliases": ["Labov", "Principles of Linguistic Change", "variationist sociolinguistics"],
       "summary": "Founder of variationist sociolinguistics, who showed that language change can be observed while it is happening.",
+      "sources": ["labov-1963", "labov-1966", "labov-1994"],
       "body": "Starting with Martha’s Vineyard (1963) and New York City (1966), Labov showed that variation is socially structured and that apparent-time comparisons can catch change in progress. With Weinreich and Herzog (1968) he set out the agenda for a theory of change. His three-volume Principles of Linguistic Change (1994–2010) summarised decades of work, including the Atlas of North American English." },
 
     { "id": "traugott", "label": "Elizabeth Closs Traugott", "category": "scholar", "kind": "person",
       "era": "b. 1939",
       "aliases": ["Traugott", "Hopper and Traugott"],
       "summary": "Leading theorist of grammaticalization and of regular paths in semantic change.",
+      "sources": ["traugott-1989", "hopper-traugott-2003", "traugott-dasher-2002"],
       "body": "Traugott’s work on subjectification (1989), Grammaticalization with Paul Hopper (1993) and Regularity in Semantic Change with Richard Dasher (2002) showed that meaning change, long seen as chaotic, follows recurring paths driven by speakers’ inferences in context." }
   ],
   "links": [

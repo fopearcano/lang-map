@@ -20,13 +20,13 @@ export function renderPanel(container, node, ctx) {
   container.scrollTop = 0;
   container.className = `panel-scroll cat-${node.category}`;
 
-  container.append(
+  container.append(...[
     el('div', { class: 'eyebrow' }, swatch(node), `${cat.label} · ${KIND_LABEL[node.kind]}`),
     el('h2', { id: 'panel-title', tabindex: '-1' }, node.label),
     node.era ? el('div', { class: 'era' }, node.era) : null,
     el('p', { class: 'summary' }, node.summary),
     node.body ? el('p', { class: 'body' }, node.body) : null,
-  );
+  ].filter(Boolean));
 
   if (node.quote) {
     container.append(
@@ -91,6 +91,9 @@ export function renderPanel(container, node, ctx) {
       ),
     );
   }
+
+  // Extra sections supplied by the caller (world-map links, sources).
+  for (const section of ctx.extraSections || []) if (section) container.append(section);
 
   const total = ordered.reduce((sum, [, ids]) => sum + ids.length, 0);
   container.append(el('div', { class: 'panel-foot' }, `${total} connection${total === 1 ? '' : 's'} · link to this concept: #/${node.id}`));

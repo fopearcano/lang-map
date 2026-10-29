@@ -28,6 +28,27 @@ export function buildSearchIndex(nodes) {
   });
 }
 
+/**
+ * Search entries for world-map languages, shaped like concept entries. The
+ * `node` carries `type: 'language'` so the UI can route and style results.
+ */
+export function buildLanguageEntries(languages, families) {
+  const familyLabel = new Map(families.map((f) => [f.id, f.label]));
+  return languages.map((l) => {
+    const phrases = [];
+    if (l.night) phrases.push({ text: `‘night’: ${l.night.form}`, norm: normalize(l.night.form) });
+    for (const p of l.places || []) phrases.push({ text: p.label, norm: normalize(p.label) });
+    const aliases = [l.familyName || familyLabel.get(l.family), l.branch].filter(Boolean);
+    return {
+      node: { id: l.id, label: l.name, kind: 'language', type: 'language', family: l.family, branch: l.branch },
+      label: normalize(l.name),
+      aliases: aliases.map((a) => ({ text: a, norm: normalize(a) })),
+      phrases,
+      summary: normalize(l.summary),
+    };
+  });
+}
+
 const words = (s) => s.split(' ');
 
 function matchWords(norm, q) {

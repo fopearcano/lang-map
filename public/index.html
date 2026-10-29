@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Linguistic Drift Map</title>
-  <meta name="description" content="An interactive conceptual map of linguistic drift: how languages change in sound, grammar and meaning, why they change, and how we know.">
+  <meta name="description" content="An interactive conceptual map of linguistic drift and a world map of languages through time: how languages change in sound, grammar and meaning, why they change, and how they spread.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/world.css">
   <script src="js/theme-init.js"></script>
-  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#index-drawer">Skip to concept index</a>
+  <a class="skip-link" href="#index-drawer">Skip to index</a>
 
   <header class="topbar">
     <div class="brand">
@@ -23,35 +24,69 @@
         <circle cx="7" cy="25" r="2.5"></circle>
         <path d="M16 16 5 9M16 16l11-8M16 16l9 10M16 16 7 25"></path>
       </svg>
-      <div>
+      <div class="brand-text">
         <h1>Linguistic Drift</h1>
-        <p class="tagline">A conceptual map of how languages change</p>
+        <p class="tagline">How languages change, and where</p>
       </div>
+    </div>
+
+    <div class="section-tabs" role="tablist" aria-label="Sections">
+      <button class="section-tab" role="tab" type="button" id="tab-concepts" aria-controls="section-concepts" aria-selected="true">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="2.6"></circle><circle cx="3.5" cy="5" r="1.6"></circle><circle cx="16.5" cy="5" r="1.6"></circle><circle cx="15.5" cy="16" r="1.6"></circle><path d="M10 10 3.5 5M10 10l6.5-5M10 10l5.5 6"></path></svg>
+        <span>Concept map</span>
+      </button>
+      <button class="section-tab" role="tab" type="button" id="tab-world" aria-controls="section-world" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5"></circle><path d="M2.5 10h15M10 2.5c2.2 2.2 3.2 4.7 3.2 7.5S12.2 15.3 10 17.5M10 2.5C7.8 4.7 6.8 7.2 6.8 10s1 5.3 3.2 7.5"></path></svg>
+        <span>World map</span>
+      </button>
     </div>
 
     <div class="search" role="search">
       <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"></circle><path d="m13 13 4 4"></path></svg>
       <input id="search" type="search" autocomplete="off" spellcheck="false"
-             placeholder="Search concepts or words (try “nice”)"
-             aria-label="Search concepts and example words"
+             placeholder="Search concepts, languages or words"
+             aria-label="Search concepts, languages and example words"
              role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
       <kbd class="search-kbd" aria-hidden="true">/</kbd>
       <ul id="search-results" class="search-results" role="listbox" hidden></ul>
     </div>
 
-    <nav class="actions" aria-label="Map tools">
-      <button id="btn-tour" class="btn btn-primary" type="button">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4.5v11l9-5.5z"></path></svg>
-        <span>Guided tour</span>
-      </button>
-      <button id="btn-index" class="btn" type="button" aria-controls="index-drawer" aria-expanded="false">
+    <nav class="actions" aria-label="Tools">
+      <button id="btn-index" class="btn" type="button" aria-controls="index-drawer" aria-expanded="false" title="Index">
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 5h12M4 10h12M4 15h12"></path></svg>
         <span>Index</span>
       </button>
-      <button id="btn-timeline" class="btn" type="button" aria-controls="timeline" aria-pressed="true">
+      <button id="btn-timeline" class="btn" type="button" aria-controls="timeline" aria-pressed="true" title="Timeline">
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 10h16M5 7v6M10 6v8M15 8v4"></path></svg>
         <span>Timeline</span>
       </button>
+      <div class="menu-wrap">
+        <button id="btn-help" class="btn" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="help-menu" title="Help">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5"></circle><path d="M7.8 7.6a2.3 2.3 0 1 1 3.3 2.1c-.7.3-1.1.9-1.1 1.6v.5"></path><circle class="dot" cx="10" cy="14.3" r=".6"></circle></svg>
+          <span>Help</span>
+          <svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg>
+        </button>
+        <ul id="help-menu" class="menu" role="menu" aria-labelledby="btn-help" hidden>
+          <li role="none">
+            <button role="menuitem" type="button" data-action="tour">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path class="fill" d="M6 4.5v11l9-5.5z"></path></svg>
+              <span><strong>Guided tour</strong><small>15 steps through the concept map</small></span>
+            </button>
+          </li>
+          <li role="none">
+            <button role="menuitem" type="button" data-action="howto">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5"></circle><path d="M10 9v5M10 6.2v.1"></path></svg>
+              <span><strong>How to use this site</strong><small>Controls and keyboard shortcuts</small></span>
+            </button>
+          </li>
+          <li role="none">
+            <button role="menuitem" type="button" data-action="sources">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3.5h9.5L16 6v10.5H4z"></path><path d="M7 8h6M7 11h6M7 14h4"></path></svg>
+              <span><strong>Bibliography &amp; sources</strong><small id="help-sources-count">Every reference behind the content</small></span>
+            </button>
+          </li>
+        </ul>
+      </div>
       <button id="btn-theme" class="btn btn-icon" type="button" aria-label="Switch to dark theme">
         <svg class="icon-moon" viewBox="0 0 20 20" aria-hidden="true"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z"></path></svg>
         <svg class="icon-sun" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5"></circle><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.3 4.3l1.4 1.4M14.3 14.3l1.4 1.4M4.3 15.7l1.4-1.4M14.3 5.7l1.4-1.4"></path></svg>
@@ -59,84 +94,148 @@
     </nav>
   </header>
 
-  <main class="stage" id="stage">
-    <svg id="map" class="map" role="application" aria-label="Concept map of linguistic drift. Use the index for a keyboard-accessible list of concepts.">
-      <defs>
-        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-          <path class="arrow-head" d="M0 1 9 5 0 9z"></path>
-        </marker>
-        <marker id="arrow-hl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-          <path class="arrow-head-hl" d="M0 1 9 5 0 9z"></path>
-        </marker>
-      </defs>
-      <g class="layer-territories"></g>
-      <g class="layer-links"></g>
-      <g class="layer-nodes"></g>
-      <g class="layer-labels"></g>
-    </svg>
+  <main class="main" id="main">
+    <!-- ======================= Concept map section ======================= -->
+    <section class="stage" id="section-concepts" role="tabpanel" aria-labelledby="tab-concepts">
+      <svg id="map" class="map" role="application" aria-label="Concept map of linguistic drift. Use the index for a keyboard-accessible list of concepts.">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path class="arrow-head" d="M0 1 9 5 0 9z"></path>
+          </marker>
+          <marker id="arrow-hl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path class="arrow-head-hl" d="M0 1 9 5 0 9z"></path>
+          </marker>
+        </defs>
+        <g class="layer-territories"></g>
+        <g class="layer-links"></g>
+        <g class="layer-nodes"></g>
+        <g class="layer-labels"></g>
+      </svg>
 
-    <div class="loading" id="loading">Laying out the map…</div>
+      <section class="legend" id="legend" aria-label="Legend and filters">
+        <button class="legend-toggle" id="legend-toggle" type="button" aria-expanded="true" aria-controls="legend-body">
+          Legend &amp; filters
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg>
+        </button>
+        <div class="legend-body" id="legend-body">
+          <p class="legend-hint">Click a category to hide or show it.</p>
+          <ul class="legend-categories" id="legend-categories"></ul>
+          <ul class="legend-relations" id="legend-relations"></ul>
+        </div>
+      </section>
 
-    <section class="legend" id="legend" aria-label="Legend and filters">
-      <button class="legend-toggle" id="legend-toggle" type="button" aria-expanded="true" aria-controls="legend-body">
-        Legend &amp; filters
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg>
-      </button>
-      <div class="legend-body" id="legend-body">
-        <p class="legend-hint">Click a category to hide or show it.</p>
-        <ul class="legend-categories" id="legend-categories"></ul>
-        <ul class="legend-relations" id="legend-relations"></ul>
+      <div class="zoom-controls" role="group" aria-label="Zoom">
+        <button id="zoom-in" class="btn btn-icon" type="button" aria-label="Zoom in"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"></path></svg></button>
+        <button id="zoom-out" class="btn btn-icon" type="button" aria-label="Zoom out"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12"></path></svg></button>
+        <button id="zoom-fit" class="btn btn-icon" type="button" aria-label="Fit map to screen"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"></path></svg></button>
       </div>
+
+      <div class="tour-card" id="tour-card" hidden aria-live="polite">
+        <div class="tour-progress"><span id="tour-step"></span><div class="tour-bar"><div id="tour-bar-fill"></div></div></div>
+        <p id="tour-text"></p>
+        <div class="tour-actions">
+          <button class="btn" type="button" id="tour-prev">Back</button>
+          <button class="btn btn-primary" type="button" id="tour-next">Next</button>
+          <button class="btn btn-ghost" type="button" id="tour-exit">End tour</button>
+        </div>
+      </div>
+
+      <aside class="panel" id="panel" aria-label="Concept details" hidden>
+        <button class="panel-close btn btn-icon" id="panel-close" type="button" aria-label="Close details">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"></path></svg>
+        </button>
+        <div class="panel-scroll" id="panel-content"></div>
+      </aside>
     </section>
 
-    <div class="zoom-controls" role="group" aria-label="Zoom">
-      <button id="zoom-in" class="btn btn-icon" type="button" aria-label="Zoom in"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"></path></svg></button>
-      <button id="zoom-out" class="btn btn-icon" type="button" aria-label="Zoom out"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12"></path></svg></button>
-      <button id="zoom-fit" class="btn btn-icon" type="button" aria-label="Fit map to screen"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"></path></svg></button>
-    </div>
+    <!-- ========================= World map section ======================== -->
+    <section class="stage world-stage" id="section-world" role="tabpanel" aria-labelledby="tab-world" hidden>
+      <svg id="world" class="world-map" role="application" aria-label="World map of languages through time. Use the index for a keyboard-accessible list of languages.">
+        <g class="w-viewport">
+          <g class="w-graticule"></g>
+          <g class="w-land"></g>
+        </g>
+        <g class="w-arcs"></g>
+        <g class="w-markers"></g>
+        <g class="w-labels"></g>
+      </svg>
 
-    <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
-
-    <div class="welcome" id="welcome" hidden>
-      <h2>Languages never stand still</h2>
-      <p>This map connects the kinds of change languages undergo, the forces behind them, and the ideas linguists use to study them.</p>
-      <ul>
-        <li><strong>Click</strong> a concept to read about it and step through word histories.</li>
-        <li><strong>Drag</strong> to pan, <strong>scroll</strong> or pinch to zoom, drag a node to move it.</li>
-        <li><strong>Search</strong> for a concept or a word like <em>nice</em>, <em>bird</em> or <em>apron</em>.</li>
-      </ul>
-      <div class="welcome-actions">
-        <button class="btn btn-primary" type="button" id="welcome-tour">Take the guided tour</button>
-        <button class="btn" type="button" id="welcome-close">Explore on my own</button>
+      <div class="w-year" aria-live="polite">
+        <div class="w-year-value" id="w-year-value">2025</div>
+        <div class="w-year-meta" id="w-year-meta"></div>
       </div>
-    </div>
 
-    <div class="tour-card" id="tour-card" hidden aria-live="polite">
-      <div class="tour-progress"><span id="tour-step"></span><div class="tour-bar"><div id="tour-bar-fill"></div></div></div>
-      <p id="tour-text"></p>
-      <div class="tour-actions">
-        <button class="btn" type="button" id="tour-prev">Back</button>
-        <button class="btn btn-primary" type="button" id="tour-next">Next</button>
-        <button class="btn btn-ghost" type="button" id="tour-exit">End tour</button>
+      <section class="legend w-legend" id="w-legend" aria-label="World map legend and filters">
+        <button class="legend-toggle" id="w-legend-toggle" type="button" aria-expanded="true" aria-controls="w-legend-body">
+          Families &amp; layers
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg>
+        </button>
+        <div class="legend-body" id="w-legend-body">
+          <ul class="legend-categories" id="w-families"></ul>
+          <ul class="w-symbols" id="w-symbols"></ul>
+          <div class="w-switches">
+            <label class="switch"><input type="checkbox" id="w-opt-extinct" checked><span>Languages no longer spoken</span></label>
+            <label class="switch"><input type="checkbox" id="w-opt-lineage" checked><span>Family lines</span></label>
+            <label class="switch"><input type="checkbox" id="w-opt-word"><span>Show the word for ‘night’</span></label>
+          </div>
+        </div>
+      </section>
+
+      <div class="zoom-controls w-zoom" role="group" aria-label="Zoom">
+        <button id="w-zoom-in" class="btn btn-icon" type="button" aria-label="Zoom in"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"></path></svg></button>
+        <button id="w-zoom-out" class="btn btn-icon" type="button" aria-label="Zoom out"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12"></path></svg></button>
+        <button id="w-zoom-fit" class="btn btn-icon" type="button" aria-label="Show the whole world"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"></path></svg></button>
       </div>
-    </div>
 
-    <aside class="panel" id="panel" aria-label="Concept details" hidden>
-      <button class="panel-close btn btn-icon" id="panel-close" type="button" aria-label="Close details">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"></path></svg>
-      </button>
-      <div class="panel-scroll" id="panel-content"></div>
-    </aside>
+      <div class="w-time" id="w-time">
+        <button class="btn btn-primary w-play" id="w-play" type="button" aria-label="Play through time">
+          <svg class="i-play" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4.5v11l9-5.5z"></path></svg>
+          <svg class="i-pause" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4h3v12H6zM11 4h3v12h-3z"></path></svg>
+        </button>
+        <div class="w-slider">
+          <input type="range" id="w-range" min="0" max="1000" step="1" value="1000" aria-label="Year">
+          <div class="w-ticks" id="w-ticks" aria-hidden="true"></div>
+        </div>
+        <div class="w-eras" id="w-eras" role="group" aria-label="Jump to a date"></div>
+      </div>
 
-    <aside class="drawer" id="index-drawer" aria-label="Concept index" hidden tabindex="-1">
+      <aside class="panel" id="w-panel" aria-label="Language details" hidden>
+        <button class="panel-close btn btn-icon" id="w-panel-close" type="button" aria-label="Close details">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"></path></svg>
+        </button>
+        <div class="panel-scroll" id="w-panel-content"></div>
+      </aside>
+    </section>
+
+    <div class="loading" id="loading">Loading…</div>
+
+    <!-- ============================ Shared overlays ============================ -->
+    <aside class="drawer" id="index-drawer" aria-labelledby="index-title" hidden tabindex="-1">
       <div class="drawer-head">
-        <h2>Concept index</h2>
+        <h2 id="index-title">Index</h2>
         <button class="btn btn-icon" id="index-close" type="button" aria-label="Close index">
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"></path></svg>
         </button>
       </div>
       <div class="drawer-body" id="index-list"></div>
     </aside>
+
+    <div class="welcome" id="welcome" role="dialog" aria-labelledby="welcome-title" hidden>
+      <h2 id="welcome-title">Languages never stand still</h2>
+      <p>Two ways in: the <strong>concept map</strong> connects the kinds of change languages undergo and the ideas linguists use to study them; the <strong>world map</strong> shows languages appearing, spreading and splitting over 6,500 years.</p>
+      <ul>
+        <li><strong>Click</strong> a concept or language to read about it and follow its connections.</li>
+        <li><strong>Drag</strong> to pan, <strong>scroll</strong> or pinch to zoom.</li>
+        <li><strong>Search</strong> for a concept, a language or a word like <em>nice</em>, <em>apron</em> or <em>nuit</em>.</li>
+        <li>On the world map, <strong>press play</strong> or drag the time slider.</li>
+      </ul>
+      <p class="welcome-keys"><kbd>/</kbd> search · <kbd>+</kbd> <kbd>−</kbd> zoom · <kbd>0</kbd> fit · <kbd>Space</kbd> play (world map) · <kbd>Esc</kbd> close</p>
+      <div class="welcome-actions">
+        <button class="btn btn-primary" type="button" id="welcome-tour">Take the guided tour</button>
+        <button class="btn" type="button" id="welcome-world">Open the world map</button>
+        <button class="btn btn-ghost" type="button" id="welcome-close">Explore on my own</button>
+      </div>
+    </div>
   </main>
 
   <section class="timeline" id="timeline" aria-label="Timeline">
@@ -147,6 +246,27 @@
     <svg id="timeline-svg" class="timeline-svg" role="img" aria-label="Timeline of language changes and ideas about change"></svg>
   </section>
 
-  <noscript><p class="noscript">This map needs JavaScript. The underlying data is available at <a href="/api/map">/api/map</a>.</p></noscript>
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+
+  <div class="dialog-backdrop" id="bibliography" hidden>
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="bib-title">
+      <div class="dialog-head">
+        <div>
+          <h2 id="bib-title">Bibliography &amp; sources</h2>
+          <p class="dialog-sub" id="bib-sub"></p>
+        </div>
+        <button class="btn btn-icon" id="bib-close" type="button" aria-label="Close bibliography">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"></path></svg>
+        </button>
+      </div>
+      <div class="bib-tools">
+        <input id="bib-filter" type="search" autocomplete="off" placeholder="Filter by author, title or year" aria-label="Filter the bibliography">
+        <div class="bib-topics" id="bib-topics" role="group" aria-label="Filter by topic"></div>
+      </div>
+      <div class="dialog-body" id="bib-body"></div>
+    </div>
+  </div>
+
+  <noscript><p class="noscript">This site needs JavaScript. The underlying data is available at <a href="/api/map">/api/map</a>, <a href="/api/languages">/api/languages</a> and <a href="/api/sources">/api/sources</a>.</p></noscript>
 </body>
 </html>

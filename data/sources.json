@@ -1,0 +1,2204 @@
+{
+  "topics": [
+    {
+      "id": "foundations",
+      "label": "Foundations & history of the field"
+    },
+    {
+      "id": "sound",
+      "label": "Sound change"
+    },
+    {
+      "id": "grammar",
+      "label": "Grammar change"
+    },
+    {
+      "id": "meaning",
+      "label": "Meaning & vocabulary"
+    },
+    {
+      "id": "society",
+      "label": "Society & variation"
+    },
+    {
+      "id": "contact",
+      "label": "Contact, creoles & endangerment"
+    },
+    {
+      "id": "methods",
+      "label": "Methods & phylogenetics"
+    },
+    {
+      "id": "families",
+      "label": "Language families & histories"
+    },
+    {
+      "id": "reference",
+      "label": "Reference works, data & maps"
+    }
+  ],
+  "sources": [
+    {
+      "id": "abondolo-1998",
+      "type": "book",
+      "editors": [
+        "Abondolo, Daniel"
+      ],
+      "year": 1998,
+      "title": "The Uralic Languages",
+      "publisher": "Routledge",
+      "place": "London",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "adams-2007",
+      "type": "book",
+      "authors": [
+        "Adams, J. N."
+      ],
+      "year": 2007,
+      "title": "The Regional Diversification of Latin 200 BC – AD 600",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511482977",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "adelaar-muysken-2004",
+      "type": "book",
+      "authors": [
+        "Adelaar, Willem F. H.",
+        "Muysken, Pieter"
+      ],
+      "year": 2004,
+      "title": "The Languages of the Andes",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511486852",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "ads-2014",
+      "type": "web",
+      "authors": [
+        "American Dialect Society"
+      ],
+      "year": 2014,
+      "title": "“Because” is the 2013 Word of the Year",
+      "publisher": "American Dialect Society",
+      "url": "https://americandialect.org/because-is-the-2013-word-of-the-year/",
+      "topics": [
+        "meaning",
+        "society"
+      ]
+    },
+    {
+      "id": "allen-2013",
+      "type": "book",
+      "authors": [
+        "Allen, James P."
+      ],
+      "year": 2013,
+      "title": "The Ancient Egyptian Language: An Historical Study",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9781139506090",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "andersen-1973",
+      "type": "article",
+      "authors": [
+        "Andersen, Henning"
+      ],
+      "year": 1973,
+      "title": "Abductive and deductive change",
+      "journal": "Language",
+      "volume": "49",
+      "issue": "4",
+      "pages": "765–793",
+      "doi": "10.2307/412063",
+      "topics": [
+        "foundations",
+        "grammar"
+      ]
+    },
+    {
+      "id": "anthony-2007",
+      "type": "book",
+      "authors": [
+        "Anthony, David W."
+      ],
+      "year": 2007,
+      "title": "The Horse, the Wheel, and Language: How Bronze-Age Riders from the Eurasian Steppes Shaped the Modern World",
+      "publisher": "Princeton University Press",
+      "place": "Princeton",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "austin-sallabank-2011",
+      "type": "book",
+      "editors": [
+        "Austin, Peter K.",
+        "Sallabank, Julia"
+      ],
+      "year": 2011,
+      "title": "The Cambridge Handbook of Endangered Languages",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511975981",
+      "topics": [
+        "contact"
+      ]
+    },
+    {
+      "id": "ball-muller-2009",
+      "type": "book",
+      "editors": [
+        "Ball, Martin J.",
+        "Müller, Nicole"
+      ],
+      "year": 2009,
+      "title": "The Celtic Languages",
+      "edition": "2nd",
+      "publisher": "Routledge",
+      "place": "London",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "baugh-cable-2013",
+      "type": "book",
+      "authors": [
+        "Baugh, Albert C.",
+        "Cable, Thomas"
+      ],
+      "year": 2013,
+      "title": "A History of the English Language",
+      "edition": "6th",
+      "publisher": "Routledge",
+      "place": "London",
+      "topics": [
+        "families",
+        "meaning"
+      ]
+    },
+    {
+      "id": "baxter-1992",
+      "type": "book",
+      "authors": [
+        "Baxter, William H."
+      ],
+      "year": 1992,
+      "title": "A Handbook of Old Chinese Phonology",
+      "publisher": "Mouton de Gruyter",
+      "place": "Berlin",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "bergsland-vogt-1962",
+      "type": "article",
+      "authors": [
+        "Bergsland, Knut",
+        "Vogt, Hans"
+      ],
+      "year": 1962,
+      "title": "On the validity of glottochronology",
+      "journal": "Current Anthropology",
+      "volume": "3",
+      "issue": "2",
+      "pages": "115–153",
+      "doi": "10.1086/200264",
+      "topics": [
+        "methods"
+      ]
+    },
+    {
+      "id": "blevins-garrett-1998",
+      "type": "article",
+      "authors": [
+        "Blevins, Juliette",
+        "Garrett, Andrew"
+      ],
+      "year": 1998,
+      "title": "The origins of consonant-vowel metathesis",
+      "journal": "Language",
+      "volume": "74",
+      "issue": "3",
+      "pages": "508–556",
+      "doi": "10.2307/417792",
+      "topics": [
+        "sound"
+      ]
+    },
+    {
+      "id": "blust-2013",
+      "type": "book",
+      "authors": [
+        "Blust, Robert"
+      ],
+      "year": 2013,
+      "title": "The Austronesian Languages",
+      "edition": "Revised",
+      "publisher": "Asia-Pacific Linguistics, Australian National University",
+      "place": "Canberra",
+      "url": "https://hdl.handle.net/1885/10191",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "bonfante-2002",
+      "type": "book",
+      "authors": [
+        "Bonfante, Giuliano",
+        "Bonfante, Larissa"
+      ],
+      "year": 2002,
+      "title": "The Etruscan Language: An Introduction",
+      "edition": "2nd",
+      "publisher": "Manchester University Press",
+      "place": "Manchester",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "bouckaert-2012",
+      "type": "article",
+      "authors": [
+        "Bouckaert, Remco",
+        "Lemey, Philippe",
+        "Dunn, Michael",
+        "Greenhill, Simon J.",
+        "Alekseyenko, Alexander V.",
+        "Drummond, Alexei J.",
+        "Gray, Russell D.",
+        "Suchard, Marc A.",
+        "Atkinson, Quentin D."
+      ],
+      "year": 2012,
+      "title": "Mapping the origins and expansion of the Indo-European language family",
+      "journal": "Science",
+      "volume": "337",
+      "issue": "6097",
+      "pages": "957–960",
+      "doi": "10.1126/science.1219669",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "buck-1949",
+      "type": "book",
+      "authors": [
+        "Buck, Carl Darling"
+      ],
+      "year": 1949,
+      "title": "A Dictionary of Selected Synonyms in the Principal Indo-European Languages",
+      "publisher": "University of Chicago Press",
+      "place": "Chicago",
+      "topics": [
+        "reference",
+        "meaning"
+      ],
+      "usedFor": "Cross-checking the word for ‘night’ on the world map"
+    },
+    {
+      "id": "bybee-2007",
+      "type": "book",
+      "authors": [
+        "Bybee, Joan"
+      ],
+      "year": 2007,
+      "title": "Frequency of Use and the Organization of Language",
+      "publisher": "Oxford University Press",
+      "place": "Oxford",
+      "doi": "10.1093/acprof:oso/9780195301571.001.0001",
+      "topics": [
+        "grammar",
+        "sound"
+      ]
+    },
+    {
+      "id": "campbell-2013",
+      "type": "book",
+      "authors": [
+        "Campbell, Lyle"
+      ],
+      "year": 2013,
+      "title": "Historical Linguistics: An Introduction",
+      "edition": "3rd",
+      "publisher": "Edinburgh University Press",
+      "place": "Edinburgh",
+      "topics": [
+        "foundations",
+        "sound",
+        "grammar",
+        "meaning",
+        "methods"
+      ]
+    },
+    {
+      "id": "campbell-poser-2008",
+      "type": "book",
+      "authors": [
+        "Campbell, Lyle",
+        "Poser, William J."
+      ],
+      "year": 2008,
+      "title": "Language Classification: History and Method",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511486906",
+      "topics": [
+        "methods",
+        "foundations"
+      ]
+    },
+    {
+      "id": "chang-2015",
+      "type": "article",
+      "authors": [
+        "Chang, Will",
+        "Cathcart, Chundra",
+        "Hall, David",
+        "Garrett, Andrew"
+      ],
+      "year": 2015,
+      "title": "Ancestry-constrained phylogenetic analysis supports the Indo-European steppe hypothesis",
+      "journal": "Language",
+      "volume": "91",
+      "issue": "1",
+      "pages": "194–244",
+      "doi": "10.1353/lan.2015.0005",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "clackson-horrocks-2007",
+      "type": "book",
+      "authors": [
+        "Clackson, James",
+        "Horrocks, Geoffrey"
+      ],
+      "year": 2007,
+      "title": "The Blackwell History of the Latin Language",
+      "publisher": "Blackwell",
+      "place": "Oxford",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "dahl-1979",
+      "type": "article",
+      "authors": [
+        "Dahl, Östen"
+      ],
+      "year": 1979,
+      "title": "Typology of sentence negation",
+      "journal": "Linguistics",
+      "volume": "17",
+      "issue": "1–2",
+      "pages": "79–106",
+      "doi": "10.1515/ling.1979.17.1-2.79",
+      "topics": [
+        "grammar"
+      ]
+    },
+    {
+      "id": "derksen-2008",
+      "type": "book",
+      "authors": [
+        "Derksen, Rick"
+      ],
+      "year": 2008,
+      "title": "Etymological Dictionary of the Slavic Inherited Lexicon",
+      "publisher": "Brill",
+      "place": "Leiden",
+      "topics": [
+        "reference",
+        "families"
+      ]
+    },
+    {
+      "id": "devaan-2008",
+      "type": "book",
+      "authors": [
+        "de Vaan, Michiel"
+      ],
+      "year": 2008,
+      "title": "Etymological Dictionary of Latin and the other Italic Languages",
+      "publisher": "Brill",
+      "place": "Leiden",
+      "topics": [
+        "reference",
+        "families"
+      ]
+    },
+    {
+      "id": "dryer-haspelmath-2013",
+      "type": "web",
+      "editors": [
+        "Dryer, Matthew S.",
+        "Haspelmath, Martin"
+      ],
+      "year": 2013,
+      "title": "The World Atlas of Language Structures Online",
+      "publisher": "Max Planck Institute for Evolutionary Anthropology",
+      "place": "Leipzig",
+      "url": "https://wals.info",
+      "topics": [
+        "reference"
+      ]
+    },
+    {
+      "id": "ellegard-1953",
+      "type": "book",
+      "authors": [
+        "Ellegård, Alvar"
+      ],
+      "year": 1953,
+      "title": "The Auxiliary Do: The Establishment and Regulation of Its Use in English",
+      "series": "Gothenburg Studies in English 2",
+      "publisher": "Almqvist & Wiksell",
+      "place": "Stockholm",
+      "topics": [
+        "grammar"
+      ]
+    },
+    {
+      "id": "ethnologue",
+      "type": "web",
+      "editors": [
+        "Eberhard, David M.",
+        "Simons, Gary F.",
+        "Fennig, Charles D."
+      ],
+      "year": null,
+      "title": "Ethnologue: Languages of the World",
+      "publisher": "SIL International",
+      "place": "Dallas",
+      "url": "https://www.ethnologue.com",
+      "note": "Online edition; speaker figures on this site are rounded approximations from it.",
+      "topics": [
+        "reference"
+      ]
+    },
+    {
+      "id": "etymonline",
+      "type": "web",
+      "authors": [
+        "Harper, Douglas"
+      ],
+      "year": null,
+      "title": "Online Etymology Dictionary",
+      "url": "https://www.etymonline.com",
+      "note": "Used for the dated sense histories of English words (nice, silly, bead, etc.).",
+      "topics": [
+        "reference",
+        "meaning"
+      ]
+    },
+    {
+      "id": "fischer-1958",
+      "type": "article",
+      "authors": [
+        "Fischer, John L."
+      ],
+      "year": 1958,
+      "title": "Social influences on the choice of a linguistic variant",
+      "journal": "Word",
+      "volume": "14",
+      "issue": "1",
+      "pages": "47–56",
+      "doi": "10.1080/00437956.1958.11659655",
+      "topics": [
+        "society"
+      ]
+    },
+    {
+      "id": "fortson-2010",
+      "type": "book",
+      "authors": [
+        "Fortson, Benjamin W., IV"
+      ],
+      "year": 2010,
+      "title": "Indo-European Language and Culture: An Introduction",
+      "edition": "2nd",
+      "publisher": "Wiley-Blackwell",
+      "place": "Chichester",
+      "topics": [
+        "families",
+        "sound"
+      ]
+    },
+    {
+      "id": "frellesvig-2010",
+      "type": "book",
+      "authors": [
+        "Frellesvig, Bjarke"
+      ],
+      "year": 2010,
+      "title": "A History of the Japanese Language",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511778322",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "gabelentz-1891",
+      "type": "book",
+      "authors": [
+        "Gabelentz, Georg von der"
+      ],
+      "year": 1891,
+      "title": "Die Sprachwissenschaft: Ihre Aufgaben, Methoden und bisherigen Ergebnisse",
+      "publisher": "T. O. Weigel",
+      "place": "Leipzig",
+      "topics": [
+        "foundations",
+        "grammar"
+      ]
+    },
+    {
+      "id": "glottolog",
+      "type": "web",
+      "authors": [
+        "Hammarström, Harald",
+        "Forkel, Robert",
+        "Haspelmath, Martin",
+        "Bank, Sebastian"
+      ],
+      "year": null,
+      "title": "Glottolog",
+      "publisher": "Max Planck Institute for Evolutionary Anthropology",
+      "place": "Leipzig",
+      "url": "https://glottolog.org",
+      "note": "Classification and locations of the world’s languages.",
+      "topics": [
+        "reference"
+      ]
+    },
+    {
+      "id": "gray-atkinson-2003",
+      "type": "article",
+      "authors": [
+        "Gray, Russell D.",
+        "Atkinson, Quentin D."
+      ],
+      "year": 2003,
+      "title": "Language-tree divergence times support the Anatolian theory of Indo-European origin",
+      "journal": "Nature",
+      "volume": "426",
+      "pages": "435–439",
+      "doi": "10.1038/nature02029",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "gray-drummond-greenhill-2009",
+      "type": "article",
+      "authors": [
+        "Gray, Russell D.",
+        "Drummond, Alexei J.",
+        "Greenhill, Simon J."
+      ],
+      "year": 2009,
+      "title": "Language phylogenies reveal expansion pulses and pauses in Pacific settlement",
+      "journal": "Science",
+      "volume": "323",
+      "issue": "5913",
+      "pages": "479–483",
+      "doi": "10.1126/science.1166858",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "grimm-1822",
+      "type": "book",
+      "authors": [
+        "Grimm, Jacob"
+      ],
+      "year": 1822,
+      "title": "Deutsche Grammatik, Erster Theil",
+      "edition": "2nd",
+      "publisher": "Dieterich",
+      "place": "Göttingen",
+      "topics": [
+        "foundations",
+        "sound"
+      ]
+    },
+    {
+      "id": "grollemund-2015",
+      "type": "article",
+      "authors": [
+        "Grollemund, Rebecca",
+        "Branford, Simon",
+        "Bostoen, Koen",
+        "Meade, Andrew",
+        "Venditti, Chris",
+        "Pagel, Mark"
+      ],
+      "year": 2015,
+      "title": "Bantu expansion shows that habitat alters the route and pace of human dispersals",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "112",
+      "issue": "43",
+      "pages": "13296–13301",
+      "doi": "10.1073/pnas.1503793112",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "gzella-2015",
+      "type": "book",
+      "authors": [
+        "Gzella, Holger"
+      ],
+      "year": 2015,
+      "title": "A Cultural History of Aramaic: From the Beginnings to the Advent of Islam",
+      "publisher": "Brill",
+      "place": "Leiden",
+      "doi": "10.1163/9789004285101",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "harris-campbell-1995",
+      "type": "book",
+      "authors": [
+        "Harris, Alice C.",
+        "Campbell, Lyle"
+      ],
+      "year": 1995,
+      "title": "Historical Syntax in Cross-Linguistic Perspective",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511620553",
+      "topics": [
+        "grammar"
+      ]
+    },
+    {
+      "id": "haudricourt-1954",
+      "type": "article",
+      "authors": [
+        "Haudricourt, André-Georges"
+      ],
+      "year": 1954,
+      "title": "De l’origine des tons en vietnamien",
+      "journal": "Journal Asiatique",
+      "volume": "242",
+      "pages": "69–82",
+      "topics": [
+        "sound"
+      ]
+    },
+    {
+      "id": "helsinki-corpus",
+      "type": "web",
+      "authors": [
+        "Rissanen, Matti",
+        "Kytö, Merja",
+        "Palander-Collin, Minna"
+      ],
+      "year": 1991,
+      "title": "The Helsinki Corpus of English Texts",
+      "publisher": "Department of Modern Languages, University of Helsinki",
+      "place": "Helsinki",
+      "url": "https://varieng.helsinki.fi/CoRD/corpora/HelsinkiCorpus/",
+      "note": "Compiled by Matti Rissanen (project leader), Merja Kytö and others.",
+      "topics": [
+        "methods",
+        "reference"
+      ]
+    },
+    {
+      "id": "hock-joseph-2009",
+      "type": "book",
+      "authors": [
+        "Hock, Hans Henrich",
+        "Joseph, Brian D."
+      ],
+      "year": 2009,
+      "title": "Language History, Language Change, and Language Relationship: An Introduction to Historical and Comparative Linguistics",
+      "edition": "2nd revised",
+      "publisher": "Mouton de Gruyter",
+      "place": "Berlin",
+      "topics": [
+        "foundations",
+        "sound",
+        "grammar",
+        "meaning",
+        "contact"
+      ]
+    },
+    {
+      "id": "honkola-2013",
+      "type": "article",
+      "authors": [
+        "Honkola, T.",
+        "Vesakoski, O.",
+        "Korhonen, K.",
+        "Lehtinen, J.",
+        "Syrjänen, K.",
+        "Wahlberg, N."
+      ],
+      "year": 2013,
+      "title": "Cultural and climatic changes shape the evolutionary history of the Uralic languages",
+      "journal": "Journal of Evolutionary Biology",
+      "volume": "26",
+      "issue": "6",
+      "pages": "1244–1253",
+      "doi": "10.1111/jeb.12107",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "hopper-traugott-2003",
+      "type": "book",
+      "authors": [
+        "Hopper, Paul J.",
+        "Traugott, Elizabeth Closs"
+      ],
+      "year": 2003,
+      "title": "Grammaticalization",
+      "edition": "2nd",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9781139165525",
+      "note": "First edition 1993.",
+      "topics": [
+        "grammar"
+      ]
+    },
+    {
+      "id": "horrocks-2010",
+      "type": "book",
+      "authors": [
+        "Horrocks, Geoffrey"
+      ],
+      "year": 2010,
+      "title": "Greek: A History of the Language and its Speakers",
+      "edition": "2nd",
+      "publisher": "Wiley-Blackwell",
+      "place": "Chichester",
+      "doi": "10.1002/9781444318913",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "houston-2000",
+      "type": "article",
+      "authors": [
+        "Houston, Stephen",
+        "Robertson, John",
+        "Stuart, David"
+      ],
+      "year": 2000,
+      "title": "The language of Classic Maya inscriptions",
+      "journal": "Current Anthropology",
+      "volume": "41",
+      "issue": "3",
+      "pages": "321–356",
+      "doi": "10.1086/300142",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "hrozny-1915",
+      "type": "article",
+      "authors": [
+        "Hrozný, Bedřich"
+      ],
+      "year": 1915,
+      "title": "Die Lösung des hethitischen Problems",
+      "journal": "Mitteilungen der Deutschen Orient-Gesellschaft",
+      "volume": "56",
+      "pages": "17–50",
+      "topics": [
+        "foundations",
+        "families"
+      ]
+    },
+    {
+      "id": "ids",
+      "type": "web",
+      "editors": [
+        "Key, Mary Ritchie",
+        "Comrie, Bernard"
+      ],
+      "year": 2015,
+      "title": "The Intercontinental Dictionary Series",
+      "publisher": "Max Planck Institute for Evolutionary Anthropology",
+      "place": "Leipzig",
+      "url": "https://ids.clld.org",
+      "note": "Comparative word lists, including the meaning ‘night’.",
+      "topics": [
+        "reference"
+      ],
+      "usedFor": "Cross-checking the word for ‘night’ on the world map"
+    },
+    {
+      "id": "jacobs-2005",
+      "type": "book",
+      "authors": [
+        "Jacobs, Neil G."
+      ],
+      "year": 2005,
+      "title": "Yiddish: A Linguistic Introduction",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "families",
+        "contact"
+      ]
+    },
+    {
+      "id": "jespersen-1905",
+      "type": "book",
+      "authors": [
+        "Jespersen, Otto"
+      ],
+      "year": 1905,
+      "title": "Growth and Structure of the English Language",
+      "publisher": "B. G. Teubner",
+      "place": "Leipzig",
+      "topics": [
+        "foundations",
+        "meaning"
+      ]
+    },
+    {
+      "id": "jespersen-1909",
+      "type": "book",
+      "authors": [
+        "Jespersen, Otto"
+      ],
+      "year": 1909,
+      "title": "A Modern English Grammar on Historical Principles. Part I: Sounds and Spellings",
+      "publisher": "Carl Winter",
+      "place": "Heidelberg",
+      "topics": [
+        "foundations",
+        "sound"
+      ]
+    },
+    {
+      "id": "jespersen-1917",
+      "type": "book",
+      "authors": [
+        "Jespersen, Otto"
+      ],
+      "year": 1917,
+      "title": "Negation in English and Other Languages",
+      "series": "Det Kgl. Danske Videnskabernes Selskab, Historisk-filologiske Meddelelser I, 5",
+      "publisher": "A. F. Høst",
+      "place": "Copenhagen",
+      "topics": [
+        "grammar"
+      ]
+    },
+    {
+      "id": "johanson-csato-1998",
+      "type": "book",
+      "editors": [
+        "Johanson, Lars",
+        "Csató, Éva Ágnes"
+      ],
+      "year": 1998,
+      "title": "The Turkic Languages",
+      "publisher": "Routledge",
+      "place": "London",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "jones-1788",
+      "type": "article",
+      "authors": [
+        "Jones, William"
+      ],
+      "year": 1788,
+      "title": "The third anniversary discourse, delivered 2 February 1786: On the Hindus",
+      "journal": "Asiatick Researches",
+      "volume": "1",
+      "pages": "415–431",
+      "topics": [
+        "foundations",
+        "families"
+      ]
+    },
+    {
+      "id": "joseph-janda-2003",
+      "type": "book",
+      "editors": [
+        "Joseph, Brian D.",
+        "Janda, Richard D."
+      ],
+      "year": 2003,
+      "title": "The Handbook of Historical Linguistics",
+      "publisher": "Blackwell",
+      "place": "Oxford",
+      "doi": "10.1002/9780470756393",
+      "topics": [
+        "foundations",
+        "sound",
+        "grammar",
+        "methods"
+      ]
+    },
+    {
+      "id": "kitchen-2009",
+      "type": "article",
+      "authors": [
+        "Kitchen, Andrew",
+        "Ehret, Christopher",
+        "Assefa, Shiferaw",
+        "Mulligan, Connie J."
+      ],
+      "year": 2009,
+      "title": "Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East",
+      "journal": "Proceedings of the Royal Society B",
+      "volume": "276",
+      "issue": "1668",
+      "pages": "2703–2710",
+      "doi": "10.1098/rspb.2009.0408",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "kloekhorst-2008",
+      "type": "book",
+      "authors": [
+        "Kloekhorst, Alwin"
+      ],
+      "year": 2008,
+      "title": "Etymological Dictionary of the Hittite Inherited Lexicon",
+      "publisher": "Brill",
+      "place": "Leiden",
+      "topics": [
+        "reference",
+        "families"
+      ]
+    },
+    {
+      "id": "krishnamurti-2003",
+      "type": "book",
+      "authors": [
+        "Krishnamurti, Bhadriraju"
+      ],
+      "year": 2003,
+      "title": "The Dravidian Languages",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511486876",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "kroch-1989",
+      "type": "article",
+      "authors": [
+        "Kroch, Anthony S."
+      ],
+      "year": 1989,
+      "title": "Reflexes of grammar in patterns of language change",
+      "journal": "Language Variation and Change",
+      "volume": "1",
+      "issue": "3",
+      "pages": "199–244",
+      "doi": "10.1017/S0954394500000168",
+      "topics": [
+        "grammar",
+        "society"
+      ]
+    },
+    {
+      "id": "kroonen-2013",
+      "type": "book",
+      "authors": [
+        "Kroonen, Guus"
+      ],
+      "year": 2013,
+      "title": "Etymological Dictionary of Proto-Germanic",
+      "publisher": "Brill",
+      "place": "Leiden",
+      "topics": [
+        "reference",
+        "families"
+      ]
+    },
+    {
+      "id": "labov-1963",
+      "type": "article",
+      "authors": [
+        "Labov, William"
+      ],
+      "year": 1963,
+      "title": "The social motivation of a sound change",
+      "journal": "Word",
+      "volume": "19",
+      "issue": "3",
+      "pages": "273–309",
+      "doi": "10.1080/00437956.1963.11659799",
+      "topics": [
+        "society",
+        "sound"
+      ]
+    },
+    {
+      "id": "labov-1966",
+      "type": "book",
+      "authors": [
+        "Labov, William"
+      ],
+      "year": 1966,
+      "title": "The Social Stratification of English in New York City",
+      "publisher": "Center for Applied Linguistics",
+      "place": "Washington, DC",
+      "note": "Second edition: Cambridge University Press, 2006.",
+      "topics": [
+        "society"
+      ]
+    },
+    {
+      "id": "labov-1990",
+      "type": "article",
+      "authors": [
+        "Labov, William"
+      ],
+      "year": 1990,
+      "title": "The intersection of sex and social class in the course of linguistic change",
+      "journal": "Language Variation and Change",
+      "volume": "2",
+      "issue": "2",
+      "pages": "205–254",
+      "doi": "10.1017/S0954394500000338",
+      "topics": [
+        "society"
+      ]
+    },
+    {
+      "id": "labov-1994",
+      "type": "book",
+      "authors": [
+        "Labov, William"
+      ],
+      "year": 1994,
+      "title": "Principles of Linguistic Change, Vol. 1: Internal Factors",
+      "publisher": "Blackwell",
+      "place": "Oxford",
+      "note": "Vol. 2: Social Factors (2001); Vol. 3: Cognitive and Cultural Factors (2010).",
+      "topics": [
+        "society",
+        "sound",
+        "foundations"
+      ]
+    },
+    {
+      "id": "labov-2007",
+      "type": "article",
+      "authors": [
+        "Labov, William"
+      ],
+      "year": 2007,
+      "title": "Transmission and diffusion",
+      "journal": "Language",
+      "volume": "83",
+      "issue": "2",
+      "pages": "344–387",
+      "doi": "10.1353/lan.2007.0082",
+      "topics": [
+        "society",
+        "foundations"
+      ]
+    },
+    {
+      "id": "labov-ash-boberg-2006",
+      "type": "book",
+      "authors": [
+        "Labov, William",
+        "Ash, Sharon",
+        "Boberg, Charles"
+      ],
+      "year": 2006,
+      "title": "The Atlas of North American English: Phonetics, Phonology and Sound Change",
+      "publisher": "Mouton de Gruyter",
+      "place": "Berlin",
+      "doi": "10.1515/9783110167467",
+      "topics": [
+        "sound",
+        "society"
+      ]
+    },
+    {
+      "id": "labov-yaeger-steiner-1972",
+      "type": "book",
+      "authors": [
+        "Labov, William",
+        "Yaeger, Malcah",
+        "Steiner, Richard"
+      ],
+      "year": 1972,
+      "title": "A Quantitative Study of Sound Change in Progress",
+      "publisher": "U.S. Regional Survey",
+      "place": "Philadelphia",
+      "topics": [
+        "sound",
+        "society"
+      ]
+    },
+    {
+      "id": "launey-2011",
+      "type": "book",
+      "authors": [
+        "Launey, Michel"
+      ],
+      "year": 2011,
+      "title": "An Introduction to Classical Nahuatl",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511778001",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "ledgeway-maiden-2016",
+      "type": "book",
+      "editors": [
+        "Ledgeway, Adam",
+        "Maiden, Martin"
+      ],
+      "year": 2016,
+      "title": "The Oxford Guide to the Romance Languages",
+      "publisher": "Oxford University Press",
+      "place": "Oxford",
+      "doi": "10.1093/acprof:oso/9780199677108.001.0001",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "lee-ramsey-2011",
+      "type": "book",
+      "authors": [
+        "Lee, Ki-Moon",
+        "Ramsey, S. Robert"
+      ],
+      "year": 2011,
+      "title": "A History of the Korean Language",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511974045",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "lees-1953",
+      "type": "article",
+      "authors": [
+        "Lees, Robert B."
+      ],
+      "year": 1953,
+      "title": "The basis of glottochronology",
+      "journal": "Language",
+      "volume": "29",
+      "issue": "2",
+      "pages": "113–127",
+      "doi": "10.2307/410164",
+      "topics": [
+        "methods"
+      ]
+    },
+    {
+      "id": "lieberman-2007",
+      "type": "article",
+      "authors": [
+        "Lieberman, Erez",
+        "Michel, Jean-Baptiste",
+        "Jackson, Joe",
+        "Tang, Tina",
+        "Nowak, Martin A."
+      ],
+      "year": 2007,
+      "title": "Quantifying the evolutionary dynamics of language",
+      "journal": "Nature",
+      "volume": "449",
+      "pages": "713–716",
+      "doi": "10.1038/nature06137",
+      "topics": [
+        "grammar",
+        "methods"
+      ]
+    },
+    {
+      "id": "lightfoot-1979",
+      "type": "book",
+      "authors": [
+        "Lightfoot, David"
+      ],
+      "year": 1979,
+      "title": "Principles of Diachronic Syntax",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "grammar"
+      ]
+    },
+    {
+      "id": "mallory-adams-2006",
+      "type": "book",
+      "authors": [
+        "Mallory, J. P.",
+        "Adams, D. Q."
+      ],
+      "year": 2006,
+      "title": "The Oxford Introduction to Proto-Indo-European and the Proto-Indo-European World",
+      "publisher": "Oxford University Press",
+      "place": "Oxford",
+      "topics": [
+        "families",
+        "reference"
+      ]
+    },
+    {
+      "id": "martinet-1955",
+      "type": "book",
+      "authors": [
+        "Martinet, André"
+      ],
+      "year": 1955,
+      "title": "Économie des changements phonétiques: Traité de phonologie diachronique",
+      "publisher": "A. Francke",
+      "place": "Bern",
+      "topics": [
+        "sound",
+        "foundations"
+      ]
+    },
+    {
+      "id": "matras-2002",
+      "type": "book",
+      "authors": [
+        "Matras, Yaron"
+      ],
+      "year": 2002,
+      "title": "Romani: A Linguistic Introduction",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511486791",
+      "topics": [
+        "families",
+        "contact"
+      ]
+    },
+    {
+      "id": "mcculloch-2019",
+      "type": "book",
+      "authors": [
+        "McCulloch, Gretchen"
+      ],
+      "year": 2019,
+      "title": "Because Internet: Understanding the New Rules of Language",
+      "publisher": "Riverhead Books",
+      "place": "New York",
+      "topics": [
+        "society",
+        "meaning"
+      ]
+    },
+    {
+      "id": "meillet-1912",
+      "type": "article",
+      "authors": [
+        "Meillet, Antoine"
+      ],
+      "year": 1912,
+      "title": "L’évolution des formes grammaticales",
+      "journal": "Scientia (Rivista di Scienza)",
+      "volume": "12",
+      "pages": "384–400",
+      "note": "Reprinted in Meillet, Linguistique historique et linguistique générale (Paris: Champion, 1921), 130–148.",
+      "topics": [
+        "grammar",
+        "foundations"
+      ]
+    },
+    {
+      "id": "michel-2011",
+      "type": "article",
+      "authors": [
+        "Michel, Jean-Baptiste",
+        "Shen, Yuan Kui",
+        "Aiden, Aviva Presser",
+        "Veres, Adrian",
+        "Gray, Matthew K.",
+        "Pickett, Joseph P.",
+        "Hoiberg, Dale",
+        "Clancy, Dan",
+        "Norvig, Peter",
+        "Orwant, Jon",
+        "Pinker, Steven",
+        "Nowak, Martin A.",
+        "Aiden, Erez Lieberman"
+      ],
+      "year": 2011,
+      "title": "Quantitative analysis of culture using millions of digitized books",
+      "journal": "Science",
+      "volume": "331",
+      "issue": "6014",
+      "pages": "176–182",
+      "doi": "10.1126/science.1199644",
+      "topics": [
+        "methods"
+      ]
+    },
+    {
+      "id": "milroy-1980",
+      "type": "book",
+      "authors": [
+        "Milroy, Lesley"
+      ],
+      "year": 1980,
+      "title": "Language and Social Networks",
+      "publisher": "Blackwell",
+      "place": "Oxford",
+      "topics": [
+        "society"
+      ]
+    },
+    {
+      "id": "milroy-milroy-1985",
+      "type": "article",
+      "authors": [
+        "Milroy, James",
+        "Milroy, Lesley"
+      ],
+      "year": 1985,
+      "title": "Linguistic change, social network and speaker innovation",
+      "journal": "Journal of Linguistics",
+      "volume": "21",
+      "issue": "2",
+      "pages": "339–384",
+      "doi": "10.1017/S0022226700010306",
+      "topics": [
+        "society"
+      ]
+    },
+    {
+      "id": "moseley-2010",
+      "type": "book",
+      "editors": [
+        "Moseley, Christopher"
+      ],
+      "year": 2010,
+      "title": "Atlas of the World’s Languages in Danger",
+      "edition": "3rd",
+      "publisher": "UNESCO Publishing",
+      "place": "Paris",
+      "topics": [
+        "contact",
+        "reference"
+      ]
+    },
+    {
+      "id": "natural-earth",
+      "type": "web",
+      "authors": [
+        "Natural Earth"
+      ],
+      "year": null,
+      "title": "Natural Earth: Free vector and raster map data",
+      "url": "https://www.naturalearthdata.com",
+      "note": "Coastlines for the world map (1:50m land, public domain), via the world-atlas package by Mike Bostock (https://github.com/topojson/world-atlas).",
+      "topics": [
+        "reference"
+      ],
+      "usedFor": "World map coastlines"
+    },
+    {
+      "id": "nurse-hinnebusch-1993",
+      "type": "book",
+      "authors": [
+        "Nurse, Derek",
+        "Hinnebusch, Thomas J."
+      ],
+      "year": 1993,
+      "title": "Swahili and Sabaki: A Linguistic History",
+      "publisher": "University of California Press",
+      "place": "Berkeley",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "nurse-philippson-2003",
+      "type": "book",
+      "editors": [
+        "Nurse, Derek",
+        "Philippson, Gérard"
+      ],
+      "year": 2003,
+      "title": "The Bantu Languages",
+      "publisher": "Routledge",
+      "place": "London",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "oed",
+      "type": "web",
+      "authors": [
+        "Oxford University Press"
+      ],
+      "year": null,
+      "title": "Oxford English Dictionary Online",
+      "url": "https://www.oed.com",
+      "topics": [
+        "reference",
+        "meaning"
+      ]
+    },
+    {
+      "id": "ohala-1981",
+      "type": "chapter",
+      "authors": [
+        "Ohala, John J."
+      ],
+      "year": 1981,
+      "title": "The listener as a source of sound change",
+      "editors": [
+        "Masek, Carrie S.",
+        "Hendrick, Roberta A.",
+        "Miller, Mary Frances"
+      ],
+      "booktitle": "Papers from the Parasession on Language and Behavior",
+      "pages": "178–203",
+      "publisher": "Chicago Linguistic Society",
+      "place": "Chicago",
+      "topics": [
+        "sound"
+      ]
+    },
+    {
+      "id": "osthoff-brugmann-1878",
+      "type": "book",
+      "authors": [
+        "Osthoff, Hermann",
+        "Brugmann, Karl"
+      ],
+      "year": 1878,
+      "title": "Morphologische Untersuchungen auf dem Gebiete der indogermanischen Sprachen, vol. 1",
+      "publisher": "S. Hirzel",
+      "place": "Leipzig",
+      "note": "The preface (pp. iii–xx) is the Neogrammarian manifesto.",
+      "topics": [
+        "foundations",
+        "sound"
+      ]
+    },
+    {
+      "id": "pagel-2007",
+      "type": "article",
+      "authors": [
+        "Pagel, Mark",
+        "Atkinson, Quentin D.",
+        "Meade, Andrew"
+      ],
+      "year": 2007,
+      "title": "Frequency of word-use predicts rates of lexical evolution throughout Indo-European history",
+      "journal": "Nature",
+      "volume": "449",
+      "pages": "717–720",
+      "doi": "10.1038/nature06176",
+      "topics": [
+        "meaning",
+        "methods"
+      ]
+    },
+    {
+      "id": "penny-2002",
+      "type": "book",
+      "authors": [
+        "Penny, Ralph"
+      ],
+      "year": 2002,
+      "title": "A History of the Spanish Language",
+      "edition": "2nd",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511992827",
+      "topics": [
+        "families",
+        "sound"
+      ]
+    },
+    {
+      "id": "pinker-1994",
+      "type": "newspaper",
+      "authors": [
+        "Pinker, Steven"
+      ],
+      "year": 1994,
+      "title": "The game of the name",
+      "journal": "The New York Times",
+      "date": "5 April 1994",
+      "url": "https://www.nytimes.com/1994/04/05/opinion/the-game-of-the-name.html",
+      "topics": [
+        "meaning"
+      ]
+    },
+    {
+      "id": "rask-1818",
+      "type": "book",
+      "authors": [
+        "Rask, Rasmus"
+      ],
+      "year": 1818,
+      "title": "Undersøgelse om det gamle Nordiske eller Islandske Sprogs Oprindelse",
+      "publisher": "Gyldendal",
+      "place": "Copenhagen",
+      "topics": [
+        "foundations",
+        "sound"
+      ]
+    },
+    {
+      "id": "ringe-2006",
+      "type": "book",
+      "authors": [
+        "Ringe, Don"
+      ],
+      "year": 2006,
+      "title": "From Proto-Indo-European to Proto-Germanic",
+      "series": "A Linguistic History of English, vol. 1",
+      "publisher": "Oxford University Press",
+      "place": "Oxford",
+      "topics": [
+        "sound",
+        "families"
+      ]
+    },
+    {
+      "id": "saenz-badillos-1993",
+      "type": "book",
+      "authors": [
+        "Sáenz-Badillos, Angel"
+      ],
+      "year": 1993,
+      "title": "A History of the Hebrew Language",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9781139166553",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "sagart-2019",
+      "type": "article",
+      "authors": [
+        "Sagart, Laurent",
+        "Jacques, Guillaume",
+        "Lai, Yunfan",
+        "Ryder, Robin J.",
+        "Thouzeau, Valentin",
+        "Greenhill, Simon J.",
+        "List, Johann-Mattis"
+      ],
+      "year": 2019,
+      "title": "Dated language phylogenies shed light on the ancestry of Sino-Tibetan",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "116",
+      "issue": "21",
+      "pages": "10317–10322",
+      "doi": "10.1073/pnas.1817972116",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "sankoff-blondeau-2007",
+      "type": "article",
+      "authors": [
+        "Sankoff, Gillian",
+        "Blondeau, Hélène"
+      ],
+      "year": 2007,
+      "title": "Language change across the lifespan: /r/ in Montreal French",
+      "journal": "Language",
+      "volume": "83",
+      "issue": "3",
+      "pages": "560–588",
+      "doi": "10.1353/lan.2007.0106",
+      "topics": [
+        "society"
+      ]
+    },
+    {
+      "id": "sapir-1921",
+      "type": "book",
+      "authors": [
+        "Sapir, Edward"
+      ],
+      "year": 1921,
+      "title": "Language: An Introduction to the Study of Speech",
+      "publisher": "Harcourt, Brace",
+      "place": "New York",
+      "url": "https://www.gutenberg.org/ebooks/12629",
+      "note": "Chapter 7, “Language as a Historical Product: Drift”.",
+      "topics": [
+        "foundations"
+      ]
+    },
+    {
+      "id": "saussure-1879",
+      "type": "book",
+      "authors": [
+        "Saussure, Ferdinand de"
+      ],
+      "year": 1879,
+      "title": "Mémoire sur le système primitif des voyelles dans les langues indo-européennes",
+      "publisher": "B. G. Teubner",
+      "place": "Leipzig",
+      "note": "Published December 1878, dated 1879.",
+      "topics": [
+        "foundations",
+        "families"
+      ]
+    },
+    {
+      "id": "saussure-1916",
+      "type": "book",
+      "authors": [
+        "Saussure, Ferdinand de"
+      ],
+      "year": 1916,
+      "title": "Cours de linguistique générale",
+      "editors": [
+        "Bally, Charles",
+        "Sechehaye, Albert"
+      ],
+      "publisher": "Payot",
+      "place": "Lausanne & Paris",
+      "topics": [
+        "foundations"
+      ]
+    },
+    {
+      "id": "savelyev-robbeets-2020",
+      "type": "article",
+      "authors": [
+        "Savelyev, Alexander",
+        "Robbeets, Martine"
+      ],
+      "year": 2020,
+      "title": "Bayesian phylolinguistics infers the internal structure and the time-depth of the Turkic language family",
+      "journal": "Journal of Language Evolution",
+      "volume": "5",
+      "issue": "1",
+      "pages": "39–53",
+      "doi": "10.1093/jole/lzz010",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "schleicher-1853",
+      "type": "article",
+      "authors": [
+        "Schleicher, August"
+      ],
+      "year": 1853,
+      "title": "Die ersten Spaltungen des indogermanischen Urvolkes",
+      "journal": "Allgemeine Monatsschrift für Wissenschaft und Literatur",
+      "pages": "786–787",
+      "topics": [
+        "foundations",
+        "methods"
+      ]
+    },
+    {
+      "id": "schmidt-1872",
+      "type": "book",
+      "authors": [
+        "Schmidt, Johannes"
+      ],
+      "year": 1872,
+      "title": "Die Verwantschaftsverhältnisse der indogermanischen Sprachen",
+      "publisher": "Hermann Böhlau",
+      "place": "Weimar",
+      "topics": [
+        "foundations",
+        "methods"
+      ]
+    },
+    {
+      "id": "sturtevant-1947",
+      "type": "book",
+      "authors": [
+        "Sturtevant, Edgar H."
+      ],
+      "year": 1947,
+      "title": "An Introduction to Linguistic Science",
+      "publisher": "Yale University Press",
+      "place": "New Haven",
+      "topics": [
+        "grammar",
+        "foundations"
+      ]
+    },
+    {
+      "id": "swadesh-1952",
+      "type": "article",
+      "authors": [
+        "Swadesh, Morris"
+      ],
+      "year": 1952,
+      "title": "Lexico-statistic dating of prehistoric ethnic contacts: With special reference to North American Indians and Eskimos",
+      "journal": "Proceedings of the American Philosophical Society",
+      "volume": "96",
+      "issue": "4",
+      "pages": "452–463",
+      "topics": [
+        "methods"
+      ]
+    },
+    {
+      "id": "tagliamonte-darcy-2004",
+      "type": "article",
+      "authors": [
+        "Tagliamonte, Sali",
+        "D’Arcy, Alexandra"
+      ],
+      "year": 2004,
+      "title": "He’s like, she’s like: The quotative system in Canadian youth",
+      "journal": "Journal of Sociolinguistics",
+      "volume": "8",
+      "issue": "4",
+      "pages": "493–514",
+      "doi": "10.1111/j.1467-9841.2004.00271.x",
+      "topics": [
+        "society",
+        "grammar"
+      ]
+    },
+    {
+      "id": "thomason-2001",
+      "type": "book",
+      "authors": [
+        "Thomason, Sarah G."
+      ],
+      "year": 2001,
+      "title": "Language Contact: An Introduction",
+      "publisher": "Edinburgh University Press",
+      "place": "Edinburgh",
+      "topics": [
+        "contact"
+      ]
+    },
+    {
+      "id": "thomason-kaufman-1988",
+      "type": "book",
+      "authors": [
+        "Thomason, Sarah Grey",
+        "Kaufman, Terrence"
+      ],
+      "year": 1988,
+      "title": "Language Contact, Creolization, and Genetic Linguistics",
+      "publisher": "University of California Press",
+      "place": "Berkeley",
+      "topics": [
+        "contact"
+      ]
+    },
+    {
+      "id": "thurgood-lapolla-2003",
+      "type": "book",
+      "editors": [
+        "Thurgood, Graham",
+        "LaPolla, Randy J."
+      ],
+      "year": 2003,
+      "title": "The Sino-Tibetan Languages",
+      "publisher": "Routledge",
+      "place": "London",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "trask-1997",
+      "type": "book",
+      "authors": [
+        "Trask, R. L."
+      ],
+      "year": 1997,
+      "title": "The History of Basque",
+      "publisher": "Routledge",
+      "place": "London",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "traugott-1989",
+      "type": "article",
+      "authors": [
+        "Traugott, Elizabeth Closs"
+      ],
+      "year": 1989,
+      "title": "On the rise of epistemic meanings in English: An example of subjectification in semantic change",
+      "journal": "Language",
+      "volume": "65",
+      "issue": "1",
+      "pages": "31–55",
+      "doi": "10.2307/414841",
+      "topics": [
+        "meaning"
+      ]
+    },
+    {
+      "id": "traugott-dasher-2002",
+      "type": "book",
+      "authors": [
+        "Traugott, Elizabeth Closs",
+        "Dasher, Richard B."
+      ],
+      "year": 2002,
+      "title": "Regularity in Semantic Change",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "doi": "10.1017/CBO9780511486500",
+      "topics": [
+        "meaning"
+      ]
+    },
+    {
+      "id": "trubetzkoy-1930",
+      "type": "chapter",
+      "authors": [
+        "Trubetzkoy, Nikolai S."
+      ],
+      "year": 1930,
+      "title": "Proposition 16",
+      "booktitle": "Actes du Premier Congrès International de Linguistes à La Haye, du 10–15 avril 1928",
+      "pages": "17–18",
+      "publisher": "A. W. Sijthoff",
+      "place": "Leiden",
+      "topics": [
+        "contact",
+        "foundations"
+      ]
+    },
+    {
+      "id": "trudgill-1972",
+      "type": "article",
+      "authors": [
+        "Trudgill, Peter"
+      ],
+      "year": 1972,
+      "title": "Sex, covert prestige and linguistic change in the urban British English of Norwich",
+      "journal": "Language in Society",
+      "volume": "1",
+      "issue": "2",
+      "pages": "179–195",
+      "doi": "10.1017/S0047404500000488",
+      "topics": [
+        "society"
+      ]
+    },
+    {
+      "id": "valdman-2015",
+      "type": "book",
+      "authors": [
+        "Valdman, Albert"
+      ],
+      "year": 2015,
+      "title": "Haitian Creole: Structure, Variation, Status, Origin",
+      "publisher": "Equinox",
+      "place": "Sheffield",
+      "topics": [
+        "contact",
+        "families"
+      ]
+    },
+    {
+      "id": "velupillai-2015",
+      "type": "book",
+      "authors": [
+        "Velupillai, Viveka"
+      ],
+      "year": 2015,
+      "title": "Pidgins, Creoles and Mixed Languages: An Introduction",
+      "publisher": "John Benjamins",
+      "place": "Amsterdam",
+      "doi": "10.1075/cll.48",
+      "topics": [
+        "contact"
+      ]
+    },
+    {
+      "id": "ventris-chadwick-1953",
+      "type": "article",
+      "authors": [
+        "Ventris, Michael",
+        "Chadwick, John"
+      ],
+      "year": 1953,
+      "title": "Evidence for Greek dialect in the Mycenaean archives",
+      "journal": "The Journal of Hellenic Studies",
+      "volume": "73",
+      "pages": "84–103",
+      "doi": "10.2307/628239",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "verner-1877",
+      "type": "article",
+      "authors": [
+        "Verner, Karl"
+      ],
+      "year": 1877,
+      "title": "Eine Ausnahme der ersten Lautverschiebung",
+      "journal": "Zeitschrift für vergleichende Sprachforschung auf dem Gebiete der indogermanischen Sprachen",
+      "volume": "23",
+      "issue": "2",
+      "pages": "97–130",
+      "topics": [
+        "sound",
+        "foundations"
+      ]
+    },
+    {
+      "id": "versteegh-2014",
+      "type": "book",
+      "authors": [
+        "Versteegh, Kees"
+      ],
+      "year": 2014,
+      "title": "The Arabic Language",
+      "edition": "2nd",
+      "publisher": "Edinburgh University Press",
+      "place": "Edinburgh",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "wang-1969",
+      "type": "article",
+      "authors": [
+        "Wang, William S.-Y."
+      ],
+      "year": 1969,
+      "title": "Competing changes as a cause of residue",
+      "journal": "Language",
+      "volume": "45",
+      "issue": "1",
+      "pages": "9–25",
+      "doi": "10.2307/411748",
+      "topics": [
+        "sound"
+      ]
+    },
+    {
+      "id": "wedel-2013",
+      "type": "article",
+      "authors": [
+        "Wedel, Andrew",
+        "Kaplan, Abby",
+        "Jackson, Scott"
+      ],
+      "year": 2013,
+      "title": "High functional load inhibits phonological contrast loss: A corpus study",
+      "journal": "Cognition",
+      "volume": "128",
+      "issue": "2",
+      "pages": "179–186",
+      "doi": "10.1016/j.cognition.2013.03.002",
+      "topics": [
+        "sound"
+      ]
+    },
+    {
+      "id": "weinreich-1945",
+      "type": "article",
+      "authors": [
+        "Weinreich, Max"
+      ],
+      "year": 1945,
+      "title": "Der yivo un di problemen fun undzer tsayt",
+      "journal": "Yivo Bleter",
+      "volume": "25",
+      "issue": "1",
+      "pages": "3–18",
+      "note": "Source of the remark that “a language is a dialect with an army and navy”, which Weinreich attributed to an audience member.",
+      "topics": [
+        "society",
+        "contact"
+      ]
+    },
+    {
+      "id": "weinreich-1953",
+      "type": "book",
+      "authors": [
+        "Weinreich, Uriel"
+      ],
+      "year": 1953,
+      "title": "Languages in Contact: Findings and Problems",
+      "publisher": "Linguistic Circle of New York",
+      "place": "New York",
+      "topics": [
+        "contact"
+      ]
+    },
+    {
+      "id": "weinreich-labov-herzog-1968",
+      "type": "chapter",
+      "authors": [
+        "Weinreich, Uriel",
+        "Labov, William",
+        "Herzog, Marvin I."
+      ],
+      "year": 1968,
+      "title": "Empirical foundations for a theory of language change",
+      "editors": [
+        "Lehmann, Winfred P.",
+        "Malkiel, Yakov"
+      ],
+      "booktitle": "Directions for Historical Linguistics: A Symposium",
+      "pages": "95–195",
+      "publisher": "University of Texas Press",
+      "place": "Austin",
+      "topics": [
+        "society",
+        "foundations"
+      ]
+    },
+    {
+      "id": "weninger-2011",
+      "type": "book",
+      "editors": [
+        "Weninger, Stefan"
+      ],
+      "year": 2011,
+      "title": "The Semitic Languages: An International Handbook",
+      "publisher": "De Gruyter Mouton",
+      "place": "Berlin",
+      "doi": "10.1515/9783110251586",
+      "topics": [
+        "families"
+      ]
+    },
+    {
+      "id": "woodard-2004",
+      "type": "book",
+      "editors": [
+        "Woodard, Roger D."
+      ],
+      "year": 2004,
+      "title": "The Cambridge Encyclopedia of the World’s Ancient Languages",
+      "publisher": "Cambridge University Press",
+      "place": "Cambridge",
+      "topics": [
+        "families",
+        "reference"
+      ]
+    },
+    {
+      "id": "world-atlas",
+      "type": "web",
+      "authors": [
+        "Bostock, Mike"
+      ],
+      "year": null,
+      "title": "world-atlas: Pre-built TopoJSON from Natural Earth (v2.0.2)",
+      "url": "https://github.com/topojson/world-atlas",
+      "note": "ISC licence.",
+      "topics": [
+        "reference"
+      ],
+      "usedFor": "World map coastlines"
+    },
+    {
+      "id": "zhang-2019",
+      "type": "article",
+      "authors": [
+        "Zhang, Menghan",
+        "Yan, Shi",
+        "Pan, Wuyun",
+        "Jin, Li"
+      ],
+      "year": 2019,
+      "title": "Phylogenetic evidence for Sino-Tibetan origin in northern China in the Late Neolithic",
+      "journal": "Nature",
+      "volume": "569",
+      "pages": "112–115",
+      "doi": "10.1038/s41586-019-1153-z",
+      "topics": [
+        "methods",
+        "families"
+      ]
+    },
+    {
+      "id": "zipf-1949",
+      "type": "book",
+      "authors": [
+        "Zipf, George Kingsley"
+      ],
+      "year": 1949,
+      "title": "Human Behavior and the Principle of Least Effort",
+      "publisher": "Addison-Wesley",
+      "place": "Cambridge, MA",
+      "topics": [
+        "sound",
+        "foundations"
+      ]
+    }
+  ]
+}

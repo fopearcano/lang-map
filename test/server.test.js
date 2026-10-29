@@ -22,7 +22,7 @@ test('serves the app shell', async () => {
 });
 
 test('serves JavaScript modules with a JavaScript MIME type', async () => {
-  const res = await fetch(`${base}/js/main.js`);
+  const res = await fetch(`${base}/js/app.js`);
   assert.equal(res.status, 200);
   assert.match(res.headers.get('content-type'), /text\/javascript/);
 });
@@ -38,7 +38,22 @@ test('serves the concept map as JSON', async () => {
 test('health endpoint reports counts', async () => {
   const body = await (await fetch(`${base}/api/health`)).json();
   assert.equal(body.status, 'ok');
-  assert.ok(body.nodes > 0);
+  assert.ok(body.concepts > 0 && body.sources > 0 && body.languages > 0);
+});
+
+test('serves the bibliography and language data', async () => {
+  const sources = await (await fetch(`${base}/api/sources`)).json();
+  assert.ok(sources.sources.length > 100);
+  const languages = await (await fetch(`${base}/api/languages`)).json();
+  assert.ok(languages.languages.length > 100);
+});
+
+test('compresses JSON when the client accepts gzip', async () => {
+  const res = await fetch(`${base}/data/land.json`, { headers: { 'Accept-Encoding': 'gzip' } });
+  assert.equal(res.status, 200);
+  assert.equal(res.headers.get('content-encoding'), 'gzip');
+  const land = await res.json(); // fetch decompresses transparently
+  assert.match(land.d, /^M/);
 });
 
 test('unknown paths return 404', async () => {
