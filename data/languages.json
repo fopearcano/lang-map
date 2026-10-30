@@ -17,7 +17,7 @@
   "languages": [
     {
       "id": "pie", "name": "Proto-Indo-European", "family": "indo-european", "branch": "Proto-language", "kind": "proto",
-      "start": -4500, "end": -2500, "era": "c. 4500–2500 BCE (reconstructed)", "at": [40, 48],
+      "start": -4500, "end": -2500, "era": "c. 4500–2500 BCE (reconstructed)", "at": [40, 48], "area": 650,
       "summary": "The reconstructed ancestor of the Indo-European languages. The leading hypothesis places its speakers on the Pontic–Caspian steppe (the Yamnaya horizon); the main alternative is Anatolia several millennia earlier.",
       "night": { "form": "*nókʷts", "cognate": true },
       "concepts": ["language-family", "comparative-method", "phylogenetics"],
@@ -25,7 +25,7 @@
     },
     {
       "id": "hittite", "name": "Hittite", "family": "indo-european", "branch": "Anatolian", "parent": "pie",
-      "start": -1650, "end": -1180, "era": "c. 1650–1180 BCE", "at": [34.6, 40.0],
+      "start": -1650, "end": -1180, "era": "c. 1650–1180 BCE", "at": [34.6, 40.0], "area": 350,
       "summary": "The oldest well-attested Indo-European language, written in cuneiform at Hattusa. Its decipherment by Bedřich Hrozný (1915) revealed consonants (ḫ) where Saussure had predicted lost ‘laryngeal’ sounds.",
       "night": { "form": "nekut- ‘evening’", "cognate": true },
       "concepts": ["comparative-method", "saussure"],
@@ -33,26 +33,26 @@
     },
     {
       "id": "tocharian", "name": "Tocharian", "family": "indo-european", "branch": "Tocharian", "parent": "pie",
-      "start": 500, "end": 800, "era": "attested c. 6th–8th century CE", "at": [83.0, 41.7],
+      "start": 500, "end": 800, "era": "attested c. 6th–8th century CE", "at": [83.0, 41.7], "area": 450,
       "summary": "Two related languages (A and B) known from Buddhist manuscripts found in the oases of the Tarim Basin, the easternmost ancient Indo-European languages.",
       "sources": ["fortson-2010", "woodard-2004"]
     },
     {
       "id": "proto-indo-iranian", "name": "Proto-Indo-Iranian", "family": "indo-european", "branch": "Indo-Iranian", "kind": "proto", "parent": "pie",
-      "start": -2300, "end": -1800, "era": "c. 2300–1800 BCE (reconstructed)", "at": [61, 52],
+      "start": -2300, "end": -1800, "era": "c. 2300–1800 BCE (reconstructed)", "at": [61, 52], "area": 600,
       "summary": "The common ancestor of the Indo-Aryan and Iranian languages, often associated with the Sintashta culture of the southern Urals.",
       "sources": ["anthony-2007", "fortson-2010"]
     },
     {
       "id": "vedic-sanskrit", "name": "Vedic Sanskrit", "family": "indo-european", "branch": "Indo-Aryan", "parent": "proto-indo-iranian",
-      "start": -1500, "end": -500, "era": "c. 1500–500 BCE", "at": [75, 31],
+      "start": -1500, "end": -500, "era": "c. 1500–500 BCE", "at": [75, 31], "area": 450,
       "summary": "The language of the Rigveda, composed in the Punjab and transmitted orally with great precision for centuries before it was written down.",
       "night": { "form": "nákt-", "cognate": true },
       "sources": ["fortson-2010", "woodard-2004"]
     },
     {
       "id": "sanskrit", "name": "Classical Sanskrit", "family": "indo-european", "branch": "Indo-Aryan", "parent": "vedic-sanskrit",
-      "start": -500, "end": null, "era": "from c. 500 BCE", "at": [79, 25.3],
+      "start": -500, "end": null, "era": "from c. 500 BCE", "at": [79, 25.3], "area": false,
       "summary": "The language codified by the grammarian Pāṇini (c. 4th century BCE). It became the pan-Indian language of learning, literature and religion.",
       "afterlife": "Classical and liturgical language today, with few native speakers.",
       "night": { "form": "nakta-", "cognate": true },
@@ -60,13 +60,13 @@
     },
     {
       "id": "prakrit", "name": "Prakrits", "family": "indo-european", "branch": "Middle Indo-Aryan", "parent": "vedic-sanskrit",
-      "start": -500, "end": 1000, "era": "c. 500 BCE – 1000 CE", "at": [85.1, 25.6],
+      "start": -500, "end": 1000, "era": "c. 500 BCE – 1000 CE", "at": [85.1, 25.6], "area": 900,
       "summary": "The vernacular Middle Indo-Aryan languages, including Pali and the language of Ashoka’s inscriptions (3rd century BCE). Most modern Indo-Aryan languages descend from them.",
       "sources": ["fortson-2010", "woodard-2004"]
     },
     {
       "id": "hindustani", "name": "Hindi–Urdu", "family": "indo-european", "branch": "Indo-Aryan", "parent": "prakrit",
-      "start": 1200, "end": null, "era": "from c. 1200", "at": [77.2, 28.6],
+      "start": 1200, "end": null, "era": "from c. 1200", "at": [77.2, 28.6], "area": 800,
       "summary": "Hindustani, the language of the Delhi region, developed two standard registers: Hindi (Devanagari script, Sanskrit vocabulary) and Urdu (Perso-Arabic script, Persian and Arabic vocabulary).",
       "speakers": "≈ 345 million native speakers of Hindi, plus ≈ 70 million of Urdu",
       "night": { "form": "rāt", "cognate": false, "note": "From Sanskrit rātri; the *nókʷts word was lost." },
@@ -74,7 +74,7 @@
     },
     {
       "id": "bengali", "name": "Bengali", "family": "indo-european", "branch": "Indo-Aryan", "parent": "prakrit",
-      "start": 1000, "end": null, "era": "from c. 1000", "at": [89.5, 23.5],
+      "start": 1000, "end": null, "era": "from c. 1000", "at": [89.5, 23.5], "area": 380,
       "summary": "The eastern Indo-Aryan language of Bengal; the Charyapada poems (10th–12th centuries) are its earliest literature.",
       "speakers": "≈ 230 million native speakers",
       "night": { "form": "rat", "cognate": false, "note": "From Sanskrit rātri." },
@@ -82,7 +82,7 @@
     },
     {
       "id": "punjabi", "name": "Punjabi", "family": "indo-european", "branch": "Indo-Aryan", "parent": "prakrit",
-      "start": 1200, "end": null, "era": "from c. 1200", "at": [74.3, 31.5],
+      "start": 1200, "end": null, "era": "from c. 1200", "at": [74.3, 31.5], "area": 300,
       "summary": "One of the few Indo-European languages with lexical tone, which developed when breathy-voiced consonants lost their breathiness (tonogenesis).",
       "night": { "form": "rāt", "cognate": false, "note": "From Sanskrit rātri." },
       "concepts": ["tonogenesis"],
@@ -90,12 +90,12 @@
     },
     {
       "id": "romani", "name": "Romani", "family": "indo-european", "branch": "Indo-Aryan", "parent": "prakrit",
-      "start": 600, "end": null, "era": "left India c. 6th–10th century", "at": [76, 28.5], "homeUntil": 1000, "chain": true,
+      "start": 600, "end": null, "era": "left India c. 6th–10th century", "at": [76, 28.5], "area": false, "homeUntil": 1000, "chain": true,
       "places": [
-        { "from": 1000, "at": [45, 38.5], "label": "Persia and Armenia" },
-        { "from": 1100, "at": [33, 39], "label": "Byzantine Anatolia" },
-        { "from": 1300, "at": [23, 42.5], "label": "The Balkans" },
-        { "from": 1420, "at": [10, 50], "label": "Central and Western Europe" }
+        { "from": 1000, "at": [45, 38.5], "label": "Persia and Armenia", "area": false },
+        { "from": 1100, "at": [33, 39], "label": "Byzantine Anatolia", "area": false },
+        { "from": 1300, "at": [23, 42.5], "label": "The Balkans", "area": false },
+        { "from": 1420, "at": [10, 50], "label": "Central and Western Europe", "area": false }
       ],
       "summary": "An Indo-Aryan language whose speakers left northern India and reached Europe by the 14th century. Loanwords picked up along the way (Persian, Armenian, Greek) trace the route.",
       "night": { "form": "rat", "cognate": false, "note": "From Sanskrit rātri." },
@@ -104,21 +104,21 @@
     },
     {
       "id": "old-persian", "name": "Old Persian", "family": "indo-european", "branch": "Iranian", "parent": "proto-indo-iranian",
-      "start": -525, "end": -300, "era": "c. 525–300 BCE", "at": [52.9, 29.9],
+      "start": -525, "end": -300, "era": "c. 525–300 BCE", "at": [52.9, 29.9], "area": 400,
       "summary": "The language of the Achaemenid royal inscriptions, above all Darius’s trilingual inscription at Behistun (c. 520 BCE).",
       "night": { "form": "xšap-", "cognate": false, "note": "A different Indo-European root." },
       "sources": ["woodard-2004", "fortson-2010"]
     },
     {
       "id": "middle-persian", "name": "Middle Persian", "family": "indo-european", "branch": "Iranian", "parent": "old-persian",
-      "start": -300, "end": 900, "era": "c. 300 BCE – 900 CE", "at": [51.5, 32.6],
+      "start": -300, "end": 900, "era": "c. 300 BCE – 900 CE", "at": [51.5, 32.6], "area": 700,
       "summary": "Pahlavi, the language of the Sasanian Empire and Zoroastrian literature.",
       "night": { "form": "šab", "cognate": false },
       "sources": ["woodard-2004"]
     },
     {
       "id": "persian", "name": "Persian", "family": "indo-european", "branch": "Iranian", "parent": "middle-persian",
-      "start": 800, "end": null, "era": "from c. 800", "at": [51.4, 35.7],
+      "start": 800, "end": null, "era": "from c. 800", "at": [51.4, 35.7], "area": 800,
       "summary": "New Persian (Farsi, Dari, Tajik) emerged after the Arab conquest, written in Arabic script and full of Arabic loanwords, yet grammatically Iranian. Unlike Egypt or Syria, Persia did not shift to Arabic.",
       "night": { "form": "šab", "cognate": false },
       "concepts": ["borrowing"],
@@ -126,16 +126,16 @@
     },
     {
       "id": "mycenaean-greek", "name": "Mycenaean Greek", "family": "indo-european", "branch": "Hellenic", "parent": "pie",
-      "start": -1450, "end": -1200, "era": "c. 1450–1200 BCE", "at": [22.75, 37.73],
+      "start": -1450, "end": -1200, "era": "c. 1450–1200 BCE", "at": [22.75, 37.73], "area": 200,
       "summary": "The earliest attested Greek, written in the Linear B syllabary on palace tablets. Michael Ventris deciphered it in 1952.",
       "sources": ["ventris-chadwick-1953", "horrocks-2010"]
     },
     {
       "id": "ancient-greek", "name": "Ancient Greek", "family": "indo-european", "branch": "Hellenic", "parent": "mycenaean-greek",
-      "start": -800, "end": -300, "era": "c. 800–300 BCE", "at": [23.73, 37.97],
+      "start": -800, "end": -300, "era": "c. 800–300 BCE", "at": [23.73, 37.97], "area": 250,
       "places": [
-        { "from": -750, "at": [16, 39], "label": "Colonies in southern Italy and Sicily" },
-        { "from": -600, "at": [33.5, 44.6], "label": "Black Sea colonies" }
+        { "from": -750, "at": [16, 39], "label": "Colonies in southern Italy and Sicily", "area": 150 },
+        { "from": -600, "at": [33.5, 44.6], "label": "Black Sea colonies", "area": 100 }
       ],
       "summary": "The language of Homer, Herodotus and Plato, spoken in many dialects (Attic, Ionic, Doric, Aeolic) and carried by colonists around the Mediterranean and Black Sea.",
       "night": { "form": "νύξ (núx)", "cognate": true },
@@ -143,9 +143,10 @@
     },
     {
       "id": "koine-greek", "name": "Koine Greek", "family": "indo-european", "branch": "Hellenic", "parent": "ancient-greek",
-      "start": -300, "end": 600, "era": "c. 300 BCE – 600 CE", "at": [29.9, 31.2],
+      "start": -300, "end": 600, "era": "c. 300 BCE – 600 CE", "at": [24, 38.8], "area": 450,
       "places": [
-        { "from": -300, "at": [36.2, 36.2], "label": "Antioch and the Seleucid east" }
+        { "from": -300, "at": [36.2, 36.2], "label": "Antioch and the Seleucid east", "area": 200 },
+        { "from": -300, "at": [29.9, 31.2], "label": "Alexandria and Ptolemaic Egypt", "area": 150 }
       ],
       "summary": "The ‘common’ Greek that spread with Alexander’s conquests, the lingua franca of the eastern Mediterranean and the language of the New Testament.",
       "night": { "form": "νύξ (núx)", "cognate": true },
@@ -153,13 +154,13 @@
     },
     {
       "id": "medieval-greek", "name": "Medieval Greek", "family": "indo-european", "branch": "Hellenic", "parent": "koine-greek",
-      "start": 600, "end": 1453, "era": "c. 600–1453", "at": [28.97, 41.01],
+      "start": 600, "end": 1453, "era": "c. 600–1453", "at": [28.97, 41.01], "area": 450,
       "summary": "The Greek of the Byzantine Empire, centred on Constantinople.",
       "sources": ["horrocks-2010"]
     },
     {
       "id": "greek", "name": "Modern Greek", "family": "indo-european", "branch": "Hellenic", "parent": "medieval-greek",
-      "start": 1453, "end": null, "era": "from 1453", "at": [22.5, 39.0],
+      "start": 1453, "end": null, "era": "from 1453", "at": [22.5, 39.0], "area": 300,
       "summary": "With more than 3,000 years of written records, Greek has one of the longest documented histories of any language.",
       "night": { "form": "νύχτα (níchta)", "cognate": true },
       "concepts": ["sprachbund"],
@@ -167,21 +168,21 @@
     },
     {
       "id": "classical-armenian", "name": "Classical Armenian", "family": "indo-european", "branch": "Armenian", "parent": "pie",
-      "start": 405, "end": 1100, "era": "c. 405–1100", "at": [44.5, 40.2],
+      "start": 405, "end": 1100, "era": "c. 405–1100", "at": [44.5, 40.2], "area": 300,
       "summary": "Grabar, written in the alphabet that Mesrop Mashtots created around 405 CE.",
       "night": { "form": "gišer", "cognate": false },
       "sources": ["fortson-2010", "woodard-2004"]
     },
     {
       "id": "armenian", "name": "Armenian", "family": "indo-european", "branch": "Armenian", "parent": "classical-armenian",
-      "start": 1100, "end": null, "era": "from c. 1100", "at": [45.0, 40.0],
+      "start": 1100, "end": null, "era": "from c. 1100", "at": [45.0, 40.0], "area": 220,
       "summary": "A branch of its own within Indo-European, with Eastern and Western standard varieties.",
       "night": { "form": "gišer", "cognate": false },
       "sources": ["glottolog", "fortson-2010"]
     },
     {
       "id": "albanian", "name": "Albanian", "family": "indo-european", "branch": "Albanian", "parent": "pie",
-      "start": 1462, "end": null, "era": "first written 1462", "at": [19.8, 41.3],
+      "start": 1462, "end": null, "era": "first written 1462", "at": [19.8, 41.3], "area": 150,
       "summary": "A branch of its own within Indo-European, first written in a baptismal formula of 1462. It shares Balkan Sprachbund features, such as a postposed article, with unrelated neighbours.",
       "night": { "form": "natë", "cognate": true },
       "concepts": ["sprachbund"],
@@ -189,41 +190,41 @@
     },
     {
       "id": "proto-balto-slavic", "name": "Proto-Balto-Slavic", "family": "indo-european", "branch": "Balto-Slavic", "kind": "proto", "parent": "pie",
-      "start": -1500, "end": -500, "era": "c. 1500–500 BCE (reconstructed; debated)", "at": [27, 54],
+      "start": -1500, "end": -500, "era": "c. 1500–500 BCE (reconstructed; debated)", "at": [27, 54], "area": 550,
       "summary": "The reconstructed common ancestor of the Baltic and Slavic languages.",
       "sources": ["fortson-2010", "derksen-2008"]
     },
     {
       "id": "old-prussian", "name": "Old Prussian", "family": "indo-european", "branch": "Baltic", "parent": "proto-balto-slavic",
-      "start": 1300, "end": 1700, "era": "c. 1300 – early 18th century", "at": [20.5, 54.7],
+      "start": 1300, "end": 1700, "era": "c. 1300 – early 18th century", "at": [20.5, 54.7], "area": 150,
       "summary": "A West Baltic language recorded in vocabularies and catechisms. It died out in the early 18th century as its speakers shifted to German.",
       "concepts": ["language-shift"],
       "sources": ["fortson-2010"]
     },
     {
       "id": "lithuanian", "name": "Lithuanian", "family": "indo-european", "branch": "Baltic", "parent": "proto-balto-slavic",
-      "start": 1547, "end": null, "era": "first book 1547", "at": [23.9, 54.9],
+      "start": 1547, "end": null, "era": "first book 1547", "at": [23.9, 54.9], "area": 180,
       "summary": "Famously conservative: it preserves a rich case system and pitch accent that resemble reconstructed Proto-Indo-European.",
       "night": { "form": "naktis", "cognate": true },
       "sources": ["fortson-2010", "glottolog"]
     },
     {
       "id": "latvian", "name": "Latvian", "family": "indo-european", "branch": "Baltic", "parent": "proto-balto-slavic",
-      "start": 1585, "end": null, "era": "first book 1585", "at": [24.1, 56.95],
+      "start": 1585, "end": null, "era": "first book 1585", "at": [24.1, 56.95], "area": 170,
       "summary": "The other living Baltic language, with fixed initial stress and a large Low German vocabulary layer.",
       "night": { "form": "nakts", "cognate": true },
       "sources": ["glottolog"]
     },
     {
       "id": "proto-slavic", "name": "Proto-Slavic", "family": "indo-european", "branch": "Slavic", "kind": "proto", "parent": "proto-balto-slavic",
-      "start": 500, "end": 1000, "era": "c. 500–1000 CE (reconstructed)", "at": [27, 51],
+      "start": 500, "end": 1000, "era": "c. 500–1000 CE (reconstructed)", "at": [27, 51], "area": 550,
       "summary": "The common Slavic language, which spread rapidly across eastern and central Europe and the Balkans from the 6th century.",
       "night": { "form": "*noťь", "cognate": true },
       "sources": ["derksen-2008", "fortson-2010"]
     },
     {
       "id": "old-church-slavonic", "name": "Old Church Slavonic", "family": "indo-european", "branch": "South Slavic", "parent": "proto-slavic",
-      "start": 863, "end": 1100, "era": "from 863", "at": [20.8, 41.1],
+      "start": 863, "end": 1100, "era": "from 863", "at": [20.8, 41.1], "area": false,
       "summary": "The first written Slavic language, created for the mission of Cyril and Methodius (863) and cultivated at Ohrid and Preslav.",
       "afterlife": "Survives as Church Slavonic, the liturgical language of Orthodox Slavs.",
       "night": { "form": "нощь (noštĭ)", "cognate": true },
@@ -231,15 +232,18 @@
     },
     {
       "id": "old-east-slavic", "name": "Old East Slavic", "family": "indo-european", "branch": "East Slavic", "parent": "proto-slavic",
-      "start": 1000, "end": 1400, "era": "c. 1000–1400", "at": [30.52, 50.45],
+      "start": 1000, "end": 1400, "era": "c. 1000–1400", "at": [30.52, 50.45], "area": 700,
       "summary": "The language of Kievan Rus’, known from chronicles and the birch-bark letters of Novgorod.",
       "night": { "form": "ночь (nočĭ)", "cognate": true },
       "sources": ["glottolog"]
     },
     {
       "id": "russian", "name": "Russian", "family": "indo-european", "branch": "East Slavic", "parent": "old-east-slavic",
-      "start": 1400, "end": null, "era": "from c. 1400", "at": [37.62, 55.75],
-      "places": [ { "from": 1600, "at": [85, 56], "label": "Siberia (from the late 16th century)" } ],
+      "start": 1400, "end": null, "era": "from c. 1400", "at": [37.62, 55.75], "area": 900,
+      "places": [
+        { "from": 1600, "at": [85, 56], "label": "Siberia (from the late 16th century)", "area": 1500, "grow": 250 },
+        { "from": 1632, "at": [125, 56], "label": "Eastern Siberia (Yakutsk 1632, Okhotsk 1647)", "area": 1200, "grow": 250 }
+      ],
       "summary": "Moscow’s language spread east with Russian expansion across Siberia to the Pacific.",
       "speakers": "≈ 145 million native speakers",
       "night": { "form": "ночь (noch’)", "cognate": true },
@@ -247,35 +251,35 @@
     },
     {
       "id": "ukrainian", "name": "Ukrainian", "family": "indo-european", "branch": "East Slavic", "parent": "old-east-slavic",
-      "start": 1400, "end": null, "era": "from c. 1400", "at": [31.5, 49.0],
+      "start": 1400, "end": null, "era": "from c. 1400", "at": [31.5, 49.0], "area": 380,
       "summary": "An East Slavic language that developed its own standard in the 19th century.",
       "night": { "form": "ніч (nich)", "cognate": true },
       "sources": ["glottolog"]
     },
     {
       "id": "polish", "name": "Polish", "family": "indo-european", "branch": "West Slavic", "parent": "proto-slavic",
-      "start": 1000, "end": null, "era": "first sentence written 1270", "at": [19.94, 50.06],
+      "start": 1000, "end": null, "era": "first sentence written 1270", "at": [19.94, 50.06], "area": 300,
       "summary": "A West Slavic language and one of the few Slavic languages to keep the nasal vowels of Proto-Slavic.",
       "night": { "form": "noc", "cognate": true },
       "sources": ["glottolog"]
     },
     {
       "id": "czech", "name": "Czech", "family": "indo-european", "branch": "West Slavic", "parent": "proto-slavic",
-      "start": 1000, "end": null, "era": "texts from the 13th century", "at": [14.42, 50.09],
+      "start": 1000, "end": null, "era": "texts from the 13th century", "at": [14.42, 50.09], "area": 200,
       "summary": "A West Slavic language whose spelling reform (attributed to Jan Hus, early 15th century) introduced diacritics such as the háček, later adopted by other languages.",
       "night": { "form": "noc", "cognate": true },
       "sources": ["glottolog"]
     },
     {
       "id": "bcms", "name": "Bosnian–Croatian–Montenegrin–Serbian", "family": "indo-european", "branch": "South Slavic", "parent": "proto-slavic",
-      "start": 1100, "end": null, "era": "from c. 1100", "at": [18.4, 43.9],
+      "start": 1100, "end": null, "era": "from c. 1100", "at": [18.4, 43.9], "area": 260,
       "summary": "One South Slavic language with several national standards, written in Latin and Cyrillic scripts.",
       "night": { "form": "noć", "cognate": true },
       "sources": ["glottolog"]
     },
     {
       "id": "bulgarian", "name": "Bulgarian", "family": "indo-european", "branch": "South Slavic", "parent": "old-church-slavonic",
-      "start": 1100, "end": null, "era": "from c. 1100", "at": [23.32, 42.7],
+      "start": 1100, "end": null, "era": "from c. 1100", "at": [23.32, 42.7], "area": 230,
       "summary": "A South Slavic language that, through Balkan contact, lost its noun cases and gained a definite article placed after the noun (вълкът ‘the wolf’).",
       "night": { "form": "нощ (nosht)", "cognate": true },
       "concepts": ["sprachbund", "synthetic-analytic"],
@@ -283,7 +287,7 @@
     },
     {
       "id": "proto-germanic", "name": "Proto-Germanic", "family": "indo-european", "branch": "Germanic", "kind": "proto", "parent": "pie",
-      "start": -500, "end": 200, "era": "c. 500 BCE – 200 CE (reconstructed)", "at": [10, 55.5],
+      "start": -500, "end": 200, "era": "c. 500 BCE – 200 CE (reconstructed)", "at": [10, 55.5], "area": 450,
       "summary": "The ancestor of the Germanic languages, set apart from the rest of Indo-European by Grimm’s and Verner’s Laws and by fixed stress on the first syllable.",
       "night": { "form": "*nahts", "cognate": true },
       "concepts": ["grimms-law", "verners-law"],
@@ -291,19 +295,19 @@
     },
     {
       "id": "gothic", "name": "Gothic", "family": "indo-european", "branch": "East Germanic", "parent": "proto-germanic",
-      "start": 350, "end": 600, "era": "Bible translation c. 350", "at": [25.5, 43.6],
+      "start": 350, "end": 600, "era": "Bible translation c. 350", "at": [25.5, 43.6], "area": 300,
       "summary": "Known mainly from Bishop Wulfila’s 4th-century Bible translation; the only well-attested East Germanic language. A form of it (Crimean Gothic) was still recorded in the 16th century.",
       "night": { "form": "nahts", "cognate": true },
       "sources": ["ringe-2006", "woodard-2004"]
     },
     {
       "id": "old-norse", "name": "Old Norse", "family": "indo-european", "branch": "North Germanic", "parent": "proto-germanic",
-      "start": 800, "end": 1350, "era": "c. 800–1350", "at": [13, 60],
+      "start": 800, "end": 1350, "era": "c. 800–1350", "at": [13, 60], "area": 600,
       "places": [
-        { "from": 865, "until": 1100, "at": [-1.1, 53.96], "label": "The Danelaw in England" },
-        { "from": 870, "at": [-21.9, 64.1], "label": "Iceland (settled c. 870)" },
-        { "from": 911, "until": 1000, "at": [0.5, 49.2], "label": "Normandy" },
-        { "from": 985, "until": 1450, "at": [-45.5, 61], "label": "Norse Greenland" }
+        { "from": 865, "until": 1100, "at": [-1.1, 53.96], "label": "The Danelaw in England", "area": 200 },
+        { "from": 870, "at": [-21.9, 64.1], "label": "Iceland (settled c. 870)", "area": 220 },
+        { "from": 911, "until": 1000, "at": [0.5, 49.2], "label": "Normandy", "area": 100 },
+        { "from": 985, "until": 1450, "at": [-45.5, 61], "label": "Norse Greenland", "area": 150 }
       ],
       "summary": "The language of the Viking Age and the sagas, carried west to the British Isles, Normandy, Iceland and Greenland.",
       "night": { "form": "nátt / nótt", "cognate": true },
@@ -312,7 +316,7 @@
     },
     {
       "id": "icelandic", "name": "Icelandic", "family": "indo-european", "branch": "North Germanic", "parent": "old-norse",
-      "start": 1350, "end": null, "era": "from c. 1350", "at": [-19, 64.9],
+      "start": 1350, "end": null, "era": "from c. 1350", "at": [-19, 64.9], "area": 220,
       "summary": "Changed so little in its written form that Icelanders can still read the medieval sagas; it famously embarrassed glottochronology’s constant-rate assumption.",
       "night": { "form": "nótt", "cognate": true },
       "concepts": ["glottochronology"],
@@ -320,14 +324,14 @@
     },
     {
       "id": "swedish", "name": "Swedish", "family": "indo-european", "branch": "North Germanic", "parent": "old-norse",
-      "start": 1225, "end": null, "era": "from c. 1225", "at": [18.07, 59.33],
+      "start": 1225, "end": null, "era": "from c. 1225", "at": [18.07, 59.33], "area": 400,
       "summary": "An East Scandinavian language, largely mutually intelligible with Norwegian and (in writing) Danish.",
       "night": { "form": "natt", "cognate": true },
       "sources": ["glottolog"]
     },
     {
       "id": "danish", "name": "Danish", "family": "indo-european", "branch": "North Germanic", "parent": "old-norse",
-      "start": 1200, "end": null, "era": "from c. 1200", "at": [10.5, 55.9],
+      "start": 1200, "end": null, "era": "from c. 1200", "at": [10.5, 55.9], "area": 220,
       "summary": "An East Scandinavian language known for extensive consonant weakening (lenition) in speech.",
       "night": { "form": "nat", "cognate": true },
       "concepts": ["lenition"],
@@ -335,7 +339,7 @@
     },
     {
       "id": "norwegian", "name": "Norwegian", "family": "indo-european", "branch": "North Germanic", "parent": "old-norse",
-      "start": 1350, "end": null, "era": "from c. 1350", "at": [9, 61.3],
+      "start": 1350, "end": null, "era": "from c. 1350", "at": [9, 61.3], "area": 400,
       "summary": "A West Scandinavian language with two written standards, Bokmål and Nynorsk, and strong spoken dialect diversity.",
       "night": { "form": "natt", "cognate": true },
       "concepts": ["dialect-continuum"],
@@ -343,7 +347,7 @@
     },
     {
       "id": "old-english", "name": "Old English", "family": "indo-european", "branch": "West Germanic", "parent": "proto-germanic",
-      "start": 450, "end": 1150, "era": "c. 450–1150", "at": [-1.3, 51.06],
+      "start": 450, "end": 1150, "era": "c. 450–1150", "at": [-1.3, 51.06], "area": 300,
       "summary": "Brought to Britain by Angles, Saxons and Jutes from the 5th century. It had four cases, three genders and verb-second word order; Beowulf is its best-known poem.",
       "night": { "form": "niht", "cognate": true },
       "concepts": ["synthetic-analytic", "word-order", "language-split"],
@@ -351,7 +355,7 @@
     },
     {
       "id": "middle-english", "name": "Middle English", "family": "indo-european", "branch": "West Germanic", "parent": "old-english",
-      "start": 1150, "end": 1500, "era": "c. 1150–1500", "at": [-0.12, 51.5],
+      "start": 1150, "end": 1500, "era": "c. 1150–1500", "at": [-0.12, 51.5], "area": 300,
       "summary": "The English of Chaucer, transformed by the loss of inflections and by thousands of Norman French loanwords.",
       "night": { "form": "niht / nyght", "cognate": true },
       "concepts": ["borrowing", "synthetic-analytic", "jespersen-cycle"],
@@ -359,12 +363,17 @@
     },
     {
       "id": "english", "name": "English", "family": "indo-european", "branch": "West Germanic", "parent": "middle-english",
-      "start": 1500, "end": null, "era": "from c. 1500", "at": [-1.8, 52.6],
+      "start": 1500, "end": null, "era": "from c. 1500", "at": [-1.8, 52.6], "area": 330,
       "places": [
-        { "from": 1607, "at": [-76.8, 37.2], "label": "North America (Jamestown, 1607)" },
-        { "from": 1788, "at": [151.2, -33.87], "label": "Australia (1788)" },
-        { "from": 1820, "at": [25.6, -33.96], "label": "South Africa (1820 settlers)" },
-        { "from": 1840, "at": [174.78, -41.29], "label": "New Zealand (1840)" }
+        { "from": 1607, "at": [-76.8, 37.2], "label": "North America (Jamestown, 1607)", "area": 1100, "grow": 200 },
+        { "from": 1783, "at": [-79.4, 43.7], "label": "Upper Canada (Loyalist settlers, from the 1780s)", "area": 450 },
+        { "from": 1788, "at": [151.2, -33.87], "label": "Australia (1788)", "area": 1100, "grow": 120 },
+        { "from": 1795, "at": [-89, 40.5], "label": "The Ohio Valley and the Midwest (from the 1790s)", "area": 800, "grow": 60 },
+        { "from": 1820, "at": [25.6, -33.96], "label": "South Africa (1820 settlers)", "area": 250 },
+        { "from": 1829, "at": [115.86, -31.95], "label": "Western Australia (Swan River Colony, 1829)", "area": 600, "grow": 100 },
+        { "from": 1840, "at": [174.78, -41.29], "label": "New Zealand (1840)", "area": 600, "grow": 80 },
+        { "from": 1848, "at": [-112, 40], "label": "The American West (from the 1840s)", "area": 1300, "grow": 60 },
+        { "from": 1880, "at": [-108, 52], "label": "The Canadian Prairies (settled from the 1880s)", "area": 900, "grow": 50 }
       ],
       "summary": "Early Modern and Modern English: the Great Vowel Shift, the rise of do-support, the loss of thou, and global spread with colonisation, trade and, later, technology.",
       "speakers": "≈ 380 million native speakers; far more as a second language",
@@ -374,7 +383,7 @@
     },
     {
       "id": "scots", "name": "Scots", "family": "indo-european", "branch": "West Germanic", "parent": "middle-english",
-      "start": 1375, "end": null, "era": "from c. 1375", "at": [-3.19, 55.95],
+      "start": 1375, "end": null, "era": "from c. 1375", "at": [-3.19, 55.95], "area": 170,
       "summary": "Descended from Northern Middle English; the language of the Scottish court and its poets before the Union of the Crowns in 1603.",
       "night": { "form": "nicht", "cognate": true },
       "concepts": ["dialect-continuum", "standardization"],
@@ -382,7 +391,7 @@
     },
     {
       "id": "old-high-german", "name": "Old High German", "family": "indo-european", "branch": "West Germanic", "parent": "proto-germanic",
-      "start": 750, "end": 1050, "era": "c. 750–1050", "at": [9.5, 48.8],
+      "start": 750, "end": 1050, "era": "c. 750–1050", "at": [9.5, 48.8], "area": 330,
       "summary": "The southern German dialects that underwent the High German consonant shift (p, t, k → pf/ff, ts/ss, ch).",
       "night": { "form": "naht", "cognate": true },
       "concepts": ["high-german-shift", "wave-model"],
@@ -390,14 +399,14 @@
     },
     {
       "id": "middle-high-german", "name": "Middle High German", "family": "indo-european", "branch": "West Germanic", "parent": "old-high-german",
-      "start": 1050, "end": 1350, "era": "c. 1050–1350", "at": [11, 49.5],
+      "start": 1050, "end": 1350, "era": "c. 1050–1350", "at": [11, 49.5], "area": 350,
       "summary": "The language of the Nibelungenlied and courtly poetry.",
       "night": { "form": "naht", "cognate": true },
       "sources": ["glottolog"]
     },
     {
       "id": "german", "name": "German", "family": "indo-european", "branch": "West Germanic", "parent": "middle-high-german",
-      "start": 1350, "end": null, "era": "from c. 1350", "at": [10.45, 51.17],
+      "start": 1350, "end": null, "era": "from c. 1350", "at": [10.45, 51.17], "area": 380,
       "summary": "Standard German grew from East Central German varieties, helped by printing and Luther’s Bible translation (1522–1534).",
       "night": { "form": "Nacht", "cognate": true },
       "concepts": ["standardization", "dialect-continuum"],
@@ -405,10 +414,10 @@
     },
     {
       "id": "yiddish", "name": "Yiddish", "family": "indo-european", "branch": "West Germanic", "parent": "middle-high-german",
-      "start": 1100, "end": null, "era": "from c. 1100", "at": [8.3, 50.0], "homeUntil": 1800,
+      "start": 1100, "end": null, "era": "from c. 1100", "at": [8.3, 50.0], "area": false, "homeUntil": 1800,
       "places": [
-        { "from": 1300, "at": [25.3, 54.7], "label": "Eastern Europe" },
-        { "from": 1880, "at": [-74.0, 40.7], "label": "New York and the Americas (from the 1880s)" }
+        { "from": 1300, "at": [25.3, 54.7], "label": "Eastern Europe", "area": false },
+        { "from": 1880, "at": [-74, 40.7], "label": "New York and the Americas (from the 1880s)", "area": false }
       ],
       "summary": "The language of Ashkenazi Jews: a Germanic base with Hebrew–Aramaic and Slavic components, written in Hebrew script. Its centre moved east, and later across the Atlantic.",
       "night": { "form": "נאַכט (nakht)", "cognate": true },
@@ -417,14 +426,14 @@
     },
     {
       "id": "old-dutch", "name": "Old Dutch", "family": "indo-european", "branch": "West Germanic", "parent": "proto-germanic",
-      "start": 500, "end": 1150, "era": "c. 500–1150", "at": [5.12, 52.09],
+      "start": 500, "end": 1150, "era": "c. 500–1150", "at": [5.12, 52.09], "area": 170,
       "summary": "Old Low Franconian, sparsely attested; ‘Hebban olla vogala…’ (c. 1100) is its best-known line.",
       "night": { "form": "naht", "cognate": true },
       "sources": ["glottolog"]
     },
     {
       "id": "dutch", "name": "Dutch", "family": "indo-european", "branch": "West Germanic", "parent": "old-dutch",
-      "start": 1150, "end": null, "era": "from c. 1150", "at": [4.9, 52.37],
+      "start": 1150, "end": null, "era": "from c. 1150", "at": [4.9, 52.37], "area": 170,
       "summary": "A West Germanic language that did not undergo the High German consonant shift (maken, not machen).",
       "night": { "form": "nacht", "cognate": true },
       "concepts": ["high-german-shift"],
@@ -432,7 +441,7 @@
     },
     {
       "id": "afrikaans", "name": "Afrikaans", "family": "indo-european", "branch": "West Germanic", "parent": "dutch",
-      "start": 1700, "end": null, "era": "from the 18th century", "at": [18.42, -33.92],
+      "start": 1700, "end": null, "era": "from the 18th century", "at": [18.42, -33.92], "area": 450,
       "summary": "Developed from the Dutch of the Cape Colony (founded 1652), restructured through contact with Khoekhoe, Malay, Portuguese and other languages; an official language since 1925.",
       "night": { "form": "nag", "cognate": true },
       "concepts": ["contact", "language-split"],
@@ -440,13 +449,13 @@
     },
     {
       "id": "latin", "name": "Latin", "family": "indo-european", "branch": "Italic", "parent": "pie",
-      "start": -600, "end": 600, "era": "c. 600 BCE – 600 CE as a spoken mother tongue", "at": [12.5, 41.9],
+      "start": -600, "end": 600, "era": "c. 600 BCE – 600 CE as a spoken mother tongue", "at": [12.5, 41.9], "area": 450,
       "places": [
-        { "from": -218, "at": [-4, 40], "label": "Hispania (from 218 BCE)" },
-        { "from": -146, "at": [10.3, 36.85], "label": "Roman Africa (from 146 BCE)" },
-        { "from": -50, "at": [2.5, 46.5], "label": "Gaul (conquered 58–50 BCE)" },
-        { "from": 43, "until": 410, "at": [-1.5, 52], "label": "Britain (43–410 CE)" },
-        { "from": 106, "at": [24.5, 45.5], "label": "Dacia (from 106 CE)" }
+        { "from": -218, "at": [-4, 40], "label": "Hispania (from 218 BCE)", "area": 500 },
+        { "from": -146, "at": [10.3, 36.85], "label": "Roman Africa (from 146 BCE)", "area": 300 },
+        { "from": -50, "at": [2.5, 46.5], "label": "Gaul (conquered 58–50 BCE)", "area": 500 },
+        { "from": 43, "until": 410, "at": [-1.5, 52], "label": "Britain (43–410 CE)", "area": false },
+        { "from": 106, "at": [24.5, 45.5], "label": "Dacia (from 106 CE)", "area": 250 }
       ],
       "summary": "The language of Rome, spread by conquest across the western Mediterranean. As the empire fragmented, spoken Latin drifted into the Romance languages; in Britain and North Africa it did not survive.",
       "afterlife": "Remained the written language of scholarship, law and the Church; still liturgical today.",
@@ -456,8 +465,10 @@
     },
     {
       "id": "old-french", "name": "Old French", "family": "indo-european", "branch": "Romance", "parent": "latin",
-      "start": 842, "end": 1350, "era": "842 (Strasbourg Oaths) – c. 1350", "at": [2.35, 48.86],
-      "places": [ { "from": 1066, "until": 1400, "at": [-0.5, 51.8], "label": "Anglo-Norman England (after 1066)" } ],
+      "start": 842, "end": 1350, "era": "842 (Strasbourg Oaths) – c. 1350", "at": [2.35, 48.86], "area": 400,
+      "places": [
+        { "from": 1066, "until": 1400, "at": [-0.5, 51.8], "label": "Anglo-Norman England (after 1066)", "area": false }
+      ],
       "summary": "First recorded in the Strasbourg Oaths of 842. After 1066 its Norman variety became the language of England’s ruling class and left thousands of words in English.",
       "night": { "form": "nuit", "cognate": true },
       "concepts": ["language-split", "borrowing", "jespersen-cycle"],
@@ -465,10 +476,10 @@
     },
     {
       "id": "french", "name": "French", "family": "indo-european", "branch": "Romance", "parent": "old-french",
-      "start": 1350, "end": null, "era": "from c. 1350", "at": [2.4, 46.9],
+      "start": 1350, "end": null, "era": "from c. 1350", "at": [2.4, 46.9], "area": 420,
       "places": [
-        { "from": 1608, "at": [-71.2, 46.8], "label": "Quebec (from 1608)" },
-        { "from": 1880, "at": [-1.5, 12.4], "label": "West and Central Africa (mostly as a second language, from the late 19th century)" }
+        { "from": 1608, "at": [-71.2, 46.8], "label": "Quebec (from 1608)", "area": 500, "grow": 150 },
+        { "from": 1880, "at": [-1.5, 12.4], "label": "West and Central Africa (mostly as a second language, from the late 19th century)", "area": false }
       ],
       "summary": "Standardised early (the Académie française dates from 1635). French has gone round Jespersen’s Cycle (ne … pas → pas) and is cycling its future tense (chanterai → je vais chanter).",
       "speakers": "≈ 74 million native speakers; many more as a second language",
@@ -478,7 +489,7 @@
     },
     {
       "id": "haitian-creole", "name": "Haitian Creole", "family": "other", "familyName": "Creole (French-lexified)", "branch": "French-based creole", "parent": "french", "relation": "contact",
-      "start": 1700, "end": null, "era": "from c. 1700", "at": [-72.34, 18.54],
+      "start": 1700, "end": null, "era": "from c. 1700", "at": [-72.34, 18.54], "area": 200,
       "summary": "Formed in the plantation colony of Saint-Domingue from French vocabulary and West African (especially Gbe) grammatical patterns. Many nouns fused with the French article.",
       "speakers": "≈ 12 million speakers",
       "night": { "form": "lannwit", "cognate": true, "note": "From French la nuit, with the article fused to the noun (reanalysis)." },
@@ -487,20 +498,24 @@
     },
     {
       "id": "old-spanish", "name": "Old Spanish", "family": "indo-european", "branch": "Romance", "parent": "latin",
-      "start": 950, "end": 1492, "era": "c. 950–1492", "at": [-3.7, 42.34],
+      "start": 950, "end": 1492, "era": "c. 950–1492", "at": [-3.7, 42.34], "area": 300,
       "summary": "Castilian, from the northern county of Castile, spread south with the Reconquista.",
       "night": { "form": "noche", "cognate": true },
       "sources": ["penny-2002"]
     },
     {
       "id": "spanish", "name": "Spanish", "family": "indo-european", "branch": "Romance", "parent": "old-spanish",
-      "start": 1492, "end": null, "era": "from 1492 (Nebrija’s grammar)", "at": [-3.7, 40.42],
+      "start": 1492, "end": null, "era": "from 1492 (Nebrija’s grammar)", "at": [-3.7, 40.42], "area": 450,
       "places": [
-        { "from": 1493, "at": [-69.9, 18.5], "label": "Hispaniola (1493)" },
-        { "from": 1521, "at": [-99.13, 19.43], "label": "Mexico (1521)" },
-        { "from": 1532, "at": [-77.04, -12.05], "label": "Peru (1532)" },
-        { "from": 1565, "at": [120.98, 14.6], "label": "Philippines (colonial language; few native speakers today)" },
-        { "from": 1580, "at": [-58.38, -34.6], "label": "Río de la Plata (1580)" }
+        { "from": 1493, "at": [-69.9, 18.5], "label": "Hispaniola (1493)", "area": 250 },
+        { "from": 1511, "at": [-79.5, 21.8], "label": "Cuba (from 1511)", "area": 400 },
+        { "from": 1521, "at": [-99.13, 19.43], "label": "Mexico (1521)", "area": 1100, "grow": 250 },
+        { "from": 1524, "at": [-90.5, 14.6], "label": "Central America (Guatemala, from 1524)", "area": 500, "grow": 200 },
+        { "from": 1532, "at": [-77.04, -12.05], "label": "Peru (1532)", "area": 900, "grow": 250 },
+        { "from": 1538, "at": [-74.1, 4.6], "label": "New Granada (Bogotá, founded 1538)", "area": 800, "grow": 200 },
+        { "from": 1541, "at": [-70.65, -33.45], "label": "Chile (Santiago, founded 1541)", "area": 600, "grow": 200 },
+        { "from": 1565, "at": [120.98, 14.6], "label": "Philippines (colonial language; few native speakers today)", "area": false },
+        { "from": 1580, "at": [-58.38, -34.6], "label": "Río de la Plata (1580)", "area": 900, "grow": 250 }
       ],
       "summary": "Spread across the Americas from 1492; today the world’s second-largest language by native speakers. Its sound history shows lenition (vita → vida) and the b/v merger.",
       "speakers": "≈ 485 million native speakers",
@@ -510,17 +525,18 @@
     },
     {
       "id": "galician-portuguese", "name": "Galician-Portuguese", "family": "indo-european", "branch": "Romance", "parent": "latin",
-      "start": 1100, "end": 1350, "era": "c. 1100–1350", "at": [-8.54, 42.88],
+      "start": 1100, "end": 1350, "era": "c. 1100–1350", "at": [-8.54, 42.88], "area": 220,
       "summary": "The medieval language of the northwestern Iberian Peninsula and of the cantigas, lyric poetry admired across Iberia.",
       "night": { "form": "noite", "cognate": true },
       "sources": ["ledgeway-maiden-2016"]
     },
     {
       "id": "portuguese", "name": "Portuguese", "family": "indo-european", "branch": "Romance", "parent": "galician-portuguese",
-      "start": 1350, "end": null, "era": "from c. 1350", "at": [-8.6, 39.6],
+      "start": 1350, "end": null, "era": "from c. 1350", "at": [-8.6, 39.6], "area": 250,
       "places": [
-        { "from": 1500, "at": [-38.5, -12.97], "label": "Brazil (from 1500)" },
-        { "from": 1575, "at": [13.23, -8.84], "label": "Angola (from 1575)" }
+        { "from": 1500, "at": [-38.5, -12.97], "label": "Brazil (from 1500)", "area": 1100, "grow": 250 },
+        { "from": 1575, "at": [13.23, -8.84], "label": "Angola (from 1575)", "area": false },
+        { "from": 1695, "at": [-44.5, -19.5], "label": "Minas Gerais (gold rush from the 1690s)", "area": 900, "grow": 120 }
       ],
       "summary": "Carried across the Atlantic and Indian Oceans by Portuguese navigators; most of its speakers today are Brazilian.",
       "speakers": "over 230 million native speakers",
@@ -529,14 +545,14 @@
     },
     {
       "id": "catalan", "name": "Catalan", "family": "indo-european", "branch": "Romance", "parent": "latin",
-      "start": 1100, "end": null, "era": "texts from the 12th century", "at": [2.17, 41.39],
+      "start": 1100, "end": null, "era": "texts from the 12th century", "at": [2.17, 41.39], "area": 200,
       "summary": "A Romance language of Catalonia, Valencia, the Balearic Islands and Andorra, with a rich medieval literature.",
       "night": { "form": "nit", "cognate": true },
       "sources": ["ledgeway-maiden-2016"]
     },
     {
       "id": "italian", "name": "Italian", "family": "indo-european", "branch": "Romance", "parent": "latin",
-      "start": 960, "end": null, "era": "from 960 (Placiti Cassinesi)", "at": [11.26, 43.77],
+      "start": 960, "end": null, "era": "from 960 (Placiti Cassinesi)", "at": [11.26, 43.77], "area": 400,
       "summary": "Standard Italian is based on the Tuscan of Dante, Petrarch and Boccaccio. Italian keeps Latin’s assimilated consonant clusters (octo → otto, noctem → notte).",
       "speakers": "≈ 65 million native speakers",
       "night": { "form": "notte", "cognate": true },
@@ -545,7 +561,7 @@
     },
     {
       "id": "romanian", "name": "Romanian", "family": "indo-european", "branch": "Romance", "parent": "latin",
-      "start": 900, "end": null, "era": "first written text 1521", "at": [26.1, 44.43],
+      "start": 900, "end": null, "era": "first written text 1521", "at": [26.1, 44.43], "area": 350,
       "summary": "The easternmost Romance language, isolated from the others for over a millennium. It keeps some noun cases and shares Balkan features such as the postposed article (lupul ‘the wolf’).",
       "night": { "form": "noapte", "cognate": true },
       "concepts": ["sprachbund", "language-split"],
@@ -553,26 +569,26 @@
     },
     {
       "id": "proto-celtic", "name": "Proto-Celtic", "family": "indo-european", "branch": "Celtic", "kind": "proto", "parent": "pie",
-      "start": -1300, "end": -800, "era": "c. 1300–800 BCE (reconstructed; homeland debated)", "at": [8, 48],
+      "start": -1300, "end": -800, "era": "c. 1300–800 BCE (reconstructed; homeland debated)", "at": [8, 48], "area": 550,
       "summary": "The ancestor of the Celtic languages. Whether it arose in central Europe or along the Atlantic coast is debated.",
       "sources": ["ball-muller-2009", "fortson-2010"]
     },
     {
       "id": "gaulish", "name": "Gaulish", "family": "indo-european", "branch": "Continental Celtic", "parent": "proto-celtic",
-      "start": -300, "end": 500, "era": "c. 300 BCE – 500 CE", "at": [3.0, 46.5],
+      "start": -300, "end": 500, "era": "c. 300 BCE – 500 CE", "at": [3.0, 46.5], "area": 450,
       "summary": "The Celtic language of Gaul, known from inscriptions and the Coligny calendar. Its speakers shifted to Latin under Roman rule.",
       "concepts": ["language-shift", "substrate"],
       "sources": ["ball-muller-2009", "woodard-2004"]
     },
     {
       "id": "common-brittonic", "name": "Common Brittonic", "family": "indo-european", "branch": "Brittonic", "kind": "proto", "parent": "proto-celtic",
-      "start": -500, "end": 600, "era": "c. 500 BCE – 600 CE", "at": [-2.2, 52.6],
+      "start": -500, "end": 600, "era": "c. 500 BCE – 600 CE", "at": [-2.2, 52.6], "area": 350,
       "summary": "The Celtic language of Roman Britain, ancestor of Welsh, Cornish and Breton.",
       "sources": ["ball-muller-2009"]
     },
     {
       "id": "welsh", "name": "Welsh", "family": "indo-european", "branch": "Brittonic", "parent": "common-brittonic",
-      "start": 550, "end": null, "era": "from c. 550", "at": [-3.8, 52.4],
+      "start": 550, "end": null, "era": "from c. 550", "at": [-3.8, 52.4], "area": 130,
       "summary": "The most widely spoken Celtic language today, with literature going back to the 6th-century poets Aneirin and Taliesin.",
       "speakers": "≈ 540,000 speakers (2021 census)",
       "night": { "form": "nos", "cognate": true },
@@ -580,7 +596,7 @@
     },
     {
       "id": "cornish", "name": "Cornish", "family": "indo-european", "branch": "Brittonic", "parent": "common-brittonic",
-      "start": 600, "end": null, "era": "from c. 600; traditional use ended in the late 18th century", "at": [-5.05, 50.26], "status": "revived",
+      "start": 600, "end": null, "era": "from c. 600; traditional use ended in the late 18th century", "at": [-5.05, 50.26], "area": 70, "status": "revived",
       "summary": "Lost its last traditional speakers in the late 18th century (Dolly Pentreath, d. 1777, is the traditional symbol) and was revived by learners in the 20th century.",
       "night": { "form": "nos", "cognate": true },
       "concepts": ["language-shift"],
@@ -588,21 +604,21 @@
     },
     {
       "id": "breton", "name": "Breton", "family": "indo-european", "branch": "Brittonic", "parent": "common-brittonic",
-      "start": 600, "end": null, "era": "from c. 600", "at": [-3.5, 48.2],
+      "start": 600, "end": null, "era": "from c. 600", "at": [-3.5, 48.2], "area": 120,
       "summary": "Taken from Britain to Brittany by migrants in the 5th–6th centuries, so its closest relatives are Cornish and Welsh rather than Gaulish.",
       "night": { "form": "noz", "cognate": true },
       "sources": ["ball-muller-2009"]
     },
     {
       "id": "old-irish", "name": "Old Irish", "family": "indo-european", "branch": "Goidelic", "parent": "proto-celtic",
-      "start": 600, "end": 900, "era": "c. 600–900", "at": [-7.5, 53.3],
+      "start": 600, "end": 900, "era": "c. 600–900", "at": [-7.5, 53.3], "area": 250,
       "summary": "Known from glosses in monastic manuscripts, with a famously complex verb system.",
       "night": { "form": "adaig", "cognate": false, "note": "The old root survives in in-nocht ‘tonight’." },
       "sources": ["ball-muller-2009"]
     },
     {
       "id": "irish", "name": "Irish", "family": "indo-european", "branch": "Goidelic", "parent": "old-irish",
-      "start": 1200, "end": null, "era": "from c. 1200", "at": [-9.0, 53.27],
+      "start": 1200, "end": null, "era": "from c. 1200", "at": [-9.0, 53.27], "area": 200,
       "summary": "Once spoken across Ireland; the shift to English accelerated after the Famine of the 1840s. Today it is an official language with a small community of daily speakers.",
       "night": { "form": "oíche", "cognate": false, "note": "anocht ‘tonight’ keeps the old root." },
       "concepts": ["language-shift"],
@@ -610,15 +626,17 @@
     },
     {
       "id": "scottish-gaelic", "name": "Scottish Gaelic", "family": "indo-european", "branch": "Goidelic", "parent": "old-irish",
-      "start": 1200, "end": null, "era": "from c. 1200", "at": [-6.3, 57.4],
-      "places": [ { "from": 1773, "at": [-61.5, 45.6], "label": "Cape Breton, Nova Scotia (from 1773)" } ],
+      "start": 1200, "end": null, "era": "from c. 1200", "at": [-6.3, 57.4], "area": 160,
+      "places": [
+        { "from": 1773, "at": [-61.5, 45.6], "label": "Cape Breton, Nova Scotia (from 1773)", "area": 100 }
+      ],
       "summary": "Carried from Ireland to Scotland; emigration took it to Nova Scotia, where a small community still speaks it.",
       "night": { "form": "oidhche", "cognate": false },
       "sources": ["ball-muller-2009", "moseley-2010"]
     },
     {
       "id": "manx", "name": "Manx", "family": "indo-european", "branch": "Goidelic", "parent": "old-irish",
-      "start": 1200, "end": null, "era": "from c. 1200; last traditional native speaker died 1974", "at": [-4.48, 54.24], "status": "revived",
+      "start": 1200, "end": null, "era": "from c. 1200; last traditional native speaker died 1974", "at": [-4.48, 54.24], "area": 40, "status": "revived",
       "summary": "Its last traditional native speaker, Ned Maddrell, died in 1974. It has since been revived and is taught in schools on the Isle of Man.",
       "night": { "form": "oie", "cognate": false },
       "concepts": ["language-shift"],
@@ -626,14 +644,14 @@
     },
     {
       "id": "egyptian", "name": "Egyptian", "family": "afroasiatic", "branch": "Egyptian",
-      "start": -3200, "end": 450, "era": "c. 3200 BCE – 5th century CE", "at": [31.2, 29.85],
+      "start": -3200, "end": 450, "era": "c. 3200 BCE – 5th century CE", "at": [31.2, 29.85], "area": 450,
       "summary": "Attested for more than three millennia in hieroglyphic, hieratic and demotic writing, through Old, Middle and Late Egyptian.",
       "night": { "form": "grḥ", "cognate": null },
       "sources": ["allen-2013", "woodard-2004"]
     },
     {
       "id": "coptic", "name": "Coptic", "family": "afroasiatic", "branch": "Egyptian", "parent": "egyptian",
-      "start": 200, "end": 1700, "era": "c. 200 – 17th century as a spoken language", "at": [32.6, 25.7],
+      "start": 200, "end": 1700, "era": "c. 200 – 17th century as a spoken language", "at": [32.6, 25.7], "area": 450,
       "summary": "The last stage of Egyptian, written in a Greek-based alphabet. It was gradually replaced by Arabic after the 7th-century conquest.",
       "afterlife": "Liturgical language of the Coptic Church.",
       "night": { "form": "ⲟⲩϣⲏ (ouše)", "cognate": null },
@@ -642,14 +660,14 @@
     },
     {
       "id": "proto-semitic", "name": "Proto-Semitic", "family": "afroasiatic", "branch": "Semitic", "kind": "proto",
-      "start": -3750, "end": -3000, "era": "c. 3750 BCE (estimate)", "at": [37, 34],
+      "start": -3750, "end": -3000, "era": "c. 3750 BCE (estimate)", "at": [37, 34], "area": 550,
       "summary": "The reconstructed ancestor of the Semitic languages. A Bayesian analysis dates it to about 3750 BCE in the Levant.",
       "night": { "form": "*layl-", "cognate": null },
       "sources": ["kitchen-2009", "weninger-2011"]
     },
     {
       "id": "akkadian", "name": "Akkadian", "family": "afroasiatic", "branch": "East Semitic", "parent": "proto-semitic",
-      "start": -2500, "end": 100, "era": "c. 2500 BCE – 1st century CE", "at": [44.42, 32.54],
+      "start": -2500, "end": 100, "era": "c. 2500 BCE – 1st century CE", "at": [44.42, 32.54], "area": 400,
       "summary": "The language of Babylon and Assyria, written in cuneiform borrowed from Sumerian. Aramaic replaced it in speech during the 1st millennium BCE; scribes kept writing it until about 75 CE.",
       "night": { "form": "mūšu", "cognate": null },
       "concepts": ["language-shift", "borrowing"],
@@ -657,8 +675,10 @@
     },
     {
       "id": "aramaic", "name": "Aramaic", "family": "afroasiatic", "branch": "Northwest Semitic", "parent": "proto-semitic",
-      "start": -1000, "end": null, "era": "from c. 1000 BCE", "at": [37.16, 36.2],
-      "places": [ { "from": -500, "until": 700, "at": [45.5, 33.0], "label": "Lingua franca of the Persian Empire" } ],
+      "start": -1000, "end": null, "era": "from c. 1000 BCE", "at": [37.16, 36.2], "area": 400,
+      "places": [
+        { "from": -500, "until": 700, "at": [45.5, 33], "label": "Lingua franca of the Persian Empire", "area": false }
+      ],
       "summary": "Spread from Syria to become the common language of the Assyrian and Persian empires, displacing Akkadian. Neo-Aramaic varieties survive but are endangered.",
       "night": { "form": "lilyā (Syriac)", "cognate": null },
       "concepts": ["contact", "language-shift"],
@@ -666,14 +686,14 @@
     },
     {
       "id": "biblical-hebrew", "name": "Biblical Hebrew", "family": "afroasiatic", "branch": "Northwest Semitic", "parent": "proto-semitic",
-      "start": -1000, "end": 200, "era": "c. 1000 BCE – 200 CE as a spoken language", "at": [35.23, 31.78],
+      "start": -1000, "end": 200, "era": "c. 1000 BCE – 200 CE as a spoken language", "at": [35.23, 31.78], "area": 150,
       "summary": "The language of the Hebrew Bible. It ceased to be an everyday mother tongue around the 2nd century CE but continued for nearly two millennia in liturgy, scholarship and writing.",
       "night": { "form": "לַיְלָה (laylā)", "cognate": null },
       "sources": ["saenz-badillos-1993"]
     },
     {
       "id": "modern-hebrew", "name": "Modern Hebrew", "family": "afroasiatic", "branch": "Northwest Semitic", "parent": "biblical-hebrew", "relation": "revival",
-      "start": 1880, "end": null, "era": "revived from the 1880s", "at": [34.78, 32.08],
+      "start": 1880, "end": null, "era": "revived from the 1880s", "at": [34.78, 32.08], "area": 150,
       "summary": "The only clear case of a language without native speakers becoming a national mother tongue again, through the revival movement associated with Eliezer Ben-Yehuda.",
       "night": { "form": "לילה (laila)", "cognate": null },
       "concepts": ["language-shift"],
@@ -681,12 +701,13 @@
     },
     {
       "id": "arabic", "name": "Arabic", "family": "afroasiatic", "branch": "Central Semitic", "parent": "proto-semitic",
-      "start": 300, "end": null, "era": "inscriptions from the 4th century; Qur’an 7th century", "at": [39.8, 21.4],
+      "start": 300, "end": null, "era": "inscriptions from the 4th century; Qur’an 7th century", "at": [39.8, 21.4], "area": 900,
       "places": [
-        { "from": 636, "at": [44.4, 33.3], "label": "Iraq and Syria (630s conquests)" },
-        { "from": 641, "at": [31.24, 30.04], "label": "Egypt (641)" },
-        { "from": 670, "at": [10.1, 35.68], "label": "North Africa (Kairouan, 670)" },
-        { "from": 711, "until": 1609, "at": [-4.78, 37.88], "label": "al-Andalus (711 – 1609)" }
+        { "from": 636, "at": [44.4, 33.3], "label": "Iraq and Syria (630s conquests)", "area": 650 },
+        { "from": 641, "at": [31.24, 30.04], "label": "Egypt (641)", "area": 550 },
+        { "from": 670, "at": [10.1, 35.68], "label": "North Africa (Kairouan, 670)", "area": 1000, "grow": 300 },
+        { "from": 711, "until": 1609, "at": [-4.78, 37.88], "label": "al-Andalus (711 – 1609)", "area": 450 },
+        { "from": 1200, "at": [-6.5, 33.5], "label": "Morocco (Bedouin Arabic, from the 12th–13th centuries)", "area": 450, "grow": 300 }
       ],
       "summary": "Spread with the Islamic conquests from Arabia to the Atlantic, replacing Coptic, Aramaic and much of Berber in everyday speech, but not Persian. The written Classical standard coexists with many spoken varieties (diglossia).",
       "speakers": "over 300 million native speakers across its varieties",
@@ -696,7 +717,7 @@
     },
     {
       "id": "maltese", "name": "Maltese", "family": "afroasiatic", "branch": "Central Semitic", "parent": "arabic",
-      "start": 1100, "end": null, "era": "from c. 1100", "at": [14.45, 35.9],
+      "start": 1100, "end": null, "era": "from c. 1100", "at": [14.45, 35.9], "area": 40,
       "summary": "Descended from Siculo-Arabic, written in the Latin alphabet, and full of Sicilian, Italian and English loanwords: a Semitic language shaped by European contact.",
       "night": { "form": "lejl", "cognate": null },
       "concepts": ["contact", "borrowing"],
@@ -704,7 +725,7 @@
     },
     {
       "id": "geez", "name": "Ge’ez", "family": "afroasiatic", "branch": "Ethiosemitic", "parent": "proto-semitic",
-      "start": 300, "end": 1000, "era": "c. 4th – 10th century as a spoken language", "at": [38.72, 14.13],
+      "start": 300, "end": 1000, "era": "c. 4th – 10th century as a spoken language", "at": [38.72, 14.13], "area": 300,
       "summary": "The language of the kingdom of Aksum, written in its own script.",
       "afterlife": "Liturgical language of the Ethiopian and Eritrean Orthodox churches.",
       "night": { "form": "ሌሊት (lēlit)", "cognate": null },
@@ -712,7 +733,7 @@
     },
     {
       "id": "amharic", "name": "Amharic", "family": "afroasiatic", "branch": "Ethiosemitic", "parent": "proto-semitic",
-      "start": 1300, "end": null, "era": "from c. 14th century", "at": [38.75, 9.03],
+      "start": 1300, "end": null, "era": "from c. 14th century", "at": [38.75, 9.03], "area": 400,
       "summary": "A sister of Ge’ez rather than its descendant, and Ethiopia’s working language, written in the Ge’ez script.",
       "speakers": "≈ 30–35 million native speakers",
       "night": { "form": "ሌሊት (lelit)", "cognate": null },
@@ -720,26 +741,26 @@
     },
     {
       "id": "proto-uralic", "name": "Proto-Uralic", "family": "uralic", "branch": "Proto-language", "kind": "proto",
-      "start": -3000, "end": -2000, "era": "c. 3000–2000 BCE (estimate)", "at": [56, 57],
+      "start": -3000, "end": -2000, "era": "c. 3000–2000 BCE (estimate)", "at": [56, 57], "area": 550,
       "summary": "The reconstructed ancestor of the Uralic languages, usually placed near the Ural Mountains or the Volga–Kama region.",
       "sources": ["abondolo-1998", "honkola-2013"]
     },
     {
       "id": "hungarian", "name": "Hungarian", "family": "uralic", "branch": "Ugric", "parent": "proto-uralic",
-      "start": 895, "end": null, "era": "Carpathian Basin from 895", "at": [19.04, 47.5],
+      "start": 895, "end": null, "era": "Carpathian Basin from 895", "at": [19.04, 47.5], "area": 230,
       "summary": "Carried from the steppes west of the Urals into the Carpathian Basin by the Magyars around 895. Its first connected text is the Funeral Sermon of about 1192.",
       "night": { "form": "éj / éjszaka", "cognate": null },
       "sources": ["abondolo-1998", "honkola-2013"]
     },
     {
       "id": "proto-finnic", "name": "Proto-Finnic", "family": "uralic", "branch": "Finnic", "kind": "proto", "parent": "proto-uralic",
-      "start": -500, "end": 500, "era": "c. 500 BCE – 500 CE (estimate)", "at": [27, 59],
+      "start": -500, "end": 500, "era": "c. 500 BCE – 500 CE (estimate)", "at": [27, 59], "area": 400,
       "summary": "The common ancestor of Finnish, Estonian and their close relatives around the Gulf of Finland.",
       "sources": ["abondolo-1998"]
     },
     {
       "id": "finnish", "name": "Finnish", "family": "uralic", "branch": "Finnic", "parent": "proto-finnic",
-      "start": 1543, "end": null, "era": "first book 1543", "at": [24.94, 61.2],
+      "start": 1543, "end": null, "era": "first book 1543", "at": [24.94, 61.2], "area": 350,
       "summary": "First written by Mikael Agricola (ABC book, 1543). Finnish preserves many very old Germanic and Baltic loanwords.",
       "night": { "form": "yö", "cognate": null },
       "concepts": ["borrowing"],
@@ -747,7 +768,7 @@
     },
     {
       "id": "estonian", "name": "Estonian", "family": "uralic", "branch": "Finnic", "parent": "proto-finnic",
-      "start": 1535, "end": null, "era": "first surviving book 1535", "at": [25.0, 58.7],
+      "start": 1535, "end": null, "era": "first surviving book 1535", "at": [25.0, 58.7], "area": 150,
       "summary": "A close relative of Finnish, heavily influenced by centuries of contact with Low German.",
       "night": { "form": "öö", "cognate": null },
       "concepts": ["contact"],
@@ -755,20 +776,20 @@
     },
     {
       "id": "proto-turkic", "name": "Proto-Turkic", "family": "turkic", "branch": "Proto-language", "kind": "proto",
-      "start": -200, "end": 500, "era": "c. 2nd century BCE (estimate)", "at": [100, 47],
+      "start": -200, "end": 500, "era": "c. 2nd century BCE (estimate)", "at": [100, 47], "area": 650,
       "summary": "The reconstructed ancestor of the Turkic languages, placed in Mongolia and the surrounding steppe. A phylogenetic study dates it to roughly 2,100 years ago.",
       "sources": ["savelyev-robbeets-2020", "johanson-csato-1998"]
     },
     {
       "id": "old-turkic", "name": "Old Turkic", "family": "turkic", "branch": "Common Turkic", "parent": "proto-turkic",
-      "start": 720, "end": 1100, "era": "Orkhon inscriptions, 8th century", "at": [102.8, 47.6],
+      "start": 720, "end": 1100, "era": "Orkhon inscriptions, 8th century", "at": [102.8, 47.6], "area": 600,
       "summary": "The language of the 8th-century Orkhon inscriptions in Mongolia, written in a runic-looking script.",
       "night": { "form": "tün", "cognate": null },
       "sources": ["johanson-csato-1998"]
     },
     {
       "id": "turkish", "name": "Turkish", "family": "turkic", "branch": "Oghuz", "parent": "proto-turkic",
-      "start": 1071, "end": null, "era": "Anatolia from 1071", "at": [32.5, 37.87],
+      "start": 1071, "end": null, "era": "Anatolia from 1071", "at": [32.5, 37.87], "area": 450,
       "summary": "Oghuz Turkic arrived in Anatolia with the Seljuks after 1071, thousands of kilometres from the Turkic homeland. The 1928 alphabet reform replaced Arabic script with Latin.",
       "night": { "form": "gece", "cognate": null, "note": "The old word tün survives in dün ‘yesterday’." },
       "concepts": ["standardization", "borrowing"],
@@ -776,27 +797,27 @@
     },
     {
       "id": "kazakh", "name": "Kazakh", "family": "turkic", "branch": "Kipchak", "parent": "proto-turkic",
-      "start": 1450, "end": null, "era": "from the 15th century", "at": [71.4, 48.5],
+      "start": 1450, "end": null, "era": "from the 15th century", "at": [71.4, 48.5], "area": 900,
       "summary": "A Kipchak Turkic language of the Central Asian steppe.",
       "night": { "form": "tün", "cognate": null },
       "sources": ["johanson-csato-1998"]
     },
     {
       "id": "proto-sino-tibetan", "name": "Proto-Sino-Tibetan", "family": "sino-tibetan", "branch": "Proto-language", "kind": "proto",
-      "start": -4000, "end": -3000, "era": "c. 4000 BCE (estimates vary)", "at": [110, 35.5],
+      "start": -4000, "end": -3000, "era": "c. 4000 BCE (estimates vary)", "at": [110, 35.5], "area": 550,
       "summary": "The reconstructed ancestor of Chinese, Tibetan, Burmese and hundreds of other languages. Two 2019 phylogenetic studies place it in northern China about 6,000–7,000 years ago.",
       "sources": ["zhang-2019", "sagart-2019"]
     },
     {
       "id": "old-chinese", "name": "Old Chinese", "family": "sino-tibetan", "branch": "Sinitic", "parent": "proto-sino-tibetan",
-      "start": -1250, "end": 200, "era": "c. 1250 BCE – 200 CE", "at": [114.3, 36.1],
+      "start": -1250, "end": 200, "era": "c. 1250 BCE – 200 CE", "at": [114.3, 36.1], "area": 600,
       "summary": "First written on the Shang oracle bones at Anyang. Its pronunciation is reconstructed from rhymes, character components and later dialects.",
       "night": { "form": "夜", "cognate": null },
       "sources": ["baxter-1992", "thurgood-lapolla-2003"]
     },
     {
       "id": "middle-chinese", "name": "Middle Chinese", "family": "sino-tibetan", "branch": "Sinitic", "parent": "old-chinese",
-      "start": 400, "end": 1200, "era": "c. 400–1200", "at": [108.94, 34.26],
+      "start": 400, "end": 1200, "era": "c. 400–1200", "at": [108.94, 34.26], "area": 900,
       "summary": "The language codified in the Qieyun rhyme dictionary (601 CE), ancestral to most modern Chinese varieties and the source of Sino-Japanese, Sino-Korean and Sino-Vietnamese vocabulary.",
       "night": { "form": "夜 (yaeH, in Baxter’s notation)", "cognate": null },
       "concepts": ["tonogenesis", "borrowing"],
@@ -804,7 +825,7 @@
     },
     {
       "id": "mandarin", "name": "Mandarin Chinese", "family": "sino-tibetan", "branch": "Sinitic", "parent": "middle-chinese",
-      "start": 1300, "end": null, "era": "from c. 1300", "at": [116.4, 39.9],
+      "start": 1300, "end": null, "era": "from c. 1300", "at": [116.4, 39.9], "area": 1200,
       "summary": "The northern Chinese varieties, centred on Beijing; standard Mandarin is the most widely spoken first language in the world.",
       "speakers": "≈ 940 million native speakers",
       "night": { "form": "夜 yè; 晚上 wǎnshang", "cognate": null },
@@ -812,7 +833,7 @@
     },
     {
       "id": "cantonese", "name": "Cantonese", "family": "sino-tibetan", "branch": "Sinitic (Yue)", "parent": "middle-chinese",
-      "start": 1000, "end": null, "era": "from c. 1000", "at": [113.26, 23.13],
+      "start": 1000, "end": null, "era": "from c. 1000", "at": [113.26, 23.13], "area": 300,
       "summary": "A Yue variety that keeps Middle Chinese final stops (-p, -t, -k) and has six or more tones.",
       "night": { "form": "夜 je6", "cognate": null },
       "concepts": ["tonogenesis"],
@@ -820,7 +841,7 @@
     },
     {
       "id": "old-tibetan", "name": "Old Tibetan", "family": "sino-tibetan", "branch": "Tibetic", "parent": "proto-sino-tibetan",
-      "start": 650, "end": 1100, "era": "c. 650–1100", "at": [91.1, 29.65],
+      "start": 650, "end": 1100, "era": "c. 650–1100", "at": [91.1, 29.65], "area": 650,
       "summary": "Written from the 7th century in a script derived from Indian Brahmi; its conservative spelling preserves consonant clusters that later dropped out of speech.",
       "night": { "form": "མཚན་མོ (mtshan mo)", "cognate": null },
       "concepts": ["standardization"],
@@ -828,30 +849,30 @@
     },
     {
       "id": "burmese", "name": "Burmese", "family": "sino-tibetan", "branch": "Lolo-Burmese", "parent": "proto-sino-tibetan",
-      "start": 1100, "end": null, "era": "inscriptions from 1113", "at": [95.5, 21.0],
+      "start": 1100, "end": null, "era": "inscriptions from 1113", "at": [95.5, 21.0], "area": 450,
       "summary": "First written in the Myazedi inscription at Bagan (1113).",
       "night": { "form": "ည (nya)", "cognate": null },
       "sources": ["thurgood-lapolla-2003"]
     },
     {
       "id": "proto-austronesian", "name": "Proto-Austronesian", "family": "austronesian", "branch": "Proto-language", "kind": "proto",
-      "start": -3500, "end": -2500, "era": "c. 3500 BCE (estimate)", "at": [121, 23.7],
+      "start": -3500, "end": -2500, "era": "c. 3500 BCE (estimate)", "at": [121, 23.7], "area": 200,
       "summary": "The ancestor of more than 1,200 languages. Most early branches are found on Taiwan, the most likely homeland.",
       "sources": ["blust-2013", "gray-drummond-greenhill-2009"]
     },
     {
       "id": "proto-malayo-polynesian", "name": "Proto-Malayo-Polynesian", "family": "austronesian", "branch": "Malayo-Polynesian", "kind": "proto", "parent": "proto-austronesian",
-      "start": -2500, "end": -1500, "era": "c. 2500–1500 BCE (estimate)", "at": [121.0, 16.0],
+      "start": -2500, "end": -1500, "era": "c. 2500–1500 BCE (estimate)", "at": [121.0, 16.0], "area": 550,
       "summary": "The language of the first Austronesian settlers outside Taiwan, in the northern Philippines.",
       "night": { "form": "*beRŋi", "cognate": null },
       "sources": ["blust-2013"]
     },
     {
       "id": "malay", "name": "Malay", "family": "austronesian", "branch": "Malayic", "parent": "proto-malayo-polynesian",
-      "start": 683, "end": null, "era": "Old Malay inscriptions from 683", "at": [104.75, -2.99],
+      "start": 683, "end": null, "era": "Old Malay inscriptions from 683", "at": [104.75, -2.99], "area": 450,
       "places": [
-        { "from": 1400, "at": [102.25, 2.2], "label": "Malacca: lingua franca of maritime trade" },
-        { "from": 1928, "at": [106.85, -6.2], "label": "Indonesian (adopted as national language, 1928)" }
+        { "from": 1400, "at": [102.25, 2.2], "label": "Malacca: lingua franca of maritime trade", "area": 300 },
+        { "from": 1928, "at": [106.85, -6.2], "label": "Indonesian (adopted as national language, 1928)", "area": false }
       ],
       "summary": "First written under the Srivijaya empire, Malay became the trade language of the archipelago. Its standard is now the national language of Malaysia and, as Indonesian, of Indonesia.",
       "night": { "form": "malam", "cognate": null },
@@ -860,7 +881,7 @@
     },
     {
       "id": "tagalog", "name": "Tagalog", "family": "austronesian", "branch": "Philippine", "parent": "proto-malayo-polynesian",
-      "start": 1593, "end": null, "era": "first printed book 1593", "at": [121.0, 14.6],
+      "start": 1593, "end": null, "era": "first printed book 1593", "at": [121.0, 14.6], "area": 250,
       "summary": "The basis of Filipino, the national language of the Philippines; it contains many Spanish and English loanwords.",
       "night": { "form": "gabi", "cognate": null },
       "concepts": ["borrowing"],
@@ -868,35 +889,35 @@
     },
     {
       "id": "malagasy", "name": "Malagasy", "family": "austronesian", "branch": "Barito", "parent": "proto-malayo-polynesian",
-      "start": 600, "end": null, "era": "settlement c. 5th–7th century", "at": [47.5, -18.9], "via": [[114.8, -2.2]],
+      "start": 600, "end": null, "era": "settlement c. 5th–7th century", "at": [47.5, -18.9], "area": 450, "via": [[114.8, -2.2]],
       "summary": "Spoken in Madagascar but closest to the Barito languages of southeast Borneo, 7,000 km away: evidence of an Austronesian voyage across the Indian Ocean.",
       "night": { "form": "alina", "cognate": null },
       "sources": ["blust-2013"]
     },
     {
       "id": "proto-oceanic", "name": "Proto-Oceanic", "family": "austronesian", "branch": "Oceanic", "kind": "proto", "parent": "proto-malayo-polynesian",
-      "start": -1300, "end": -800, "era": "c. 1300–800 BCE (estimate)", "at": [150.5, -4.0],
+      "start": -1300, "end": -800, "era": "c. 1300–800 BCE (estimate)", "at": [150.5, -4.0], "area": 500,
       "summary": "Associated with the Lapita culture of the Bismarck Archipelago, from which people first settled the remote Pacific.",
       "night": { "form": "*boŋi", "cognate": null },
       "sources": ["blust-2013", "gray-drummond-greenhill-2009"]
     },
     {
       "id": "proto-polynesian", "name": "Proto-Polynesian", "family": "austronesian", "branch": "Polynesian", "kind": "proto", "parent": "proto-oceanic",
-      "start": -800, "end": 300, "era": "c. 800 BCE – 300 CE (estimate)", "at": [-173.5, -17.5],
+      "start": -800, "end": 300, "era": "c. 800 BCE – 300 CE (estimate)", "at": [-173.5, -17.5], "area": 600,
       "summary": "Spoken in Tonga and Samoa, where Polynesian culture took shape before the long voyages east.",
       "night": { "form": "*poo", "cognate": null },
       "sources": ["blust-2013", "gray-drummond-greenhill-2009"]
     },
     {
       "id": "samoan", "name": "Samoan", "family": "austronesian", "branch": "Polynesian", "parent": "proto-polynesian",
-      "start": 300, "end": null, "era": "from the 1st millennium CE", "at": [-172.1, -13.8],
+      "start": 300, "end": null, "era": "from the 1st millennium CE", "at": [-172.1, -13.8], "area": 150,
       "summary": "One of the larger Polynesian languages.",
       "night": { "form": "pō", "cognate": null },
       "sources": ["blust-2013"]
     },
     {
       "id": "hawaiian", "name": "Hawaiian", "family": "austronesian", "branch": "Polynesian", "parent": "proto-polynesian",
-      "start": 1000, "end": null, "era": "settlement c. 1000–1200", "at": [-155.5, 19.9], "via": [[-140, -9]],
+      "start": 1000, "end": null, "era": "settlement c. 1000–1200", "at": [-155.5, 19.9], "area": 350, "via": [[-140, -9]],
       "summary": "Brought by voyagers from central East Polynesia. After near-loss in the 20th century, immersion schools have revived it.",
       "night": { "form": "pō", "cognate": null },
       "concepts": ["language-shift"],
@@ -904,22 +925,24 @@
     },
     {
       "id": "maori", "name": "Māori", "family": "austronesian", "branch": "Polynesian", "parent": "proto-polynesian",
-      "start": 1300, "end": null, "era": "settlement c. 1250–1300", "at": [175.6, -38.9], "via": [[-159.8, -21.2]],
+      "start": 1300, "end": null, "era": "settlement c. 1250–1300", "at": [175.6, -38.9], "area": 650, "via": [[-159.8, -21.2]],
       "summary": "New Zealand was among the last major landmasses settled by humans. Māori is now an official language and the focus of revitalisation.",
       "night": { "form": "pō", "cognate": null },
       "sources": ["blust-2013"]
     },
     {
       "id": "proto-bantu", "name": "Proto-Bantu", "family": "niger-congo", "branch": "Bantu", "kind": "proto",
-      "start": -3000, "end": -1500, "era": "c. 3000 BCE (estimate)", "at": [10.5, 6.0],
+      "start": -3000, "end": -1500, "era": "c. 3000 BCE (estimate)", "at": [10.5, 6.0], "area": 550,
       "summary": "From the Cameroon–Nigeria borderlands, Bantu-speaking farmers spread over most of central, eastern and southern Africa in the following millennia.",
       "night": { "form": "*-tíkù", "cognate": null },
       "sources": ["grollemund-2015", "nurse-philippson-2003"]
     },
     {
       "id": "swahili", "name": "Swahili", "family": "niger-congo", "branch": "Bantu (Sabaki)", "parent": "proto-bantu",
-      "start": 1000, "end": null, "era": "from c. 1000", "at": [39.27, -6.16], "via": [[30, -2]],
-      "places": [ { "from": 1850, "at": [32.9, -2.5], "label": "Inland East Africa (19th-century caravan routes)" } ],
+      "start": 1000, "end": null, "era": "from c. 1000", "at": [39.27, -6.16], "area": 300, "via": [[30, -2]],
+      "places": [
+        { "from": 1850, "at": [32.9, -2.5], "label": "Inland East Africa (19th-century caravan routes)", "area": false }
+      ],
       "summary": "A Bantu language of the East African coast, rich in Arabic loanwords from Indian Ocean trade; today a lingua franca for tens of millions.",
       "speakers": "tens of millions of speakers, mostly as a second language",
       "night": { "form": "usiku", "cognate": null },
@@ -928,7 +951,7 @@
     },
     {
       "id": "zulu", "name": "Zulu", "family": "niger-congo", "branch": "Bantu (Nguni)", "parent": "proto-bantu",
-      "start": 1500, "end": null, "era": "from c. 1500", "at": [31.0, -28.5], "via": [[27, -10]],
+      "start": 1500, "end": null, "era": "from c. 1500", "at": [31.0, -28.5], "area": 300, "via": [[27, -10]],
       "summary": "A Nguni Bantu language whose click consonants were borrowed through contact with Khoisan languages.",
       "night": { "form": "ubusuku", "cognate": null },
       "concepts": ["contact", "borrowing"],
@@ -936,20 +959,20 @@
     },
     {
       "id": "yoruba", "name": "Yoruba", "family": "niger-congo", "branch": "Volta–Niger",
-      "start": 1000, "end": null, "era": "from c. 1000", "at": [3.9, 7.4],
+      "start": 1000, "end": null, "era": "from c. 1000", "at": [3.9, 7.4], "area": 280,
       "summary": "A tonal language of southwestern Nigeria and Benin; carried across the Atlantic by enslaved people, it survives in Cuban and Brazilian religious practice.",
       "night": { "form": "òru", "cognate": null },
       "sources": ["glottolog"]
     },
     {
       "id": "proto-dravidian", "name": "Proto-Dravidian", "family": "other", "familyName": "Dravidian", "branch": "Proto-language", "kind": "proto",
-      "start": -2500, "end": -1500, "era": "c. 3rd millennium BCE (estimate; homeland debated)", "at": [78, 17],
+      "start": -2500, "end": -1500, "era": "c. 3rd millennium BCE (estimate; homeland debated)", "at": [78, 17], "area": 550,
       "summary": "The ancestor of Tamil, Telugu, Kannada, Malayalam and some 80 other languages of South Asia.",
       "sources": ["krishnamurti-2003"]
     },
     {
       "id": "tamil", "name": "Tamil", "family": "other", "familyName": "Dravidian", "branch": "South Dravidian", "parent": "proto-dravidian",
-      "start": -300, "end": null, "era": "inscriptions from c. 3rd century BCE", "at": [78.12, 9.93],
+      "start": -300, "end": null, "era": "inscriptions from c. 3rd century BCE", "at": [78.12, 9.93], "area": 300,
       "summary": "One of the world’s oldest continuously used literary languages (Sangam poetry). Dravidian contact is widely credited with giving Indo-Aryan its retroflex consonants.",
       "speakers": "≈ 80 million native speakers",
       "night": { "form": "இரவு (iravu)", "cognate": null },
@@ -958,14 +981,14 @@
     },
     {
       "id": "old-japanese", "name": "Old Japanese", "family": "other", "familyName": "Japonic", "branch": "Japonic",
-      "start": 700, "end": 800, "era": "8th century (Kojiki, 712)", "at": [135.8, 34.69],
+      "start": 700, "end": 800, "era": "8th century (Kojiki, 712)", "at": [135.8, 34.69], "area": 300,
       "summary": "The language of the Nara period, recorded in Chinese characters used for their sound (man’yōgana).",
       "night": { "form": "yo / yoru", "cognate": null },
       "sources": ["frellesvig-2010"]
     },
     {
       "id": "japanese", "name": "Japanese", "family": "other", "familyName": "Japonic", "branch": "Japonic", "parent": "old-japanese",
-      "start": 800, "end": null, "era": "from c. 800", "at": [139.69, 35.69],
+      "start": 800, "end": null, "era": "from c. 800", "at": [139.69, 35.69], "area": 700,
       "summary": "Writes with three scripts, and roughly half of the words in a Japanese dictionary are Sino-Japanese, borrowed from Middle Chinese.",
       "speakers": "≈ 123 million native speakers",
       "night": { "form": "夜 (yoru)", "cognate": null },
@@ -974,14 +997,14 @@
     },
     {
       "id": "korean", "name": "Korean", "family": "other", "familyName": "Koreanic", "branch": "Koreanic",
-      "start": 668, "end": null, "era": "from the Silla period; Hangul created 1443", "at": [127.0, 37.57],
+      "start": 668, "end": null, "era": "from the Silla period; Hangul created 1443", "at": [127.0, 37.57], "area": 300,
       "summary": "The language of the Korean peninsula. King Sejong’s Hangul (1443) is a featural alphabet whose letter shapes reflect how sounds are made.",
       "night": { "form": "밤 (bam)", "cognate": null },
       "sources": ["lee-ramsey-2011"]
     },
     {
       "id": "nahuatl", "name": "Nahuatl", "family": "other", "familyName": "Uto-Aztecan", "branch": "Aztecan", "parent": "proto-uto-aztecan",
-      "start": 1000, "end": null, "era": "central Mexico by c. 1000", "at": [-99.13, 19.43],
+      "start": 1000, "end": null, "era": "central Mexico by c. 1000", "at": [-99.13, 19.43], "area": 300,
       "summary": "The language of the Aztec Empire and a lingua franca of early colonial Mexico. English owes it tomato, chocolate and avocado, via Spanish.",
       "night": { "form": "yohualli", "cognate": null },
       "concepts": ["borrowing"],
@@ -989,29 +1012,31 @@
     },
     {
       "id": "quechua", "name": "Quechua", "family": "other", "familyName": "Quechuan", "branch": "Quechuan",
-      "start": 500, "end": null, "era": "from the 1st millennium CE", "at": [-76.5, -11.5],
-      "places": [ { "from": 1438, "at": [-71.97, -13.53], "label": "Lingua franca of the Inca Empire (15th century)" } ],
+      "start": 500, "end": null, "era": "from the 1st millennium CE", "at": [-76.5, -11.5], "area": 600,
+      "places": [
+        { "from": 1438, "at": [-71.97, -13.53], "label": "Lingua franca of the Inca Empire (15th century)", "area": 500 }
+      ],
       "summary": "A family of closely related varieties from central Peru, spread through the Andes by the Inca state and later by Spanish missionaries.",
       "night": { "form": "tuta", "cognate": null },
       "sources": ["adelaar-muysken-2004"]
     },
     {
       "id": "classic-maya", "name": "Classic Maya", "family": "other", "familyName": "Mayan", "branch": "Ch’olan", "parent": "proto-mayan",
-      "start": 250, "end": 900, "era": "c. 250–900 (Classic period inscriptions)", "at": [-89.62, 17.22],
+      "start": 250, "end": 900, "era": "c. 250–900 (Classic period inscriptions)", "at": [-89.62, 17.22], "area": 300,
       "summary": "The prestige language of Maya hieroglyphic inscriptions, ancestral to the Ch’olan languages still spoken today.",
       "night": { "form": "ak’ab’", "cognate": null },
       "sources": ["houston-2000"]
     },
     {
       "id": "basque", "name": "Basque", "family": "other", "familyName": "Language isolate", "branch": "Isolate",
-      "start": 1, "end": null, "era": "ancestor attested in Roman-era inscriptions", "at": [-2.5, 43.1],
+      "start": 1, "end": null, "era": "ancestor attested in Roman-era inscriptions", "at": [-2.5, 43.1], "area": 110,
       "summary": "The only surviving language of western Europe that predates the arrival of Indo-European. Its ancestor, Aquitanian, appears in Roman-era personal and divine names.",
       "night": { "form": "gau", "cognate": null },
       "sources": ["trask-1997"]
     },
     {
       "id": "sumerian", "name": "Sumerian", "family": "other", "familyName": "Language isolate", "branch": "Isolate",
-      "start": -3100, "end": -1800, "era": "c. 3100–1800 BCE as a spoken language", "at": [45.64, 31.32],
+      "start": -3100, "end": -1800, "era": "c. 3100–1800 BCE as a spoken language", "at": [45.64, 31.32], "area": 250,
       "summary": "The language of the earliest writing, in Uruk. Akkadian replaced it in speech by about 1800 BCE.",
       "afterlife": "Remained a scholarly and religious written language for well over a thousand years.",
       "night": { "form": "ĝi₆", "cognate": null },
@@ -1020,14 +1045,14 @@
     },
     {
       "id": "etruscan", "name": "Etruscan", "family": "other", "familyName": "Tyrsenian", "branch": "Tyrsenian",
-      "start": -700, "end": 50, "era": "c. 700 BCE – 1st century CE", "at": [11.5, 42.8],
+      "start": -700, "end": 50, "era": "c. 700 BCE – 1st century CE", "at": [11.5, 42.8], "area": 150,
       "summary": "A non-Indo-European language of central Italy, written in an alphabet adapted from Greek. It was replaced by Latin.",
       "concepts": ["language-shift"],
       "sources": ["bonfante-2002", "woodard-2004"]
     },
     {
       "id": "tok-pisin", "name": "Tok Pisin", "family": "other", "familyName": "Creole (English-lexified)", "branch": "English-based creole", "parent": "english", "relation": "contact",
-      "start": 1880, "end": null, "era": "from the 1880s", "at": [145.5, -6.0],
+      "start": 1880, "end": null, "era": "from the 1880s", "at": [145.5, -6.0], "area": false,
       "summary": "Grew out of a Pacific plantation pidgin. It is now an official language of Papua New Guinea and the first language of a growing number of speakers.",
       "night": { "form": "nait", "cognate": true, "note": "From English night." },
       "concepts": ["pidgin-creole", "grammaticalization"],
@@ -1035,16 +1060,16 @@
     },
     {
       "id": "proto-eskimo", "name": "Proto-Eskimo", "family": "other", "familyName": "Eskimo–Aleut", "branch": "Eskimo", "kind": "proto",
-      "start": 1, "end": 1000, "era": "c. 1st millennium CE (estimate)", "at": [-163, 64],
+      "start": 1, "end": 1000, "era": "c. 1st millennium CE (estimate)", "at": [-163, 64], "area": 550,
       "summary": "The reconstructed ancestor of the Yupik and Inuit languages, spoken around the Bering Strait. Its Inuit branch later spread across the whole North American Arctic.",
       "sources": ["fortescue-2010", "mithun-1999"]
     },
     {
       "id": "inuit", "name": "Inuit (Iñupiaq, Inuktitut, Kalaallisut)", "family": "other", "familyName": "Eskimo–Aleut", "branch": "Inuit", "parent": "proto-eskimo",
-      "start": 1000, "end": null, "era": "spread east from northern Alaska c. 1000–1300", "at": [-156.8, 71.3], "chain": true,
+      "start": 1000, "end": null, "era": "spread east from northern Alaska c. 1000–1300", "at": [-156.8, 71.3], "area": 400, "chain": true,
       "places": [
-        { "from": 1200, "at": [-95, 68.5], "label": "Arctic Canada (the Thule migration)" },
-        { "from": 1300, "at": [-52, 69], "label": "Greenland (c. 1300), where Norse settlers were already living" }
+        { "from": 1200, "at": [-95, 68.5], "label": "Arctic Canada (the Thule migration)", "area": 1100 },
+        { "from": 1300, "at": [-52, 69], "label": "Greenland (c. 1300), where Norse settlers were already living", "area": 600 }
       ],
       "summary": "Carried by the Thule people from northern Alaska across Arctic Canada to Greenland within two or three centuries, one of the fastest long-distance spreads of any language. The varieties still form a dialect chain from Alaska to Greenland; Kalaallisut (Greenlandic) is Greenland’s official language.",
       "night": { "form": "unnuaq", "cognate": null },
@@ -1053,13 +1078,13 @@
     },
     {
       "id": "proto-athabaskan", "name": "Proto-Athabaskan", "family": "other", "familyName": "Na-Dene", "branch": "Athabaskan", "kind": "proto",
-      "start": -500, "end": 500, "era": "c. 1st millennium BCE (estimate)", "at": [-142, 63],
+      "start": -500, "end": 500, "era": "c. 1st millennium BCE (estimate)", "at": [-142, 63], "area": 550,
       "summary": "The ancestor of the Athabaskan (Dene) languages of interior Alaska and northwestern Canada. One southern branch later migrated thousands of kilometres south.",
       "sources": ["mithun-1999", "campbell-1997"]
     },
     {
       "id": "navajo", "name": "Navajo", "family": "other", "familyName": "Na-Dene", "branch": "Southern Athabaskan (Apachean)", "parent": "proto-athabaskan",
-      "start": 1400, "end": null, "era": "in the Southwest by c. 1400–1500", "at": [-109.5, 36.1], "via": [[-111, 48]],
+      "start": 1400, "end": null, "era": "in the Southwest by c. 1400–1500", "at": [-109.5, 36.1], "area": 180, "via": [[-111, 48]],
       "summary": "Navajo and the Apache languages are close relatives of languages spoken 3,000 km to the north in Canada and Alaska: their ancestors migrated south, reaching the Southwest around the 15th century. Navajo is the most widely spoken Indigenous language in the United States, and in the Second World War the Navajo Code Talkers used it for military communications.",
       "speakers": "about 170,000 speakers",
       "night": { "form": "tłʼééʼ", "cognate": null },
@@ -1067,14 +1092,14 @@
     },
     {
       "id": "proto-algonquian", "name": "Proto-Algonquian", "family": "other", "familyName": "Algic", "branch": "Algonquian", "kind": "proto",
-      "start": -1000, "end": -500, "era": "c. 1000 BCE (estimate; homeland debated)", "at": [-88, 47.5],
+      "start": -1000, "end": -500, "era": "c. 1000 BCE (estimate; homeland debated)", "at": [-88, 47.5], "area": 550,
       "summary": "Ancestor of a family stretching from the Rockies to the Atlantic, including Cree, Ojibwe, Blackfoot, Cheyenne and the languages of the East Coast. Leonard Bloomfield’s reconstruction of it showed that regular sound correspondences, and so the comparative method, work just as well for languages without written history.",
       "concepts": ["comparative-method", "regularity"],
       "sources": ["bloomfield-1946", "goddard-1996"]
     },
     {
       "id": "cree", "name": "Cree", "family": "other", "familyName": "Algic", "branch": "Algonquian", "parent": "proto-algonquian",
-      "start": 500, "end": null, "era": "syllabic script from c. 1840", "at": [-100, 55],
+      "start": 500, "end": null, "era": "syllabic script from c. 1840", "at": [-100, 55], "area": 700,
       "summary": "A chain of dialects from the Rockies to Labrador and one of the most widely spoken Indigenous languages of Canada. Many communities write it in syllabics, a script devised by the missionary James Evans around 1840 and soon adopted by Cree readers.",
       "night": { "form": "tipiskâw (‘it is night’)", "cognate": null },
       "concepts": ["dialect-continuum"],
@@ -1082,7 +1107,7 @@
     },
     {
       "id": "ojibwe", "name": "Ojibwe", "family": "other", "familyName": "Algic", "branch": "Algonquian", "parent": "proto-algonquian",
-      "start": 500, "end": null, "era": "around the Great Lakes", "at": [-86, 47.5],
+      "start": 500, "end": null, "era": "around the Great Lakes", "at": [-86, 47.5], "area": 450,
       "summary": "An Algonquian language of the Great Lakes region, spoken in Canada and the United States. English totem comes from Ojibwe doodem ‘clan’.",
       "night": { "form": "dibikad (‘it is night’)", "cognate": null },
       "concepts": ["borrowing"],
@@ -1090,16 +1115,16 @@
     },
     {
       "id": "massachusett", "name": "Massachusett (Wampanoag)", "family": "other", "familyName": "Algic", "branch": "Algonquian", "parent": "proto-algonquian",
-      "start": 500, "end": null, "status": "revived", "era": "texts from 1663; silent in the 19th century; revived since 1993", "at": [-70.6, 41.7],
+      "start": 500, "end": null, "status": "revived", "era": "texts from 1663; silent in the 19th century; revived since 1993", "at": [-70.6, 41.7], "area": 120,
       "summary": "John Eliot’s translation (1663) was the first Bible printed in the Americas, and Native writers left letters, deeds and wills in the language. It stopped being spoken in the 19th century; since 1993 the Wôpanâak Language Reclamation Project has brought it back to life from those documents.",
       "concepts": ["language-shift"],
       "sources": ["goddard-bragdon-1988", "austin-sallabank-2011"]
     },
     {
       "id": "cherokee", "name": "Cherokee", "family": "other", "familyName": "Iroquoian", "branch": "Southern Iroquoian",
-      "start": 500, "end": null, "era": "syllabary created 1821", "at": [-83.5, 35.5],
+      "start": 500, "end": null, "era": "syllabary created 1821", "at": [-83.5, 35.5], "area": 200,
       "places": [
-        { "from": 1838, "at": [-94.97, 35.9], "label": "Oklahoma, after the forced removal of 1838–39 (the Trail of Tears)" }
+        { "from": 1838, "at": [-94.97, 35.9], "label": "Oklahoma, after the forced removal of 1838–39 (the Trail of Tears)", "area": 120 }
       ],
       "summary": "Sequoyah, who could not read any language, created a syllabary for Cherokee in 1821. Within a few years much of the nation was literate, and the bilingual Cherokee Phoenix newspaper appeared in 1828.",
       "concepts": ["standardization", "language-shift"],
@@ -1107,7 +1132,7 @@
     },
     {
       "id": "lakota", "name": "Lakota", "family": "other", "familyName": "Siouan", "branch": "Dakotan",
-      "start": 1000, "end": null, "era": "on the northern Plains", "at": [-101.5, 44],
+      "start": 1000, "end": null, "era": "on the northern Plains", "at": [-101.5, 44], "area": 350,
       "summary": "A Siouan language of the northern Plains, closely related to Dakota. Most first-language speakers are elderly, and immersion schools are working to reverse the decline.",
       "night": { "form": "haŋhépi", "cognate": null },
       "concepts": ["language-shift"],
@@ -1115,31 +1140,31 @@
     },
     {
       "id": "proto-uto-aztecan", "name": "Proto-Uto-Aztecan", "family": "other", "familyName": "Uto-Aztecan", "branch": "Proto-language", "kind": "proto",
-      "start": -3000, "end": -2000, "era": "c. 3000 BCE (estimate; homeland debated)", "at": [-111, 32],
+      "start": -3000, "end": -2000, "era": "c. 3000 BCE (estimate; homeland debated)", "at": [-111, 32], "area": 550,
       "summary": "Ancestor of languages from Idaho to El Salvador, including Shoshone, Comanche, Hopi, O’odham and Nahuatl. Whether its homeland was in the US Southwest or in Mesoamerica is disputed, a question tied to the spread of maize farming.",
       "sources": ["campbell-1997", "mithun-1999"]
     },
     {
       "id": "hopi", "name": "Hopi", "family": "other", "familyName": "Uto-Aztecan", "branch": "Hopi", "parent": "proto-uto-aztecan",
-      "start": 1000, "end": null, "era": "on the Hopi mesas of Arizona", "at": [-110.5, 35.85],
+      "start": 1000, "end": null, "era": "on the Hopi mesas of Arizona", "at": [-110.5, 35.85], "area": 90,
       "summary": "Spoken in villages on the Hopi mesas. Benjamin Lee Whorf’s claim that Hopi had no words for time became famous in debates about language and thought; Ekkehart Malotki’s Hopi Time (1983) showed that Hopi has a rich vocabulary for it.",
       "sources": ["malotki-1983", "mithun-1999"]
     },
     {
       "id": "comanche", "name": "Comanche", "family": "other", "familyName": "Uto-Aztecan", "branch": "Numic", "parent": "proto-uto-aztecan",
-      "start": 1700, "end": null, "era": "on the southern Plains from c. 1700", "at": [-99.5, 34.5], "via": [[-110, 42.5]],
+      "start": 1700, "end": null, "era": "on the southern Plains from c. 1700", "at": [-99.5, 34.5], "area": 300, "via": [[-110, 42.5]],
       "summary": "Comanche split from Shoshone around 1700, when its speakers, newly mounted on horses, moved from the Great Basin onto the southern Plains. Comanche code talkers served in the Second World War.",
       "sources": ["mithun-1999"]
     },
     {
       "id": "proto-mayan", "name": "Proto-Mayan", "family": "other", "familyName": "Mayan", "branch": "Proto-language", "kind": "proto",
-      "start": -2200, "end": -1000, "era": "c. 2200 BCE (estimate)", "at": [-91.5, 15.6],
+      "start": -2200, "end": -1000, "era": "c. 2200 BCE (estimate)", "at": [-91.5, 15.6], "area": 400,
       "summary": "Reconstructed by Terrence Kaufman and others and usually placed in the Cuchumatanes highlands of western Guatemala. About thirty Mayan languages descend from it.",
       "sources": ["aissen-2017", "campbell-1997"]
     },
     {
       "id": "yucatec", "name": "Yucatec Maya", "family": "other", "familyName": "Mayan", "branch": "Yucatecan", "parent": "proto-mayan",
-      "start": 1000, "end": null, "era": "texts in Latin script from the 16th century", "at": [-89.2, 20.6],
+      "start": 1000, "end": null, "era": "texts in Latin script from the 16th century", "at": [-89.2, 20.6], "area": 220,
       "summary": "The Mayan language of the Yucatán Peninsula, recorded in the colonial Books of Chilam Balam and still widely spoken.",
       "speakers": "≈ 775,000 speakers (Mexican census, 2020)",
       "night": { "form": "áakʼab", "cognate": null },
@@ -1147,27 +1172,27 @@
     },
     {
       "id": "kiche", "name": "Kʼicheʼ", "family": "other", "familyName": "Mayan", "branch": "Kʼichean", "parent": "proto-mayan",
-      "start": 1000, "end": null, "era": "Popol Vuh written down in the mid-16th century", "at": [-91.15, 14.9],
+      "start": 1000, "end": null, "era": "Popol Vuh written down in the mid-16th century", "at": [-91.15, 14.9], "area": 120,
       "summary": "The most widely spoken Mayan language of Guatemala. The Popol Vuh, the Kʼicheʼ book of creation, was written in Latin letters in the mid-16th century.",
       "speakers": "over a million speakers",
       "sources": ["aissen-2017"]
     },
     {
       "id": "zapotec", "name": "Zapotec", "family": "other", "familyName": "Oto-Manguean", "branch": "Zapotecan",
-      "start": -500, "end": null, "era": "inscriptions from c. 500 BCE", "at": [-96.77, 17.04],
+      "start": -500, "end": null, "era": "inscriptions from c. 500 BCE", "at": [-96.77, 17.04], "area": 150,
       "summary": "Zapotec writing at Monte Albán and San José Mogote is among the earliest in Mesoamerica. ‘Zapotec’ today is a cluster of dozens of tonal varieties, many of them mutually unintelligible.",
       "sources": ["urcid-2001", "campbell-1997"]
     },
     {
       "id": "taino", "name": "Taíno", "family": "other", "familyName": "Arawakan", "branch": "Caribbean Arawakan",
-      "start": 600, "end": 1600, "era": "c. 600 – 16th century", "at": [-70.5, 19.0],
+      "start": 600, "end": 1600, "era": "c. 600 – 16th century", "at": [-70.5, 19.0], "area": 400,
       "summary": "The language of the people Columbus met in 1492. It vanished within a century of conquest, but survives in words borrowed through Spanish: hurricane, canoe, hammock and maize.",
       "concepts": ["borrowing", "language-shift"],
       "sources": ["granberry-vescelius-2004", "campbell-1997"]
     },
     {
       "id": "jamaican-patois", "name": "Jamaican Patois", "family": "other", "familyName": "Creole (English-lexified)", "branch": "English-based creole", "parent": "english", "relation": "contact",
-      "start": 1700, "end": null, "era": "from the late 17th century", "at": [-77.3, 18.1],
+      "start": 1700, "end": null, "era": "from the late 17th century", "at": [-77.3, 18.1], "area": 120,
       "summary": "Formed on Jamaica’s sugar plantations from English and West African languages, notably Akan. Most Jamaicans speak it alongside Standard English, in a continuum that runs from broad creole to the standard.",
       "night": { "form": "nait", "cognate": true, "note": "From English night." },
       "concepts": ["pidgin-creole", "dialect-continuum"],
@@ -1175,20 +1200,20 @@
     },
     {
       "id": "papiamento", "name": "Papiamento", "family": "other", "familyName": "Creole (Iberian-lexified)", "branch": "Iberian-based creole",
-      "start": 1700, "end": null, "era": "first written text 1775", "at": [-68.93, 12.11],
+      "start": 1700, "end": null, "era": "first written text 1775", "at": [-68.93, 12.11], "area": 40,
       "summary": "The creole of Curaçao, Aruba and Bonaire, with vocabulary mostly from Portuguese and Spanish and later Dutch; whether it began as a Portuguese or a Spanish creole is debated. Unusually for a creole, it is used by every social class and is an official language of Aruba and Curaçao.",
       "concepts": ["pidgin-creole"],
       "sources": ["velupillai-2015"]
     },
     {
       "id": "proto-tupi-guarani", "name": "Proto-Tupí–Guaraní", "family": "other", "familyName": "Tupian", "branch": "Tupí–Guaraní", "kind": "proto",
-      "start": -500, "end": 500, "era": "c. 2,000–2,500 years ago (estimate)", "at": [-62, -11],
+      "start": -500, "end": 500, "era": "c. 2,000–2,500 years ago (estimate)", "at": [-62, -11], "area": 550,
       "summary": "The ancestor of the Tupí–Guaraní languages, which spread along rivers and coasts over a huge part of South America. The wider Tupian family probably began in the southwestern Amazon.",
       "sources": ["aikhenvald-2012", "dixon-aikhenvald-1999"]
     },
     {
       "id": "old-tupi", "name": "Old Tupi", "family": "other", "familyName": "Tupian", "branch": "Tupí–Guaraní", "parent": "proto-tupi-guarani",
-      "start": 1500, "end": 1800, "era": "recorded from the 16th century", "at": [-38.5, -12.97],
+      "start": 1500, "end": 1800, "era": "recorded from the 16th century", "at": [-38.5, -12.97], "area": 700,
       "summary": "The Tupinambá language of the Brazilian coast, described by the Jesuit José de Anchieta (1595). As the ‘Língua Geral’ it was the everyday lingua franca of colonial Brazil until the 18th century. English owes it jaguar, piranha, tapioca and toucan.",
       "night": { "form": "pytuna", "cognate": null },
       "concepts": ["borrowing", "contact"],
@@ -1196,7 +1221,7 @@
     },
     {
       "id": "nheengatu", "name": "Nheengatu", "family": "other", "familyName": "Tupian", "branch": "Tupí–Guaraní", "parent": "old-tupi",
-      "start": 1700, "end": null, "era": "from the 18th century", "at": [-67.1, -0.13],
+      "start": 1700, "end": null, "era": "from the 18th century", "at": [-67.1, -0.13], "area": 600,
       "summary": "The ‘Língua Geral Amazônica’, the Amazonian descendant of colonial Tupi. It is still spoken along the Rio Negro, where it became the language of peoples who once spoke other languages, and is co-official in São Gabriel da Cachoeira.",
       "night": { "form": "pituna", "cognate": null },
       "concepts": ["language-shift"],
@@ -1204,7 +1229,7 @@
     },
     {
       "id": "guarani", "name": "Guarani", "family": "other", "familyName": "Tupian", "branch": "Tupí–Guaraní", "parent": "proto-tupi-guarani",
-      "start": 1000, "end": null, "era": "texts from the 17th century", "at": [-57.6, -25.3],
+      "start": 1000, "end": null, "era": "texts from the 17th century", "at": [-57.6, -25.3], "area": 350,
       "summary": "Co-official with Spanish in Paraguay and spoken by most Paraguayans, Indigenous or not, which is unusual among the Indigenous languages of the Americas. The Jesuit missions (1609–1767) used and printed it.",
       "speakers": "spoken by most of Paraguay’s population",
       "night": { "form": "pyhare", "cognate": null },
@@ -1213,7 +1238,7 @@
     },
     {
       "id": "aymara", "name": "Aymara", "family": "other", "familyName": "Aymaran", "branch": "Aymaran",
-      "start": 500, "end": null, "era": "from the 1st millennium CE", "at": [-68.15, -16.5],
+      "start": 500, "end": null, "era": "from the 1st millennium CE", "at": [-68.15, -16.5], "area": 250,
       "summary": "The second great language family of the Andes, long in contact with Quechua and sharing much vocabulary and structure with it. Aymara speakers talk and gesture as if the past lies ahead of them and the future behind.",
       "speakers": "about 2 million speakers",
       "night": { "form": "aruma", "cognate": null },
@@ -1222,14 +1247,14 @@
     },
     {
       "id": "mapudungun", "name": "Mapudungun", "family": "other", "familyName": "Araucanian", "branch": "Araucanian",
-      "start": 1000, "end": null, "era": "first grammar 1606", "at": [-72.6, -38.7],
+      "start": 1000, "end": null, "era": "first grammar 1606", "at": [-72.6, -38.7], "area": 300,
       "summary": "The language of the Mapuche of Chile and Argentina, who resisted both the Inca and the Spanish; Chile and Argentina conquered their lands only in the 1880s. Its first grammar, by Luis de Valdivia, was printed in Lima in 1606.",
       "night": { "form": "pun", "cognate": null },
       "sources": ["adelaar-muysken-2004"]
     },
     {
       "id": "igbo", "name": "Igbo", "family": "niger-congo", "branch": "Volta–Niger (Igboid)",
-      "start": 900, "end": null, "era": "from the 1st millennium CE", "at": [7.5, 5.8],
+      "start": 900, "end": null, "era": "from the 1st millennium CE", "at": [7.5, 5.8], "area": 200,
       "summary": "A tonal language of southeastern Nigeria. Chinua Achebe’s novels carried Igbo proverbs and words to readers worldwide.",
       "speakers": "around 30 million speakers",
       "night": { "form": "abalị", "cognate": null },
@@ -1237,7 +1262,7 @@
     },
     {
       "id": "akan", "name": "Akan (Twi, Fante)", "family": "niger-congo", "branch": "Kwa",
-      "start": 1000, "end": null, "era": "language of the Asante kingdom (from c. 1700)", "at": [-1.62, 6.69],
+      "start": 1000, "end": null, "era": "language of the Asante kingdom (from c. 1700)", "at": [-1.62, 6.69], "area": 250,
       "summary": "The most widely spoken language of Ghana and the language of the Asante kingdom. Through the Atlantic slave trade it left its mark on Caribbean creoles: Anansi the spider and day-names such as Kofi and Cudjoe crossed with it.",
       "night": { "form": "anadwo", "cognate": null },
       "concepts": ["contact", "borrowing"],
@@ -1245,7 +1270,7 @@
     },
     {
       "id": "wolof", "name": "Wolof", "family": "niger-congo", "branch": "Atlantic",
-      "start": 1300, "end": null, "era": "Jolof Empire from c. 1350", "at": [-16.0, 15.0],
+      "start": 1300, "end": null, "era": "Jolof Empire from c. 1350", "at": [-16.0, 15.0], "area": 250,
       "summary": "The lingua franca of Senegal, spoken as a first or second language by most Senegalese. Urban Wolof mixes freely with French.",
       "night": { "form": "guddi", "cognate": null },
       "concepts": ["contact"],
@@ -1253,12 +1278,12 @@
     },
     {
       "id": "fula", "name": "Fula (Fulfulde, Pulaar)", "family": "niger-congo", "branch": "Atlantic",
-      "start": 1000, "end": null, "era": "spread east across the Sahel from c. 1000", "at": [-14, 16.2],
+      "start": 1000, "end": null, "era": "spread east across the Sahel from c. 1000", "at": [-14, 16.2], "area": 300,
       "places": [
-        { "from": 1400, "at": [-4.2, 14.4], "label": "Macina, in the inner Niger delta" },
-        { "from": 1450, "at": [8.5, 12.5], "label": "Hausaland (from the 15th century)" },
-        { "from": 1725, "at": [-12.2, 11.3], "label": "Futa Jallon (imamate from 1725)" },
-        { "from": 1806, "at": [12.4, 9.3], "label": "Adamawa (from 1806)" }
+        { "from": 1400, "at": [-4.2, 14.4], "label": "Macina, in the inner Niger delta", "area": 250 },
+        { "from": 1450, "at": [8.5, 12.5], "label": "Hausaland (from the 15th century)", "area": false },
+        { "from": 1725, "at": [-12.2, 11.3], "label": "Futa Jallon (imamate from 1725)", "area": 200 },
+        { "from": 1806, "at": [12.4, 9.3], "label": "Adamawa (from 1806)", "area": 250 }
       ],
       "summary": "Carried by Fulani herders across the Sahel from Senegal to Cameroon and Sudan, and now spoken in some twenty countries. Fulani-led states such as the Sokoto Caliphate (1804) spread it further.",
       "speakers": "tens of millions of speakers in some twenty countries",
@@ -1267,10 +1292,10 @@
     },
     {
       "id": "manding", "name": "Manding (Bambara, Mandinka, Dyula)", "family": "niger-congo", "branch": "Mande (its place in Niger–Congo is debated)",
-      "start": 1000, "end": null, "era": "language of the Mali Empire (from the 13th century)", "at": [-8.0, 12.65],
+      "start": 1000, "end": null, "era": "language of the Mali Empire (from the 13th century)", "at": [-8.0, 12.65], "area": 400,
       "places": [
-        { "from": 1300, "at": [-15.6, 13.4], "label": "Senegambia (Mandinka)" },
-        { "from": 1400, "at": [-4.3, 11.2], "label": "Trade routes to the south (Dyula)" }
+        { "from": 1300, "at": [-15.6, 13.4], "label": "Senegambia (Mandinka)", "area": 200 },
+        { "from": 1400, "at": [-4.3, 11.2], "label": "Trade routes to the south (Dyula)", "area": false }
       ],
       "summary": "The language of the Mali Empire founded by Sundiata Keita in the 13th century, and of the griots who keep its epic alive. Bambara is now Mali’s lingua franca and Dyula a trade language of Côte d’Ivoire and Burkina Faso; Solomana Kanté created the N’Ko alphabet for it in 1949.",
       "night": { "form": "su", "cognate": null },
@@ -1279,13 +1304,13 @@
     },
     {
       "id": "kikongo", "name": "Kikongo", "family": "niger-congo", "branch": "Bantu (Kongo)", "parent": "proto-bantu",
-      "start": 1000, "end": null, "era": "earliest Bantu-language book, 1624", "at": [14.25, -6.27], "via": [[12.5, 1.5]],
+      "start": 1000, "end": null, "era": "earliest Bantu-language book, 1624", "at": [14.25, -6.27], "area": 300, "via": [[12.5, 1.5]],
       "summary": "The language of the Kingdom of Kongo, which corresponded with Portugal from the 1480s. A catechism printed in Kikongo in 1624 is the oldest surviving book in any Bantu language.",
       "sources": ["nurse-philippson-2003"]
     },
     {
       "id": "lingala", "name": "Lingala", "family": "niger-congo", "branch": "Bantu (Ngiri–Bangi)", "parent": "proto-bantu",
-      "start": 1880, "end": null, "era": "trade language from the late 19th century", "at": [15.3, -4.32], "via": [[12.5, 1.5], [18.3, 0.0]],
+      "start": 1880, "end": null, "era": "trade language from the late 19th century", "at": [15.3, -4.32], "area": 400, "via": [[12.5, 1.5], [18.3, 0.0]],
       "summary": "Grew out of Bobangi, a trade language of the middle Congo River, after the colonial state adopted it at its river posts in the 1880s. It is now the language of Kinshasa’s streets, of the army and of Congolese rumba.",
       "night": { "form": "butú", "cognate": null },
       "concepts": ["contact"],
@@ -1293,28 +1318,28 @@
     },
     {
       "id": "luganda", "name": "Luganda", "family": "niger-congo", "branch": "Bantu (Great Lakes)", "parent": "proto-bantu",
-      "start": 1300, "end": null, "era": "language of the Buganda kingdom (from the 14th century)", "at": [32.58, 0.35], "via": [[27, 2.5]],
+      "start": 1300, "end": null, "era": "language of the Buganda kingdom (from the 14th century)", "at": [32.58, 0.35], "area": 200, "via": [[27, 2.5]],
       "summary": "The language of the Buganda kingdom on the shores of Lake Victoria and a lingua franca of southern Uganda.",
       "night": { "form": "ekiro", "cognate": null },
       "sources": ["nurse-philippson-2003"]
     },
     {
       "id": "kinyarwanda", "name": "Kinyarwanda", "family": "niger-congo", "branch": "Bantu (Great Lakes)", "parent": "proto-bantu",
-      "start": 1000, "end": null, "era": "from c. 1000", "at": [30.06, -1.95], "via": [[27, 2.5]],
+      "start": 1000, "end": null, "era": "from c. 1000", "at": [30.06, -1.95], "area": 150, "via": [[27, 2.5]],
       "summary": "Spoken by nearly all Rwandans and mutually intelligible with Kirundi, the language of Burundi; together they form one of the largest Bantu languages.",
       "night": { "form": "ijoro", "cognate": null },
       "sources": ["nurse-philippson-2003"]
     },
     {
       "id": "shona", "name": "Shona", "family": "niger-congo", "branch": "Bantu (Shona)", "parent": "proto-bantu",
-      "start": 1000, "end": null, "era": "from c. 1000; Great Zimbabwe 11th–15th century", "at": [31.05, -17.83], "via": [[27, 2.5], [30, -8]],
+      "start": 1000, "end": null, "era": "from c. 1000; Great Zimbabwe 11th–15th century", "at": [31.05, -17.83], "area": 350, "via": [[27, 2.5], [30, -8]],
       "summary": "The language of the builders of Great Zimbabwe; the country’s name comes from the Shona dzimba dza mabwe, ‘houses of stone’.",
       "night": { "form": "usiku", "cognate": null },
       "sources": ["nurse-philippson-2003"]
     },
     {
       "id": "xhosa", "name": "Xhosa", "family": "niger-congo", "branch": "Bantu (Nguni)", "parent": "proto-bantu",
-      "start": 1500, "end": null, "era": "from c. 1500", "at": [27.4, -32.9], "via": [[27, -10]],
+      "start": 1500, "end": null, "era": "from c. 1500", "at": [27.4, -32.9], "area": 300, "via": [[27, -10]],
       "summary": "A Nguni language with three series of click consonants, borrowed from neighbouring Khoekhoe languages. It was Nelson Mandela’s first language.",
       "night": { "form": "ubusuku", "cognate": null },
       "concepts": ["contact", "borrowing"],
@@ -1322,7 +1347,7 @@
     },
     {
       "id": "hausa", "name": "Hausa", "family": "afroasiatic", "branch": "Chadic",
-      "start": 1000, "end": null, "era": "Hausa city-states from c. 1000; Ajami texts from the 17th century", "at": [8.52, 12.0],
+      "start": 1000, "end": null, "era": "Hausa city-states from c. 1000; Ajami texts from the 17th century", "at": [8.52, 12.0], "area": 400,
       "summary": "The most widely spoken Chadic language and a lingua franca across West Africa. It was written in Arabic script (Ajami) for centuries before Latin script (boko) was adopted under colonial rule.",
       "speakers": "tens of millions of first-language speakers and many more second-language speakers",
       "night": { "form": "dare", "cognate": null },
@@ -1331,7 +1356,7 @@
     },
     {
       "id": "somali", "name": "Somali", "family": "afroasiatic", "branch": "Cushitic",
-      "start": 1000, "end": null, "era": "official Latin alphabet from 1972", "at": [45.34, 2.05],
+      "start": 1000, "end": null, "era": "official Latin alphabet from 1972", "at": [45.34, 2.05], "area": 500,
       "summary": "A Cushitic language famous for its oral poetry. After decades of debate between Arabic, Latin and the native Osmanya script, the Latin alphabet was made official in 1972.",
       "night": { "form": "habeen", "cognate": null },
       "concepts": ["standardization"],
@@ -1339,9 +1364,9 @@
     },
     {
       "id": "oromo", "name": "Oromo", "family": "afroasiatic", "branch": "Cushitic",
-      "start": 1000, "end": null, "era": "expanded north in the 16th century; Latin script (Qubee) from 1991", "at": [38.5, 5.0],
+      "start": 1000, "end": null, "era": "expanded north in the 16th century; Latin script (Qubee) from 1991", "at": [38.5, 5.0], "area": 450,
       "places": [
-        { "from": 1550, "at": [38.5, 9.0], "label": "Central and western Ethiopia (16th-century expansion)" }
+        { "from": 1550, "at": [38.5, 9], "label": "Central and western Ethiopia (16th-century expansion)", "area": 400 }
       ],
       "summary": "Ethiopia’s most widely spoken first language. The Oromo migrations of the 16th century carried it far to the north; since 1991 it has been written in a Latin alphabet, Qubee.",
       "night": { "form": "halkan", "cognate": null },
@@ -1350,7 +1375,7 @@
     },
     {
       "id": "berber", "name": "Berber (Tamazight)", "family": "afroasiatic", "branch": "Berber",
-      "start": -200, "end": null, "era": "Libyco-Berber inscriptions from the 2nd century BCE", "at": [-5.0, 32.0],
+      "start": -200, "end": null, "era": "Libyco-Berber inscriptions from the 2nd century BCE", "at": [-5.0, 32.0], "area": 600,
       "summary": "Spoken across North Africa before Arabic arrived and still the first language of millions, especially in Morocco and Algeria. The Tuareg kept an ancient alphabet, Tifinagh. Tamazight became an official language of Morocco in 2011 and of Algeria in 2016.",
       "night": { "form": "iḍ", "cognate": null },
       "concepts": ["language-shift", "contact"],
@@ -1358,54 +1383,54 @@
     },
     {
       "id": "old-nubian", "name": "Old Nubian", "family": "other", "familyName": "Nilo-Saharan (proposed)", "branch": "Nubian",
-      "start": 750, "end": 1500, "era": "texts c. 8th–15th century", "at": [30.73, 18.22],
+      "start": 750, "end": 1500, "era": "texts c. 8th–15th century", "at": [30.73, 18.22], "area": 250,
       "summary": "The language of the Christian kingdoms of medieval Nubia, written in an alphabet adapted from Coptic with extra letters taken from Meroitic.",
       "sources": ["browne-2002", "heine-nurse-2000"]
     },
     {
       "id": "nobiin", "name": "Nobiin", "family": "other", "familyName": "Nilo-Saharan (proposed)", "branch": "Nubian", "parent": "old-nubian",
-      "start": 1500, "end": null, "era": "from c. 1500", "at": [31.3, 22.0],
+      "start": 1500, "end": null, "era": "from c. 1500", "at": [31.3, 22.0], "area": 200,
       "summary": "The descendant of Old Nubian, spoken along the Nile in southern Egypt and northern Sudan. Lake Nasser, created by the Aswan High Dam in the 1960s, flooded much of its homeland and displaced its speakers.",
       "concepts": ["language-shift"],
       "sources": ["heine-nurse-2000", "glottolog"]
     },
     {
       "id": "kanuri", "name": "Kanuri", "family": "other", "familyName": "Nilo-Saharan (proposed)", "branch": "Saharan",
-      "start": 900, "end": null, "era": "language of the Kanem–Bornu empire (9th–19th century)", "at": [17.0, 14.0], "homeUntil": 1400,
+      "start": 900, "end": null, "era": "language of the Kanem–Bornu empire (9th–19th century)", "at": [17.0, 14.0], "area": 350, "homeUntil": 1400,
       "places": [
-        { "from": 1380, "at": [13.15, 11.85], "label": "Bornu, west of Lake Chad (from the 1380s)" }
+        { "from": 1380, "at": [13.15, 11.85], "label": "Bornu, west of Lake Chad (from the 1380s)", "area": 350 }
       ],
       "summary": "The language of the Kanem–Bornu empire, which lasted about a thousand years around Lake Chad. Its ruling dynasty moved from Kanem, northeast of the lake, to Bornu in the late 14th century.",
       "sources": ["heine-nurse-2000"]
     },
     {
       "id": "dholuo", "name": "Dholuo", "family": "other", "familyName": "Nilo-Saharan (proposed)", "branch": "Nilotic (Western)",
-      "start": 1500, "end": null, "era": "in Kenya from the 15th–16th centuries", "at": [34.75, -0.1],
+      "start": 1500, "end": null, "era": "in Kenya from the 15th–16th centuries", "at": [34.75, -0.1], "area": 180,
       "summary": "The language of the Luo of Kenya and Tanzania, whose ancestors migrated south from what is now South Sudan in the 15th and 16th centuries.",
       "sources": ["heine-nurse-2000"]
     },
     {
       "id": "maasai", "name": "Maasai", "family": "other", "familyName": "Nilo-Saharan (proposed)", "branch": "Nilotic (Eastern)",
-      "start": 1500, "end": null, "era": "from c. 1500", "at": [36.0, -2.5],
+      "start": 1500, "end": null, "era": "from c. 1500", "at": [36.0, -2.5], "area": 300,
       "summary": "The language of Maasai herders in Kenya and Tanzania: a tonal Nilotic language whose basic word order puts the verb first.",
       "sources": ["heine-nurse-2000"]
     },
     {
       "id": "khoekhoe", "name": "Khoekhoe (Nama)", "family": "other", "familyName": "Khoe–Kwadi", "branch": "Khoe",
-      "start": 1000, "end": null, "era": "recorded from the 17th century", "at": [17.1, -24.5],
+      "start": 1000, "end": null, "era": "recorded from the 17th century", "at": [17.1, -24.5], "area": 450,
       "summary": "The most widely spoken of the non-Bantu click languages of southern Africa, used in Namibia (Nama and Damara) and South Africa. Neighbouring Bantu languages such as Xhosa and Zulu borrowed their clicks from Khoekhoe and related languages.",
       "concepts": ["contact", "borrowing"],
       "sources": ["gueldemann-2018"]
     },
     {
       "id": "taa", "name": "Taa (ǃXóõ)", "family": "other", "familyName": "Tuu", "branch": "Taa",
-      "start": 1000, "end": null, "era": "Kalahari Desert", "at": [21.0, -24.0],
+      "start": 1000, "end": null, "era": "Kalahari Desert", "at": [21.0, -24.0], "area": 250,
       "summary": "A language of the Kalahari with one of the largest sound inventories ever recorded, often counted at over 100 consonants, most of them clicks. It has only a few thousand speakers.",
       "sources": ["gueldemann-2018"]
     },
     {
       "id": "nigerian-pidgin", "name": "Nigerian Pidgin", "family": "other", "familyName": "Creole (English-lexified)", "branch": "English-based pidgin/creole", "parent": "english", "relation": "contact",
-      "start": 1800, "end": null, "era": "from 18th–19th-century coastal trade", "at": [5.75, 5.52],
+      "start": 1800, "end": null, "era": "from 18th–19th-century coastal trade", "at": [5.75, 5.52], "area": 150,
       "summary": "Grew from a coastal trade pidgin into a lingua franca for tens of millions of Nigerians and a first language for millions, especially around Warri and Port Harcourt. The BBC has broadcast in it since 2017.",
       "night": { "form": "nait", "cognate": true, "note": "From English night." },
       "concepts": ["pidgin-creole"],
@@ -1413,20 +1438,20 @@
     },
     {
       "id": "proto-pama-nyungan", "name": "Proto-Pama–Nyungan", "family": "other", "familyName": "Pama–Nyungan", "branch": "Proto-language", "kind": "proto",
-      "start": -4000, "end": -3000, "era": "c. 4000 BCE (estimate)", "at": [141.5, -18.5],
+      "start": -4000, "end": -3000, "era": "c. 4000 BCE (estimate)", "at": [141.5, -18.5], "area": 550,
       "summary": "The ancestor of most Aboriginal Australian languages, which together cover about seven-eighths of the continent. A phylogenetic study places it in the Gulf Plains of northern Queensland about 6,000 years ago, spreading across a continent people had already lived in for tens of thousands of years.",
       "sources": ["bouckaert-bowern-atkinson-2018", "bowern-atkinson-2012"]
     },
     {
       "id": "guugu-yimidhirr", "name": "Guugu Yimidhirr", "family": "other", "familyName": "Pama–Nyungan", "branch": "Paman", "parent": "proto-pama-nyungan",
-      "start": 1000, "end": null, "era": "word list recorded by Cook’s expedition, 1770", "at": [145.25, -15.47],
+      "start": 1000, "end": null, "era": "word list recorded by Cook’s expedition, 1770", "at": [145.25, -15.47], "area": 120,
       "summary": "When James Cook’s ship was repaired at the Endeavour River in 1770, his crew wrote down gangurru, which entered English as kangaroo. The language is also known for describing space with compass directions (‘the cup is north of the plate’) rather than left and right.",
       "concepts": ["borrowing"],
       "sources": ["haviland-1974", "dixon-2002"]
     },
     {
       "id": "warlpiri", "name": "Warlpiri", "family": "other", "familyName": "Pama–Nyungan", "branch": "Ngumpin–Yapa", "parent": "proto-pama-nyungan",
-      "start": 1000, "end": null, "era": "Tanami Desert, Northern Territory", "at": [131.8, -21.0],
+      "start": 1000, "end": null, "era": "Tanami Desert, Northern Territory", "at": [131.8, -21.0], "area": 250,
       "summary": "A desert language with a few thousand speakers, one of the strongest Aboriginal languages today. Warlpiri also has a sign language, used especially during mourning, and young people have created a new mixed language, Light Warlpiri, from Warlpiri, Kriol and English.",
       "night": { "form": "munga", "cognate": null },
       "concepts": ["contact"],
@@ -1434,68 +1459,68 @@
     },
     {
       "id": "pitjantjatjara", "name": "Pitjantjatjara", "family": "other", "familyName": "Pama–Nyungan", "branch": "Western Desert", "parent": "proto-pama-nyungan",
-      "start": 1000, "end": null, "era": "Central Australia", "at": [131.0, -26.3],
+      "start": 1000, "end": null, "era": "Central Australia", "at": [131.0, -26.3], "area": 350,
       "summary": "A variety of the Western Desert language, spoken around Uluṟu; the Western Desert dialect chain covers a vast part of central and western Australia.",
       "concepts": ["dialect-continuum"],
       "sources": ["dixon-2002"]
     },
     {
       "id": "dharug", "name": "Dharug (Sydney language)", "family": "other", "familyName": "Pama–Nyungan", "branch": "Yuin–Kuric", "parent": "proto-pama-nyungan",
-      "start": 1000, "end": null, "status": "revived", "era": "recorded from 1788; now being revived", "at": [151.0, -33.8],
+      "start": 1000, "end": null, "status": "revived", "era": "recorded from 1788; now being revived", "at": [151.0, -33.8], "area": 80,
       "summary": "The language of the Sydney region, where the British landed in 1788. Within a few decades disease and dispossession had devastated its speakers, but not before English borrowed dingo, wombat, koala, waratah and boomerang from it.",
       "concepts": ["borrowing", "language-shift"],
       "sources": ["troy-1994", "dixon-2002"]
     },
     {
       "id": "kriol", "name": "Kriol", "family": "other", "familyName": "Creole (English-lexified)", "branch": "English-based creole", "parent": "english", "relation": "contact",
-      "start": 1908, "end": null, "era": "from the early 20th century", "at": [134.7, -14.8],
+      "start": 1908, "end": null, "era": "from the early 20th century", "at": [134.7, -14.8], "area": 400,
       "summary": "An English-based creole that took shape at the Roper River mission, founded in 1908, and spread across northern Australia. With some 20,000 speakers it is now one of the largest languages of Aboriginal Australia.",
       "concepts": ["pidgin-creole", "language-shift"],
       "sources": ["velupillai-2015"]
     },
     {
       "id": "proto-trans-new-guinea", "name": "Proto-Trans–New Guinea", "family": "other", "familyName": "Trans–New Guinea", "branch": "Proto-language", "kind": "proto",
-      "start": -4500, "end": -3500, "era": "at least 6,000 years ago (estimate)", "at": [144.5, -6.0],
+      "start": -4500, "end": -3500, "era": "at least 6,000 years ago (estimate)", "at": [144.5, -6.0], "area": 550,
       "summary": "Ancestor of the largest family of New Guinea, with several hundred languages. Its spread may be linked to early farming in the highlands, one of the world’s independent centres of plant domestication.",
       "sources": ["pawley-hammarstrom-2018", "palmer-2018"]
     },
     {
       "id": "enga", "name": "Enga", "family": "other", "familyName": "Trans–New Guinea", "branch": "Engan", "parent": "proto-trans-new-guinea",
-      "start": 1000, "end": null, "era": "Papua New Guinea highlands", "at": [143.6, -5.45],
+      "start": 1000, "end": null, "era": "Papua New Guinea highlands", "at": [143.6, -5.45], "area": 100,
       "summary": "One of the largest Papuan languages, spoken in the densely populated highlands. Papua New Guinea has more than 800 languages, the greatest linguistic diversity of any country.",
       "sources": ["pawley-hammarstrom-2018", "palmer-2018"]
     },
     {
       "id": "fijian", "name": "Fijian", "family": "austronesian", "branch": "Oceanic (Central Pacific)", "parent": "proto-oceanic",
-      "start": -1000, "end": null, "era": "settlement c. 1000 BCE", "at": [178.44, -18.14],
+      "start": -1000, "end": null, "era": "settlement c. 1000 BCE", "at": [178.44, -18.14], "area": 250,
       "summary": "Fiji was settled by Lapita voyagers around 1000 BCE; Fijian and the Polynesian languages descend from closely related Central Pacific dialects.",
       "night": { "form": "bogi", "cognate": null },
       "sources": ["blust-2013"]
     },
     {
       "id": "tongan", "name": "Tongan", "family": "austronesian", "branch": "Polynesian", "parent": "proto-polynesian",
-      "start": 300, "end": null, "era": "from the 1st millennium CE", "at": [-175.2, -21.13],
+      "start": 300, "end": null, "era": "from the 1st millennium CE", "at": [-175.2, -21.13], "area": 150,
       "summary": "The language of the Kingdom of Tonga, often described as the only Pacific island state never formally colonised.",
       "night": { "form": "pō", "cognate": null },
       "sources": ["blust-2013"]
     },
     {
       "id": "tahitian", "name": "Tahitian", "family": "austronesian", "branch": "Polynesian (East)", "parent": "proto-polynesian",
-      "start": 1000, "end": null, "era": "settlement c. 1000–1100", "at": [-149.45, -17.65],
+      "start": 1000, "end": null, "era": "settlement c. 1000–1100", "at": [-149.45, -17.65], "area": 200,
       "summary": "The Society Islands were among the first parts of East Polynesia to be settled, around 1000 CE. From there voyagers reached Hawai‘i, Rapa Nui and New Zealand within a few centuries.",
       "night": { "form": "pō", "cognate": null },
       "sources": ["wilmshurst-2011", "blust-2013"]
     },
     {
       "id": "rapa-nui", "name": "Rapa Nui", "family": "austronesian", "branch": "Polynesian (East)", "parent": "proto-polynesian",
-      "start": 1200, "end": null, "era": "settlement c. 1200", "at": [-109.35, -27.12], "via": [[-140, -9]],
+      "start": 1200, "end": null, "era": "settlement c. 1200", "at": [-109.35, -27.12], "area": 50, "via": [[-140, -9]],
       "summary": "The language of Easter Island, the most remote inhabited place reached by Polynesian voyagers. The rongorongo script found there has never been deciphered.",
       "night": { "form": "pō", "cognate": null },
       "sources": ["wilmshurst-2011", "blust-2013"]
     },
     {
       "id": "chamorro", "name": "Chamorro", "family": "austronesian", "branch": "Malayo-Polynesian", "parent": "proto-malayo-polynesian",
-      "start": -1500, "end": null, "era": "settlement c. 1500 BCE", "at": [144.79, 13.44],
+      "start": -1500, "end": null, "era": "settlement c. 1500 BCE", "at": [144.79, 13.44], "area": 150,
       "summary": "Guam and the Marianas were reached about 3,500 years ago, apparently directly from the Philippines across some 2,000 km of open sea, one of the longest ocean crossings made by that time. Three centuries of Spanish rule left Chamorro full of Spanish loanwords.",
       "night": { "form": "puengi", "cognate": null },
       "concepts": ["borrowing"],
@@ -1503,13 +1528,13 @@
     },
     {
       "id": "formosan", "name": "Formosan languages (Amis, Atayal, Paiwan…)", "family": "austronesian", "branch": "Formosan", "parent": "proto-austronesian",
-      "start": -2500, "end": null, "era": "on Taiwan since the Austronesian beginnings", "at": [121.3, 23.6],
+      "start": -2500, "end": null, "era": "on Taiwan since the Austronesian beginnings", "at": [121.3, 23.6], "area": 180,
       "summary": "The Indigenous languages of Taiwan. They make up several of the oldest branches of Austronesian, while all the languages outside Taiwan belong to a single branch, Malayo-Polynesian; this is the main evidence that the family began on Taiwan. Many are now endangered.",
       "sources": ["blust-2013", "gray-drummond-greenhill-2009"]
     },
     {
       "id": "old-javanese", "name": "Old Javanese (Kawi)", "family": "austronesian", "branch": "Javanese", "parent": "proto-malayo-polynesian",
-      "start": 804, "end": 1500, "era": "inscriptions from 804", "at": [110.4, -7.6],
+      "start": 804, "end": 1500, "era": "inscriptions from 804", "at": [110.4, -7.6], "area": 300,
       "summary": "The literary language of Java’s Hindu–Buddhist kingdoms, first dated in an inscription of 804; it absorbed a large Sanskrit vocabulary.",
       "night": { "form": "wĕṅi", "cognate": null },
       "concepts": ["borrowing", "contact"],
@@ -1517,7 +1542,7 @@
     },
     {
       "id": "javanese", "name": "Javanese", "family": "austronesian", "branch": "Javanese", "parent": "old-javanese",
-      "start": 1500, "end": null, "era": "from c. 1500", "at": [111.2, -7.4],
+      "start": 1500, "end": null, "era": "from c. 1500", "at": [111.2, -7.4], "area": 300,
       "summary": "The Austronesian language with the most native speakers. Its speech levels require different words depending on whom you address: ‘eat’ is mangan between equals but dhahar when speaking of a respected person.",
       "speakers": "≈ 68 million native speakers",
       "night": { "form": "bengi", "cognate": null },
@@ -1526,29 +1551,29 @@
     },
     {
       "id": "cebuano", "name": "Cebuano", "family": "austronesian", "branch": "Philippine (Bisayan)", "parent": "proto-malayo-polynesian",
-      "start": 1500, "end": null, "era": "from the 16th century", "at": [123.89, 10.32],
+      "start": 1500, "end": null, "era": "from the 16th century", "at": [123.89, 10.32], "area": 220,
       "summary": "The second most widely spoken native language of the Philippines, centred on Cebu, where Magellan landed in 1521.",
       "night": { "form": "gabii", "cognate": null },
       "sources": ["blust-2013"]
     },
     {
       "id": "cham", "name": "Cham", "family": "austronesian", "branch": "Chamic", "parent": "proto-malayo-polynesian",
-      "start": 350, "end": null, "era": "Đông Yên Châu inscription, c. 4th century", "at": [108.3, 15.8], "via": [[114.8, -2.2]],
+      "start": 350, "end": null, "era": "Đông Yên Châu inscription, c. 4th century", "at": [108.3, 15.8], "area": 200, "via": [[114.8, -2.2]],
       "summary": "Carried from Borneo to the coast of Vietnam, where the Đông Yên Châu inscription (c. 4th century) is the oldest known text in any Austronesian language. Centuries beside Mon–Khmer languages gave Cham mainland traits, including tones in some dialects.",
       "concepts": ["contact", "tonogenesis"],
       "sources": ["thurgood-1999", "blust-2013"]
     },
     {
       "id": "proto-austroasiatic", "name": "Proto-Austroasiatic", "family": "other", "familyName": "Austroasiatic", "branch": "Proto-language", "kind": "proto",
-      "start": -3000, "end": -2000, "era": "c. 3000–2000 BCE (estimate; homeland debated)", "at": [103, 20],
+      "start": -3000, "end": -2000, "era": "c. 3000–2000 BCE (estimate; homeland debated)", "at": [103, 20], "area": 550,
       "summary": "Ancestor of Vietnamese, Khmer, Mon, the Munda languages of India and well over a hundred others. Its homeland, perhaps in the middle Mekong region, and its possible link to the spread of rice farming are debated.",
       "sources": ["jenny-sidwell-2015", "sidwell-jenny-2021"]
     },
     {
       "id": "mon", "name": "Mon", "family": "other", "familyName": "Austroasiatic", "branch": "Monic", "parent": "proto-austroasiatic",
-      "start": 550, "end": null, "era": "inscriptions from the 6th century", "at": [100.06, 13.82], "homeUntil": 1100,
+      "start": 550, "end": null, "era": "inscriptions from the 6th century", "at": [100.06, 13.82], "area": 200, "homeUntil": 1100,
       "places": [
-        { "from": 1000, "at": [97.6, 16.5], "label": "Lower Burma (Thaton and Pegu)" }
+        { "from": 1000, "at": [97.6, 16.5], "label": "Lower Burma (Thaton and Pegu)", "area": 200 }
       ],
       "summary": "The language of the Dvaravati kingdoms of central Thailand and later of Lower Burma. Mon culture and writing strongly influenced the Burmese; Mon is still spoken in Myanmar today.",
       "concepts": ["contact"],
@@ -1556,21 +1581,21 @@
     },
     {
       "id": "old-khmer", "name": "Old Khmer", "family": "other", "familyName": "Austroasiatic", "branch": "Khmeric", "parent": "proto-austroasiatic",
-      "start": 611, "end": 1400, "era": "inscriptions from 611", "at": [103.86, 13.41],
+      "start": 611, "end": 1400, "era": "inscriptions from 611", "at": [103.86, 13.41], "area": 400,
       "summary": "The language of the inscriptions of pre-Angkorian and Angkorian Cambodia, the earliest dated 611 CE. Like Old Javanese and Mon, it absorbed a large Sanskrit vocabulary.",
       "concepts": ["borrowing"],
       "sources": ["jenny-sidwell-2015"]
     },
     {
       "id": "khmer", "name": "Khmer", "family": "other", "familyName": "Austroasiatic", "branch": "Khmeric", "parent": "old-khmer",
-      "start": 1400, "end": null, "era": "from c. 1400", "at": [104.92, 11.56],
+      "start": 1400, "end": null, "era": "from c. 1400", "at": [104.92, 11.56], "area": 300,
       "summary": "Cambodia’s national language. Unlike its neighbours Thai, Lao and Vietnamese it has no tones, but it has one of the largest vowel inventories of any language.",
       "night": { "form": "យប់ (yŭp)", "cognate": null },
       "sources": ["jenny-sidwell-2015"]
     },
     {
       "id": "vietnamese", "name": "Vietnamese", "family": "other", "familyName": "Austroasiatic", "branch": "Vietic", "parent": "proto-austroasiatic",
-      "start": 939, "end": null, "era": "from the 10th century; Latin-based alphabet (quốc ngữ) from the 17th", "at": [105.85, 21.03],
+      "start": 939, "end": null, "era": "from the 10th century; Latin-based alphabet (quốc ngữ) from the 17th", "at": [105.85, 21.03], "area": 350,
       "summary": "Austroasiatic in origin but shaped by a thousand years of Chinese rule: much of its vocabulary is Sino-Vietnamese. Its tones arose from lost final consonants, as Haudricourt showed in 1954. The Latin-based quốc ngữ, developed by missionaries in the 17th century, replaced Chinese characters and chữ Nôm in the 20th.",
       "speakers": "≈ 85 million native speakers",
       "night": { "form": "đêm", "cognate": null },
@@ -1579,19 +1604,19 @@
     },
     {
       "id": "santali", "name": "Santali", "family": "other", "familyName": "Austroasiatic", "branch": "Munda", "parent": "proto-austroasiatic",
-      "start": 1000, "end": null, "era": "Ol Chiki script from 1925", "at": [86.9, 23.3],
+      "start": 1000, "end": null, "era": "Ol Chiki script from 1925", "at": [86.9, 23.3], "area": 220,
       "summary": "The largest Munda language, spoken in eastern India, Bangladesh and Nepal; the Munda branch shows how far west Austroasiatic once reached. Raghunath Murmu created the Ol Chiki alphabet for Santali in 1925.",
       "sources": ["jenny-sidwell-2015"]
     },
     {
       "id": "proto-tai", "name": "Proto-Tai", "family": "other", "familyName": "Tai–Kadai (Kra–Dai)", "branch": "Tai", "kind": "proto",
-      "start": 1, "end": 900, "era": "c. 1st millennium CE (estimate)", "at": [107.5, 23.5],
+      "start": 1, "end": 900, "era": "c. 1st millennium CE (estimate)", "at": [107.5, 23.5], "area": 450,
       "summary": "The ancestor of Thai, Lao, Shan, Zhuang and related languages. Southwestern Tai speakers spread from what is now Guangxi and northern Vietnam into mainland Southeast Asia around the 8th–10th centuries.",
       "sources": ["diller-2008"]
     },
     {
       "id": "thai", "name": "Thai", "family": "other", "familyName": "Tai–Kadai (Kra–Dai)", "branch": "Southwestern Tai", "parent": "proto-tai",
-      "start": 1283, "end": null, "era": "Sukhothai script, late 13th century", "at": [100.5, 13.75], "via": [[102.5, 19.5]],
+      "start": 1283, "end": null, "era": "Sukhothai script, late 13th century", "at": [100.5, 13.75], "area": 400, "via": [[102.5, 19.5]],
       "summary": "Tai speakers founded Sukhothai in the 13th century; a script adapted from Khmer appears on the Ram Khamhaeng inscription traditionally dated 1283, though its authenticity is debated. Thai has five tones and large layers of Khmer, Sanskrit and Pali vocabulary.",
       "night": { "form": "คืน (khuen)", "cognate": null },
       "concepts": ["borrowing"],
@@ -1599,7 +1624,7 @@
     },
     {
       "id": "lao", "name": "Lao", "family": "other", "familyName": "Tai–Kadai (Kra–Dai)", "branch": "Southwestern Tai", "parent": "proto-tai",
-      "start": 1353, "end": null, "era": "kingdom of Lan Xang from 1353", "at": [102.6, 17.97],
+      "start": 1353, "end": null, "era": "kingdom of Lan Xang from 1353", "at": [102.6, 17.97], "area": 350,
       "summary": "Closely related to Thai, and largely mutually intelligible with it. Millions more speak Lao varieties in northeastern Thailand (Isan) than in Laos itself.",
       "night": { "form": "ຄືນ (khuen)", "cognate": null },
       "concepts": ["dialect-continuum"],
@@ -1607,23 +1632,23 @@
     },
     {
       "id": "zhuang", "name": "Zhuang", "family": "other", "familyName": "Tai–Kadai (Kra–Dai)", "branch": "Northern Tai", "parent": "proto-tai",
-      "start": 1000, "end": null, "era": "Guangxi", "at": [108.3, 23.0],
+      "start": 1000, "end": null, "era": "Guangxi", "at": [108.3, 23.0], "area": 300,
       "summary": "The language of China’s largest ethnic minority, in Guangxi, long written in Sawndip, a script built from Chinese characters.",
       "sources": ["diller-2008"]
     },
     {
       "id": "ahom", "name": "Ahom", "family": "other", "familyName": "Tai–Kadai (Kra–Dai)", "branch": "Southwestern Tai", "parent": "proto-tai",
-      "start": 1228, "end": 1800, "era": "1228 – c. 19th century", "at": [94.85, 26.98], "via": [[98, 24]],
+      "start": 1228, "end": 1800, "era": "1228 – c. 19th century", "at": [94.85, 26.98], "area": 150, "via": [[98, 24]],
       "summary": "Tai conquerors founded the Ahom kingdom in Assam in 1228. Their language survived in court chronicles (buranjis), but its speakers gradually shifted to Assamese, an Indo-Aryan language.",
       "concepts": ["language-shift"],
       "sources": ["diller-2008"]
     },
     {
       "id": "hmong", "name": "Hmong", "family": "other", "familyName": "Hmong–Mien", "branch": "Hmongic",
-      "start": 1000, "end": null, "era": "moved south into Laos and Vietnam in the 18th–19th centuries", "at": [107.0, 26.5], "chain": true,
+      "start": 1000, "end": null, "era": "moved south into Laos and Vietnam in the 18th–19th centuries", "at": [107.0, 26.5], "area": 250, "chain": true,
       "places": [
-        { "from": 1800, "at": [102.8, 19.5], "label": "Laos, Vietnam and Thailand (18th–19th centuries)" },
-        { "from": 1976, "at": [-93.1, 44.95], "label": "United States (refugees after 1975)" }
+        { "from": 1800, "at": [102.8, 19.5], "label": "Laos, Vietnam and Thailand (18th–19th centuries)", "area": 250 },
+        { "from": 1976, "at": [-93.1, 44.95], "label": "United States (refugees after 1975)", "area": false }
       ],
       "summary": "Hmong speakers moved south from Guizhou into the mountains of Laos, Vietnam and Thailand in the 18th and 19th centuries. After the Vietnam War many became refugees, so there are now large Hmong communities in Minnesota, California and France. The Romanized Popular Alphabet (1953) marks its tones with final letters.",
       "night": { "form": "hmo", "cognate": null },
@@ -1632,10 +1657,10 @@
     },
     {
       "id": "hokkien", "name": "Hokkien (Southern Min)", "family": "sino-tibetan", "branch": "Sinitic (Min)", "parent": "old-chinese",
-      "start": 900, "end": null, "era": "from the 1st millennium CE", "at": [118.6, 24.9],
+      "start": 900, "end": null, "era": "from the 1st millennium CE", "at": [118.6, 24.9], "area": 230,
       "places": [
-        { "from": 1624, "at": [120.6, 23.6], "label": "Taiwan (from the 17th century)" },
-        { "from": 1800, "at": [103.85, 1.29], "label": "Southeast Asian diaspora (Singapore, Penang, Manila)" }
+        { "from": 1624, "at": [120.6, 23.6], "label": "Taiwan (from the 17th century)", "area": 200 },
+        { "from": 1800, "at": [103.85, 1.29], "label": "Southeast Asian diaspora (Singapore, Penang, Manila)", "area": false }
       ],
       "summary": "A Southern Min variety from Fujian. Min split off before Middle Chinese, so it keeps some distinctions older than other Chinese varieties. Emigrants carried it to Taiwan and across Southeast Asia, and English tea comes, via Dutch, from Hokkien tê.",
       "night": { "form": "暗暝 (àm-mî)", "cognate": null },
@@ -1644,21 +1669,21 @@
     },
     {
       "id": "tangut", "name": "Tangut", "family": "sino-tibetan", "branch": "Tangut", "parent": "proto-sino-tibetan",
-      "start": 1036, "end": 1500, "era": "script created 1036; extinct by c. 1500", "at": [106.2, 38.48],
+      "start": 1036, "end": 1500, "era": "script created 1036; extinct by c. 1500", "at": [106.2, 38.48], "area": 300,
       "summary": "The language of the Western Xia empire, written in a script of some 6,000 complex characters created in 1036. The Mongols destroyed the empire in 1227 and the language died out within a few centuries; modern scholars have deciphered much of it.",
       "concepts": ["language-shift"],
       "sources": ["thurgood-lapolla-2003"]
     },
     {
       "id": "middle-mongol", "name": "Middle Mongol", "family": "other", "familyName": "Mongolic", "branch": "Mongolic",
-      "start": 1200, "end": 1600, "era": "c. 1200–1600", "at": [102.8, 47.2],
+      "start": 1200, "end": 1600, "era": "c. 1200–1600", "at": [102.8, 47.2], "area": 900,
       "summary": "The language of Genghis Khan’s empire and of the Secret History of the Mongols (13th century). The empire stretched from Korea to Hungary, but Mongolian took root only in Mongolia itself; in the west, the Golden Horde shifted to Turkic.",
       "concepts": ["language-shift"],
       "sources": ["janhunen-2003"]
     },
     {
       "id": "mongolian", "name": "Mongolian", "family": "other", "familyName": "Mongolic", "branch": "Mongolic", "parent": "middle-mongol",
-      "start": 1600, "end": null, "era": "from c. 1600", "at": [106.9, 47.9],
+      "start": 1600, "end": null, "era": "from c. 1600", "at": [106.9, 47.9], "area": 700,
       "summary": "Khalkha Mongolian, the national language of Mongolia. It was written in the vertical Mongol script until 1941–46, when Cyrillic replaced it; Inner Mongolia, in China, still uses the old script.",
       "night": { "form": "шөнө (shönö)", "cognate": null },
       "concepts": ["standardization"],
@@ -1666,22 +1691,22 @@
     },
     {
       "id": "kalmyk", "name": "Kalmyk", "family": "other", "familyName": "Mongolic", "branch": "Oirat", "parent": "middle-mongol",
-      "start": 1630, "end": null, "era": "on the lower Volga from c. 1630", "at": [44.27, 46.31], "via": [[85, 46.5]],
+      "start": 1630, "end": null, "era": "on the lower Volga from c. 1630", "at": [44.27, 46.31], "area": 250, "via": [[85, 46.5]],
       "summary": "Oirat Mongols migrated from Dzungaria to the lower Volga around 1630, making Kalmykia the only Mongolic-speaking region of Europe. Most of them tried to return east in 1771; those who stayed were deported to Siberia in 1943.",
       "concepts": ["language-shift"],
       "sources": ["janhunen-2003"]
     },
     {
       "id": "jurchen", "name": "Jurchen", "family": "other", "familyName": "Tungusic", "branch": "Jurchen–Manchu",
-      "start": 1119, "end": 1600, "era": "script created 1119", "at": [126.9, 45.5],
+      "start": 1119, "end": 1600, "era": "script created 1119", "at": [126.9, 45.5], "area": 450,
       "summary": "The language of the Jin dynasty (1115–1234), which ruled northern China; its large script was created in 1119.",
       "sources": ["kane-1989"]
     },
     {
       "id": "manchu", "name": "Manchu", "family": "other", "familyName": "Tungusic", "branch": "Jurchen–Manchu", "parent": "jurchen",
-      "start": 1599, "end": null, "era": "Manchu script from 1599", "at": [124.0, 41.8],
+      "start": 1599, "end": null, "era": "Manchu script from 1599", "at": [124.0, 41.8], "area": 400,
       "places": [
-        { "from": 1644, "until": 1912, "at": [116.4, 39.9], "label": "Court language of the Qing dynasty in Beijing (1644–1912)" }
+        { "from": 1644, "until": 1912, "at": [116.4, 39.9], "label": "Court language of the Qing dynasty in Beijing (1644–1912)", "area": false }
       ],
       "summary": "The Manchu script, adapted from Mongolian in 1599, became an official script of the Qing empire that ruled China from 1644 to 1912. Manchu speakers later shifted to Chinese and only a handful of elderly speakers remain; the closely related Xibe, carried to Xinjiang by a garrison in 1764, is still spoken.",
       "night": { "form": "dobori", "cognate": null },
@@ -1690,7 +1715,7 @@
     },
     {
       "id": "uzbek", "name": "Uzbek", "family": "turkic", "branch": "Karluk", "parent": "proto-turkic",
-      "start": 1500, "end": null, "era": "heir to Chagatai literature (15th century)", "at": [69.24, 41.3],
+      "start": 1500, "end": null, "era": "heir to Chagatai literature (15th century)", "at": [69.24, 41.3], "area": 350,
       "summary": "Heir to Chagatai, the Turkic literary language of Timurid Central Asia and of the poet Ali-Shir Nava’i. Persian has deeply influenced it, and its alphabet has changed from Arabic to Latin (late 1920s), to Cyrillic (1940) and back to Latin (1993).",
       "night": { "form": "tun", "cognate": null },
       "concepts": ["contact", "standardization"],
@@ -1698,7 +1723,7 @@
     },
     {
       "id": "uyghur", "name": "Uyghur", "family": "turkic", "branch": "Karluk", "parent": "proto-turkic",
-      "start": 1000, "end": null, "era": "Karakhanid Turkic from the 11th century", "at": [75.99, 39.47],
+      "start": 1000, "end": null, "era": "Karakhanid Turkic from the 11th century", "at": [75.99, 39.47], "area": 600,
       "summary": "Spoken in Xinjiang. Its literary ancestor, Karakhanid Turkic, produced Mahmud al-Kashgari’s dictionary of the Turkic languages (1070s), an early work of comparative linguistics.",
       "night": { "form": "تۈن (tün)", "cognate": null },
       "concepts": ["comparative-method"],
@@ -1706,7 +1731,7 @@
     },
     {
       "id": "sakha", "name": "Sakha (Yakut)", "family": "turkic", "branch": "Siberian Turkic", "parent": "proto-turkic",
-      "start": 1300, "end": null, "era": "on the middle Lena from c. 13th–15th century", "at": [129.7, 62.0], "via": [[107, 53]],
+      "start": 1300, "end": null, "era": "on the middle Lena from c. 13th–15th century", "at": [129.7, 62.0], "area": 900, "via": [[107, 53]],
       "summary": "The northernmost Turkic language. Its speakers moved north from the Lake Baikal region to the middle Lena between the 13th and 15th centuries, taking up reindeer herding and words from Evenki and Mongolic neighbours.",
       "night": { "form": "түүн (tüün)", "cognate": null },
       "concepts": ["contact", "borrowing"],
@@ -1714,7 +1739,7 @@
     },
     {
       "id": "chuvash", "name": "Chuvash", "family": "turkic", "branch": "Oghur", "parent": "proto-turkic",
-      "start": 900, "end": null, "era": "Volga Bulgaria from c. 900", "at": [47.25, 56.13],
+      "start": 900, "end": null, "era": "Volga Bulgaria from c. 900", "at": [47.25, 56.13], "area": 200,
       "summary": "The only surviving Oghur (‘r-Turkic’) language, descended from the speech of the Volga Bulgars. Where other Turkic languages have z, Chuvash has r: Turkish dokuz ‘nine’, Chuvash tăxăr.",
       "night": { "form": "çĕр (śĕr)", "cognate": null },
       "concepts": ["sound-change", "regularity"],
@@ -1722,7 +1747,7 @@
     },
     {
       "id": "azerbaijani", "name": "Azerbaijani", "family": "turkic", "branch": "Oghuz", "parent": "proto-turkic",
-      "start": 1300, "end": null, "era": "literature from the 13th–14th century", "at": [49.87, 40.41],
+      "start": 1300, "end": null, "era": "literature from the 13th–14th century", "at": [49.87, 40.41], "area": 280,
       "summary": "An Oghuz Turkic language very close to Turkish, spoken in Azerbaijan and by a large population in northwestern Iran.",
       "night": { "form": "gecə", "cognate": null },
       "concepts": ["dialect-continuum"],
@@ -1730,69 +1755,69 @@
     },
     {
       "id": "northern-sami", "name": "Northern Sámi", "family": "uralic", "branch": "Sámi", "parent": "proto-uralic",
-      "start": 1000, "end": null, "era": "written from the 17th–18th century", "at": [23.5, 69.2],
+      "start": 1000, "end": null, "era": "written from the 17th–18th century", "at": [23.5, 69.2], "area": 280,
       "summary": "The largest Sámi language, spoken in northern Norway, Sweden and Finland. Its grammar is built around consonant gradation, and it has a rich vocabulary for snow and reindeer herding.",
       "night": { "form": "idja", "cognate": null },
       "sources": ["abondolo-1998"]
     },
     {
       "id": "khanty", "name": "Khanty", "family": "uralic", "branch": "Ob-Ugric", "parent": "proto-uralic",
-      "start": 1000, "end": null, "era": "along the Ob in western Siberia", "at": [69.0, 61.0],
+      "start": 1000, "end": null, "era": "along the Ob in western Siberia", "at": [69.0, 61.0], "area": 400,
       "summary": "With Mansi, the closest relative of Hungarian, spoken along the Ob in western Siberia: evidence of where the Hungarians’ ancestors came from. Both are endangered.",
       "concepts": ["language-shift"],
       "sources": ["abondolo-1998"]
     },
     {
       "id": "mansi", "name": "Mansi", "family": "uralic", "branch": "Ob-Ugric", "parent": "proto-uralic",
-      "start": 1000, "end": null, "era": "east of the northern Urals", "at": [62.0, 62.5],
+      "start": 1000, "end": null, "era": "east of the northern Urals", "at": [62.0, 62.5], "area": 300,
       "summary": "Hungarian’s other close relative, spoken by a few hundred people east of the northern Urals.",
       "concepts": ["language-shift"],
       "sources": ["abondolo-1998"]
     },
     {
       "id": "nenets", "name": "Nenets", "family": "uralic", "branch": "Samoyedic", "parent": "proto-uralic",
-      "start": 1000, "end": null, "era": "Arctic tundra", "at": [65.0, 67.5],
+      "start": 1000, "end": null, "era": "Arctic tundra", "at": [65.0, 67.5], "area": 600,
       "summary": "A language of reindeer herders across the tundra from the White Sea to the Yenisei. Samoyedic is one of the two main branches of Uralic.",
       "sources": ["abondolo-1998"]
     },
     {
       "id": "ket", "name": "Ket", "family": "other", "familyName": "Yeniseian", "branch": "Yeniseian",
-      "start": 1000, "end": null, "era": "recorded since the 18th century", "at": [87.5, 63.8],
+      "start": 1000, "end": null, "era": "recorded since the 18th century", "at": [87.5, 63.8], "area": 250,
       "summary": "The last surviving Yeniseian language, spoken by a few dozen people on the Yenisei in central Siberia. Edward Vajda has proposed a relationship with the Na-Dene languages of North America, including Navajo, which would link families on both sides of the Bering Strait; the proposal is debated.",
       "concepts": ["comparative-method", "language-shift"],
       "sources": ["vajda-2010", "comrie-1981"]
     },
     {
       "id": "chukchi", "name": "Chukchi", "family": "other", "familyName": "Chukotko-Kamchatkan", "branch": "Chukotkan",
-      "start": 1000, "end": null, "era": "Chukotka Peninsula", "at": [173.0, 66.0],
+      "start": 1000, "end": null, "era": "Chukotka Peninsula", "at": [173.0, 66.0], "area": 450,
       "summary": "The language of reindeer herders and sea-mammal hunters in Russia’s far northeast, known for incorporation (packing nouns into verbs to build very long words) and for differences between women’s and men’s pronunciation.",
       "sources": ["comrie-1981"]
     },
     {
       "id": "ainu", "name": "Ainu", "family": "other", "familyName": "Language isolate", "branch": "Isolate",
-      "start": 1000, "end": null, "era": "recorded from the 17th century", "at": [142.8, 43.5],
+      "start": 1000, "end": null, "era": "recorded from the 17th century", "at": [142.8, 43.5], "area": 250,
       "summary": "The language of the Ainu of Hokkaido, Sakhalin and the Kuril Islands, unrelated to Japanese. Assimilation policies after 1869 brought it close to extinction; Japan recognised the Ainu as an Indigenous people in 2019.",
       "concepts": ["language-shift"],
       "sources": ["shibatani-1990", "moseley-2010"]
     },
     {
       "id": "georgian", "name": "Georgian", "family": "other", "familyName": "Kartvelian", "branch": "Kartvelian",
-      "start": 430, "end": null, "era": "inscriptions from the 5th century", "at": [44.79, 41.72],
+      "start": 430, "end": null, "era": "inscriptions from the 5th century", "at": [44.79, 41.72], "area": 200,
       "summary": "The largest Kartvelian language, written in its own alphabet since at least the 5th century. Georgian is known for long consonant clusters, as in gvprtskvni ‘you peel us’.",
       "night": { "form": "ღამე (ghame)", "cognate": null },
       "sources": ["hewitt-2004", "comrie-1981"]
     },
     {
       "id": "chechen", "name": "Chechen", "family": "other", "familyName": "Nakh–Daghestanian", "branch": "Nakh",
-      "start": 1000, "end": null, "era": "North Caucasus", "at": [45.7, 43.3],
+      "start": 1000, "end": null, "era": "North Caucasus", "at": [45.7, 43.3], "area": 100,
       "summary": "The largest Northeast Caucasian language. The North Caucasus is one of the most linguistically diverse mountain regions on Earth: Daghestan alone has some thirty languages.",
       "sources": ["hewitt-2004", "comrie-1981"]
     },
     {
       "id": "ubykh", "name": "Ubykh", "family": "other", "familyName": "Northwest Caucasian", "branch": "Northwest Caucasian",
-      "start": 1000, "end": 1992, "era": "until 1992", "at": [39.8, 43.65], "homeUntil": 1864,
+      "start": 1000, "end": 1992, "era": "until 1992", "at": [39.8, 43.65], "area": 60, "homeUntil": 1864,
       "places": [
-        { "from": 1864, "at": [28.0, 40.1], "label": "Exile in Ottoman Anatolia (from 1864)" }
+        { "from": 1864, "at": [28, 40.1], "label": "Exile in Ottoman Anatolia (from 1864)", "area": false }
       ],
       "summary": "Famous for having about 80 consonants and only two or three vowels. After the Russian conquest of the Caucasus in 1864 its speakers were expelled to the Ottoman Empire, where they shifted to Turkish; the last fluent speaker, Tevfik Esenç, died in 1992.",
       "concepts": ["language-shift"],
@@ -1800,7 +1825,7 @@
     },
     {
       "id": "telugu", "name": "Telugu", "family": "other", "familyName": "Dravidian", "branch": "South-Central Dravidian", "parent": "proto-dravidian",
-      "start": 575, "end": null, "era": "inscriptions from 575 CE", "at": [78.48, 17.38],
+      "start": 575, "end": null, "era": "inscriptions from 575 CE", "at": [78.48, 17.38], "area": 350,
       "summary": "The most widely spoken Dravidian language, with literature from the 11th century (Nannaya’s Mahabharata). Like the other literary Dravidian languages, it absorbed a great deal of Sanskrit vocabulary.",
       "speakers": "over 80 million native speakers",
       "night": { "form": "రాత్రి (rātri)", "cognate": null, "note": "Borrowed from Sanskrit rātri." },
@@ -1809,27 +1834,27 @@
     },
     {
       "id": "kannada", "name": "Kannada", "family": "other", "familyName": "Dravidian", "branch": "South Dravidian", "parent": "proto-dravidian",
-      "start": 450, "end": null, "era": "Halmidi inscription, c. 450", "at": [76.64, 12.3],
+      "start": 450, "end": null, "era": "Halmidi inscription, c. 450", "at": [76.64, 12.3], "area": 300,
       "summary": "A South Dravidian language of Karnataka; the Halmidi inscription (c. 450 CE) is its earliest known text.",
       "sources": ["krishnamurti-2003"]
     },
     {
       "id": "malayalam", "name": "Malayalam", "family": "other", "familyName": "Dravidian", "branch": "South Dravidian", "parent": "tamil",
-      "start": 830, "end": null, "era": "inscriptions from the 9th century", "at": [76.27, 9.93],
+      "start": 830, "end": null, "era": "inscriptions from the 9th century", "at": [76.27, 9.93], "area": 200,
       "summary": "Grew out of the western coastal dialects of Tamil and became a separate language between about the 9th and 13th centuries, with heavy Sanskrit influence (the mixed literary style called Manipravalam).",
       "concepts": ["language-split", "borrowing"],
       "sources": ["krishnamurti-2003"]
     },
     {
       "id": "brahui", "name": "Brahui", "family": "other", "familyName": "Dravidian", "branch": "North Dravidian", "parent": "proto-dravidian",
-      "start": 1000, "end": null, "era": "recorded from the 18th century", "at": [66.6, 29.0],
+      "start": 1000, "end": null, "era": "recorded from the 18th century", "at": [66.6, 29.0], "area": 250,
       "summary": "A Dravidian language spoken in Balochistan, Pakistan, more than 1,500 km from the other Dravidian languages and heavily influenced by Balochi. Whether it is a relic of an older Dravidian presence or the result of a later migration is debated.",
       "concepts": ["contact"],
       "sources": ["krishnamurti-2003"]
     },
     {
       "id": "sinhala", "name": "Sinhala", "family": "indo-european", "branch": "Indo-Aryan", "parent": "prakrit",
-      "start": -300, "end": null, "era": "Brahmi inscriptions from the 3rd century BCE", "at": [80.4, 8.31],
+      "start": -300, "end": null, "era": "Brahmi inscriptions from the 3rd century BCE", "at": [80.4, 8.31], "area": 200,
       "summary": "Brought to Sri Lanka by Indo-Aryan settlers from northern India. Separated from its relatives by the sea, it developed distinctive features and absorbed Tamil influence.",
       "night": { "form": "රෑ (ræ)", "cognate": false, "note": "From Sanskrit rātri." },
       "concepts": ["contact", "language-split"],

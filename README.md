@@ -3,7 +3,7 @@
 An interactive web app about how languages change, in two sections:
 
 - **Concept map**: 88 concepts and 203 typed connections, arranged around Edward Sapir’s idea of *drift*. It covers sound change, grammar change, meaning and vocabulary, causes, social spread, outcomes, methods and key thinkers. Many concepts include an animated **word journey** (*nescius* → *nice*, *hlāf-weard* → *lord*, *cantābō* → *chanterai* → *je vais chanter*).
-- **World map**: 233 languages placed in space and time, from Proto-Indo-European (c. 4500 BCE) to today, on every inhabited continent: Indo-European and the Near East, plus the families of the Americas, Africa, South and Southeast Asia, Siberia and the Caucasus, Australia, New Guinea and the Pacific. Drag the time slider or press play to watch languages appear, split into daughters, spread with migrations and conquests, and fall silent. A layer shows each language’s word for *night*, so you can follow Proto-Indo-European *\*nókʷts* as it drifts into *nox*, *nuit*, *Nacht*, *noć* and *natë*.
+- **World map**: 233 languages placed in space and time, from Proto-Indo-European (c. 4500 BCE) to today, on every inhabited continent: Indo-European and the Near East, plus the families of the Americas, Africa, South and Southeast Asia, Siberia and the Caucasus, Australia, New Guinea and the Pacific. Drag the time slider or press play to watch languages appear, split into daughters, spread with migrations and conquests, and fall silent. Show languages as **dots** (one per place) or as **areas**: approximate territories that grow, shrink and give way to one another over time. A layer shows each language’s word for *night*, so you can follow Proto-Indo-European *\*nókʷts* as it drifts into *nox*, *nuit*, *Nacht*, *noć* and *natë*.
 
 Every concept and language cites its sources. The **bibliography** lists 172 references, and each DOI has been checked against Crossref.
 
@@ -26,7 +26,7 @@ The port defaults to **8004**. Set `PORT` to override it and `HOST` to change th
 - **Search** (press `/`) for concepts, languages, or any word in the examples: *nice*, *apron*, *nuit*.
 - **Index** lists every concept or language and is the keyboard-friendly way in.
 - **Concept map**: drag to pan, scroll to zoom, click a concept for its panel (examples, word journey, connections, sources). Filter categories from the legend, and toggle the timeline of dated changes and ideas.
-- **World map**: press play (or `Space`), drag the slider, or jump to an era. Click a language to see its family tree, migrations, its word for *night*, related concepts and sources. Use the switches to hide languages that are no longer spoken, hide family lines, or show the *night* layer. Families can be filtered from the legend.
+- **World map**: press play (or `Space`), drag the slider, or jump to an era. Click a language to see its family tree, migrations, its word for *night*, related concepts and sources. Use *Show as: Dots / Areas* at the top of the legend to switch between dots and approximate areas (the choice is remembered). Hover over or click an area just as you would a dot. Use the switches to hide languages that are no longer spoken, hide family lines, or show the *night* layer. Families can be filtered from the legend.
 - **Deep links**: `#/grimms-law`, `#/world`, `#/world/latin`, `#/sources/sapir-1921`.
 - Light and dark themes, a phone layout, and reduced-motion support.
 
@@ -51,7 +51,9 @@ public/
   js/graph.js             Concept-map renderer: camera, gestures, focus, label placement
   js/layout.js            Deterministic force layout (pure; also runs in Node)
   js/world-section.js     World-map section (time controls, legend, panel, index)
-  js/world-view.js        World-map renderer: wrapping projection, arcs, markers, labels
+  js/world-view.js        World-map renderer: wrapping projection, arcs, markers, areas, labels
+  js/areas.js             Approximate language areas for the areas view (pure; also runs in Node)
+  js/areas-worker.js      Runs the area computation off the main thread
   js/geo.js               Patterson cylindrical projection
   js/timescale.js         Compressed time scale shared by both timelines
   js/bibliography.js      Citation formatting and the bibliography dialog
@@ -79,8 +81,8 @@ The server validates all three data files at startup, including the references b
 ```json
 {
   "id": "latin", "name": "Latin", "family": "indo-european", "branch": "Italic", "parent": "pie",
-  "start": -600, "end": 600, "era": "c. 600 BCE – 600 CE as a spoken mother tongue", "at": [12.5, 41.9],
-  "places": [{ "from": -218, "at": [-4, 40], "label": "Hispania (from 218 BCE)" }],
+  "start": -600, "end": 600, "era": "c. 600 BCE – 600 CE as a spoken mother tongue", "at": [12.5, 41.9], "area": 450,
+  "places": [{ "from": -218, "at": [-4, 40], "label": "Hispania (from 218 BCE)", "area": 500 }],
   "summary": "…", "night": { "form": "nox (noctis)", "cognate": true },
   "concepts": ["language-split"], "sources": ["clackson-horrocks-2007"]
 }
@@ -90,6 +92,7 @@ The server validates all three data files at startup, including the references b
 - `kind: "proto"` marks a reconstructed language. `relation` can be `contact` (a creole and its lexifier) or `revival`.
 - `places` adds expansions over time. Use `until` when a place was lost, `homeUntil` when the homeland was left, and `chain: true` for a migration that moves from place to place (as with Romani).
 - `via` bends a descent line through waypoints (Malagasy via Borneo).
+- `area` sets the radius in km that a language (or one of its places) covers in the areas view: 300 km by default, 550 km for a proto-language. `area: false` gives no area, only a dot, for a written, liturgical, court or second language, or for communities spread among speakers of other languages (Classical Sanskrit, Yiddish, French in West Africa). On a place, `grow` (years) starts the area at a quarter of its radius and widens it over that time, as with colonial settlement.
 - `family` is one of the eight colour groups. Languages in the `other` group name their real family in `familyName` (for example `"Pama–Nyungan"` or `"Language isolate"`), and the index groups them under it.
 - `night.cognate` is `true`/`false` for Indo-European languages (descended from \*nókʷts or not), and `null` for other families.
 
@@ -103,4 +106,4 @@ npm run build:land
 
 ## A note on accuracy
 
-Dates for unwritten proto-languages are estimates, and scholars disagree about several of them (the Indo-European homeland, the age of Sino-Tibetan); the text says so where it matters. A language’s position marks a rough centre, not its full extent. Speaker numbers are rounded approximations from Ethnologue.
+Dates for unwritten proto-languages are estimates, and scholars disagree about several of them (the Indo-European homeland, the age of Sino-Tibetan); the text says so where it matters. A language’s position marks a rough centre, not its full extent. The **areas view** is schematic: each language claims the land within its radius of the places where it was spoken. Where claims overlap, the land goes to the nearer language relative to its size, so a much smaller language keeps its own patch inside a larger one. Crossing the sea to another landmass counts as farther, and a little noise makes the outlines irregular. The areas show roughly where each language on the map was spoken. They are not surveyed boundaries, and blank land belongs to the many languages the map does not include. Speaker numbers are rounded approximations from Ethnologue.

@@ -83,6 +83,26 @@
 .w-spread { fill: none; stroke: var(--c); stroke-width: 1.4; stroke-dasharray: 4 3; stroke-linecap: round; transition: opacity 0.25s; }
 .w-arrow { fill: var(--c); stroke: none; transition: opacity 0.25s; }
 
+/* Areas view: approximate territories, clipped to land. Three shades per
+   colour group keep neighbouring languages of one family apart. */
+.w-areas { pointer-events: none; }
+.w-area {
+  fill: color-mix(in srgb, var(--c) 42%, var(--land)); fill-rule: evenodd;
+  stroke: color-mix(in srgb, var(--c) 78%, var(--land)); stroke-width: 0.8; stroke-linejoin: round;
+  vector-effect: non-scaling-stroke; transition: opacity 0.25s;
+}
+.w-area.t-1 { fill: color-mix(in srgb, var(--c) 60%, var(--land)); }
+.w-area.t-2 { fill: color-mix(in srgb, var(--c) 27%, var(--land)); }
+.w-area.k-proto { fill: color-mix(in srgb, var(--c) 15%, var(--land)); stroke: var(--c); stroke-dasharray: 5 3; }
+.w-area.is-hover { fill: color-mix(in srgb, var(--c) 72%, var(--land)); }
+.w-area.is-selected { stroke: var(--ink); stroke-width: 2; stroke-dasharray: none; }
+.w-area.is-dim { opacity: 0.28; }
+.world-map.is-over-area:not(.is-panning) { cursor: pointer; }
+.w-label.is-area { font-weight: 600; }
+/* Over areas, languages no longer spoken stay in the background. */
+.world-map.is-areas .w-lang.is-ghost:not(.is-selected):not(.is-hover):not(.is-dim) { opacity: 0.5; }
+.world-map.is-areas .w-label.is-ghost:not(.is-selected):not(.is-dim) { opacity: 0.7; }
+
 .w-lang, .w-place { cursor: pointer; transition: opacity 0.25s; }
 .w-lang .hit, .w-place .hit { fill: transparent; }
 .w-lang .dot { fill: var(--c); stroke: var(--ocean); stroke-width: 2; }
@@ -139,6 +159,24 @@
 .sym path { fill: none; stroke: var(--c); stroke-width: 1.8; stroke-linecap: round; }
 .sym-contact path { stroke-dasharray: 6 4; }
 .sym-spread path { stroke-dasharray: 4 3; stroke-width: 1.4; }
+/* Dots / Areas switch */
+.w-mode {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  margin: 0 0 6px; padding: 2px 8px 10px; border-bottom: 1px solid var(--border);
+}
+.w-mode-label { color: var(--ink-2); font-size: 12.5px; }
+.segmented { display: inline-flex; flex: none; padding: 2px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface-2); }
+.segmented button {
+  padding: 3px 12px; border: 0; border-radius: 999px; background: none;
+  color: var(--ink-2); font: inherit; font-size: 12.5px; cursor: pointer;
+}
+.segmented button:hover { color: var(--ink); }
+.segmented button[aria-pressed="true"] { background: var(--surface); color: var(--ink); font-weight: 600; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14); }
+.segmented button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.w-area-note { margin: 8px 8px 0; color: var(--ink-2); font-size: 12px; line-height: 1.45; }
+.sym-area path { fill: color-mix(in srgb, var(--c) 42%, var(--surface)); stroke: color-mix(in srgb, var(--c) 78%, var(--surface)); stroke-width: 1.2; }
+.sym-area-proto path { fill: color-mix(in srgb, var(--c) 15%, var(--surface)); stroke: var(--c); stroke-width: 1.2; stroke-dasharray: 3 2; }
+
 .w-switches { margin-top: 8px; padding: 8px 8px 2px; border-top: 1px solid var(--border); display: grid; gap: 6px; }
 
 .switch { display: flex; align-items: center; gap: 9px; font-size: 13px; cursor: pointer; }

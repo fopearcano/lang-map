@@ -15,11 +15,21 @@ const ERAS = [
   { label: '1900', year: 1900 },
   { label: 'Today', year: PRESENT },
 ];
+const MODE_KEY = 'linguistic-drift.world-view';
 const SYMBOLS = [
   ['alive', 'Spoken at the selected date'],
   ['proto', 'Reconstructed proto-language'],
   ['ghost', 'No longer spoken'],
   ['place', 'Spread to a new region'],
+  ['descent', 'Descent (parent → daughter)'],
+  ['contact', 'Creole: formed through contact'],
+  ['spread', 'Migration or expansion'],
+];
+const AREA_SYMBOLS = [
+  ['area', 'Where it was spoken at the selected date (approximate)'],
+  ['area-proto', 'Reconstructed proto-language: likely homeland'],
+  ['ghost', 'No longer spoken'],
+  ['place', 'No area: a written, liturgical or second language, or too small at this zoom'],
   ['descent', 'Descent (parent → daughter)'],
   ['contact', 'Creole: formed through contact'],
   ['spread', 'Migration or expansion'],
@@ -40,6 +50,7 @@ function symbolSvg(kind) {
   else if (kind === 'proto') add('circle', { cx: 15, cy: 7, r: 5.5 });
   else if (kind === 'ghost') add('circle', { cx: 15, cy: 7, r: 4.5 });
   else if (kind === 'place') add('circle', { cx: 15, cy: 7, r: 3.5 });
+  else if (kind === 'area' || kind === 'area-proto') add('path', { d: 'M5 4.5Q9 1 16 2.5T26 6Q27 11 20 12T7 11.5Q3 8 5 4.5Z' });
   else add('path', { d: 'M2 10Q15 1 28 7' });
   return svg;
 }
@@ -78,6 +89,9 @@ export class WorldSection {
     this.buildLegend();
     this.buildTimeControls();
     this.bindControls();
+    let mode = 'dots';
+    try { mode = localStorage.getItem(MODE_KEY) || mode; } catch { /* storage unavailable */ }
+    this.setMode(mode, { save: false });
     this.setLegendOpen(!app.isNarrow() && window.innerHeight > 640);
     this.setYear(PRESENT);
   }
@@ -378,8 +392,24 @@ export class WorldSection {
         }, el('span', { class: 'swatch', 'aria-hidden': 'true' }), f.label, el('span', { class: 'count' }, counts[f.id] || 0)),
       ));
     }
+  }
+
+  renderSymbols() {
     const sym = this.$('#w-symbols');
-    for (const [kind, label] of SYMBOLS) sym.append(el('li', {}, symbolSvg(kind), label));
+    sym.replaceChildren(...(this.mode === 'areas' ? AREA_SYMBOLS : SYMBOLS).map(([kind, label]) => el('li', {}, symbolSvg(kind), label)));
+  }
+
+  /** Show languages as 'dots' (one per place) or 'areas' (approximate territories). */
+  setMode(mode, { save = true } = {}) {
+    this.mode = mode === 'areas' ? 'areas' : 'dots';
+    for (const b of this.$('#w-mode').children) b.setAttribute('aria-pressed', String(b.dataset.mode === this.mode));
+    this.root.classList.toggle('is-areas', this.mode === 'areas');
+    this.$('#w-area-note').hidden = this.mode !== 'areas';
+    this.renderSymbols();
+    this.view.setMode(this.mode);
+    if (save) {
+      try { localStorage.setItem(MODE_KEY, this.mode); } catch { /* storage unavailable */ }
+    }
   }
 
   applyFilters() {
@@ -436,6 +466,7 @@ export class WorldSection {
     this.$('#w-panel-close').addEventListener('click', () => this.select(null));
     this.$('#w-legend-toggle').addEventListener('click', () => this.setLegendOpen(this.legendBody.hidden));
     this.$('#w-play').addEventListener('click', () => this.togglePlay());
+    for (const b of this.$('#w-mode').children) b.addEventListener('click', () => this.setMode(b.dataset.mode));
     this.$('#w-zoom-in').addEventListener('click', () => this.zoomIn());
     this.$('#w-zoom-out').addEventListener('click', () => this.zoomOut());
     this.$('#w-zoom-fit').addEventListener('click', () => this.fit());

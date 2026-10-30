@@ -154,6 +154,7 @@
         <g class="w-viewport">
           <g class="w-graticule"></g>
           <g class="w-land"></g>
+          <g class="w-areas" clip-path="url(#w-land-clip)"></g>
         </g>
         <g class="w-arcs"></g>
         <g class="w-markers"></g>
@@ -171,8 +172,16 @@
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"></path></svg>
         </button>
         <div class="legend-body" id="w-legend-body">
+          <div class="w-mode" role="group" aria-label="Show languages as">
+            <span class="w-mode-label" id="w-mode-label">Show as</span>
+            <div class="segmented" id="w-mode">
+              <button type="button" data-mode="dots" aria-pressed="true">Dots</button>
+              <button type="button" data-mode="areas" aria-pressed="false">Areas</button>
+            </div>
+          </div>
           <ul class="legend-categories" id="w-families"></ul>
           <ul class="w-symbols" id="w-symbols"></ul>
+          <p class="w-area-note" id="w-area-note" hidden>Areas are approximate: each language is drawn around the places where it was spoken and shared out with its neighbours. They are not surveyed borders. Blank land belongs to languages not on this map.</p>
           <div class="w-switches">
             <label class="switch"><input type="checkbox" id="w-opt-extinct" checked><span>Languages no longer spoken</span></label>
             <label class="switch"><input type="checkbox" id="w-opt-lineage" checked><span>Family lines</span></label>
@@ -227,7 +236,7 @@
         <li><strong>Click</strong> a concept or language to read about it and follow its connections.</li>
         <li><strong>Drag</strong> to pan, <strong>scroll</strong> or pinch to zoom.</li>
         <li><strong>Search</strong> for a concept, a language or a word like <em>nice</em>, <em>apron</em> or <em>nuit</em>.</li>
-        <li>On the world map, <strong>press play</strong> or drag the time slider.</li>
+        <li>On the world map, <strong>press play</strong> or drag the time slider, and show languages as <strong>dots or areas</strong>.</li>
       </ul>
       <p class="welcome-keys"><kbd>/</kbd> search · <kbd>+</kbd> <kbd>−</kbd> zoom · <kbd>0</kbd> fit · <kbd>Space</kbd> play (world map) · <kbd>Esc</kbd> close</p>
       <div class="welcome-actions">

@@ -1,11 +1,15 @@
 import { svgEl, clamp, prefersReducedMotion } from './dom.js';
 import { projectY, WORLD_WIDTH, Y_TOP, Y_BOTTOM } from './geo.js';
+import { AreaGrid, areaSites, assignTints, CELL } from './areas.js';
 
 const MAX_K = 48;
 const DEFAULT_CENTER = 30; // longitude at the centre of the default view
 const FRESH_YEARS = 300; // arcs are emphasised for this long after a split
 const DRAG_THRESHOLD = 4;
 const FONT = 12;
+const MIN_AREA_PX = 64; // smaller areas (in screen px²) are shown as dots instead
+const MIN_LABEL_PX = 1600; // further parts of an area get their own label above this size
+const AREA_THROTTLE = 160; // ms between area recomputations while the date changes
 
 const easeInOut = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 const overlaps = (a, b) => a.x < b.x + b.w && b.x < a.x + a.w && a.y < b.y + b.h && b.y < a.y + a.h;
@@ -74,6 +78,7 @@ export class WorldView {
       viewport: svg.querySelector('.w-viewport'),
       graticule: svg.querySelector('.w-graticule'),
       land: svg.querySelector('.w-land'),
+      areas: svg.querySelector('.w-areas'),
       arcs: svg.querySelector('.w-arcs'),
       markers: svg.querySelector('.w-markers'),
       labels: svg.querySelector('.w-labels'),
@@ -91,6 +96,9 @@ export class WorldView {
     for (const l of this.langs) if (l.parent) this.children.get(l.parent).push(l.id);
 
     this.year = 2025;
+    this.mode = 'dots';
+    this.areas = null; // built the first time the areas view is shown
+    this.landPath = landPath;
     this.options = { showExtinct: true, showLineage: true, word: false };
     this.hidden = new Set();
     this.selected = null;
@@ -121,6 +129,11 @@ export class WorldView {
     for (const dx of [-WORLD_WIDTH, WORLD_WIDTH]) {
       svgEl('use', { href: '#w-land-path', x: dx, y: 0 }, land);
     }
+    // Areas are clipped to the coastlines.
+    const defs = svgEl('defs', {}, this.svg);
+    const clip = svgEl('clipPath', { id: 'w-land-clip' }, defs);
+    for (const dx of [0, -WORLD_WIDTH, WORLD_WIDTH]) svgEl('use', { href: '#w-land-path', x: dx, y: 0 }, clip);
+    this.layers.areas.style.display = 'none';
     let d = '';
     for (let lon = -540; lon <= 540; lon += 30) d += `M${lon} ${Y_TOP}V${Y_BOTTOM}`;
     for (const lat of [-30, 0, 30, 60]) d += `M-540 ${projectY(lat).toFixed(2)}H540`;
@@ -163,6 +176,19 @@ export class WorldView {
 
   setOptions(opts) {
     Object.assign(this.options, opts);
+    this.invalidate();
+  }
+
+  /** 'dots' or 'areas'. */
+  setMode(mode) {
+    this.mode = mode === 'areas' ? 'areas' : 'dots';
+    this.svg.classList.toggle('is-areas', this.mode === 'areas');
+    this.layers.areas.style.display = this.mode === 'areas' ? '' : 'none';
+    if (this.mode === 'areas') this.ensureAreas();
+    else {
+      this.svg.classList.remove('is-over-area');
+      for (const l of this.langs) l.areaShown = false;
+    }
     this.invalidate();
   }
 
@@ -368,6 +394,127 @@ export class WorldView {
     return { living, proto };
   }
 
+  // ---------- Areas ----------
+
+  ensureAreas() {
+    if (this.areas) return this.areas;
+    // The main thread keeps a grid only to answer "which area is under the
+    // pointer"; a worker does the computing.
+    const grid = new AreaGrid();
+    const mask = this.rasterizeLand(grid);
+    grid.land = mask;
+    const A = { grid, mask, worker: null, key: null, wanted: null, wantedSites: null, busy: false, computedAt: 0, timer: 0 };
+    this.areas = A;
+    try {
+      A.worker = new Worker(new URL('./areas-worker.js', import.meta.url), { type: 'module' });
+      A.worker.onmessage = (e) => this.receiveAreas(e.data);
+      A.worker.onerror = () => this.areasOnMainThread();
+      A.worker.postMessage({ type: 'land', mask });
+    } catch {
+      this.areasOnMainThread();
+    }
+    const tints = assignTints(this.langs);
+    const main = svgEl('g', { id: 'w-areas-main' }, this.layers.areas);
+    // Copies one world-width either side, as for the land.
+    for (const dx of [-WORLD_WIDTH, WORLD_WIDTH]) svgEl('use', { href: '#w-areas-main', x: dx, y: 0 }, this.layers.areas);
+    this.langs.forEach((l, i) => {
+      l.areaEl = svgEl('path', { class: `w-area fam-${l.family} t-${tints[i]}${l.kind === 'proto' ? ' k-proto' : ''}` }, main);
+      l.areaEl.style.display = 'none';
+      l.areaInfo = null;
+    });
+    return A;
+  }
+
+  /** Fallback when module workers are unavailable: compute here, throttled. */
+  areasOnMainThread() {
+    const A = this.areas;
+    A.worker?.terminate();
+    A.worker = null;
+    A.busy = false;
+    A.wanted = null;
+    A.grid.setLand(A.mask);
+    this.invalidate();
+  }
+
+  /** One byte per grid cell: 1 where the coastline path covers it. */
+  rasterizeLand(grid) {
+    const canvas = document.createElement('canvas');
+    canvas.width = grid.cols;
+    canvas.height = grid.rows;
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    const path = new Path2D(this.landPath);
+    for (const dx of [-WORLD_WIDTH, 0, WORLD_WIDTH]) {
+      ctx.setTransform(1 / grid.cell, 0, 0, 1 / grid.cell, (180 + dx) / grid.cell, -Y_TOP / grid.cell);
+      ctx.fill(path);
+    }
+    const { data } = ctx.getImageData(0, 0, grid.cols, grid.rows);
+    const mask = new Uint8Array(grid.cols * grid.rows);
+    for (let i = 0; i < mask.length; i++) mask[i] = data[i * 4 + 3] >= 128 ? 1 : 0;
+    return mask;
+  }
+
+  /** Recomputes the areas when the set of places in use changes. */
+  updateAreas() {
+    const A = this.ensureAreas();
+    const sites = areaSites(this.langs, this.year);
+    const key = sites.map((s) => s.key).join('|');
+    if (key === A.key) {
+      A.wanted = null;
+      return;
+    }
+    if (A.worker) {
+      // One request at a time; while one is out, remember only the latest.
+      A.wanted = key;
+      A.wantedSites = sites;
+      if (!A.busy) this.requestAreas();
+      return;
+    }
+    const wait = A.computedAt + AREA_THROTTLE - performance.now();
+    if (A.key !== null && wait > 0) {
+      // The date is changing fast (playback, dragging): catch up a moment later.
+      if (!A.timer) A.timer = setTimeout(() => { A.timer = 0; this.invalidate(); }, wait);
+      return;
+    }
+    this.applyAreas(key, A.grid.compute(sites));
+    A.computedAt = performance.now();
+  }
+
+  requestAreas() {
+    const A = this.areas;
+    A.busy = true;
+    A.worker.postMessage({ type: 'compute', key: A.wanted, sites: A.wantedSites });
+  }
+
+  receiveAreas({ key, entries, label }) {
+    const A = this.areas;
+    A.busy = false;
+    A.grid.label = label;
+    this.applyAreas(key, new Map(entries));
+    if (A.wanted && A.wanted !== key) this.requestAreas();
+    else A.wanted = null;
+    this.invalidate();
+  }
+
+  applyAreas(key, result) {
+    this.areas.key = key;
+    this.langs.forEach((l, i) => {
+      l.areaInfo = result.get(i) || null;
+      if (l.areaInfo && l.areaD !== l.areaInfo.d) {
+        l.areaD = l.areaInfo.d;
+        l.areaEl.setAttribute('d', l.areaD);
+      }
+    });
+  }
+
+  /** The language whose area is under a screen point (areas view only). */
+  areaAt(p) {
+    if (this.mode !== 'areas' || !this.areas) return null;
+    const { k, x, y } = this.camera;
+    const i = this.areas.grid.langAt((p.x - x) / k, (p.y - y) / k);
+    const l = i >= 0 ? this.langs[i] : null;
+    return l && l.areaShown ? l.id : null;
+  }
+
   // ---------- Render ----------
 
   render() {
@@ -404,6 +551,24 @@ export class WorldView {
         p.sx = ps.x;
         p.sy = ps.y;
         prev = { x: p.wx, y: p.y };
+      }
+    }
+
+    // Areas (areas view): a language whose area is too small to see at
+    // this zoom keeps its dot instead.
+    if (this.mode === 'areas') {
+      this.updateAreas();
+      const cellPx = (CELL * k) ** 2;
+      for (const l of this.langs) {
+        const info = l.state === 'alive' ? l.areaInfo : null;
+        l.areaShown = !!info && info.cells * cellPx >= MIN_AREA_PX;
+        l.areaEl.style.display = info ? '' : 'none';
+        if (!info) continue;
+        l.areaEl.classList.toggle('is-dim', !!focus && !focus.has(l.id));
+        l.areaEl.classList.toggle('is-selected', l.id === this.selected);
+        l.areaEl.classList.toggle('is-hover', l.id === this.hovered);
+        // Draw the selected area last, so its outline is not covered.
+        if (l.id === this.selected && l.areaEl.nextSibling) l.areaEl.parentNode.appendChild(l.areaEl);
       }
     }
 
@@ -445,7 +610,10 @@ export class WorldView {
         }
       }
       for (const p of l.places) {
-        const showSpread = p.on && !this.hidden.has(l.family);
+        // In the areas view the areas already show where a language spread,
+        // so these arcs follow the "Family lines" switch.
+        const quiet = this.mode === 'areas' && l.areaShown && !showLineage && year - p.from >= FRESH_YEARS / 2 && !(focus && focus.has(l.id));
+        const showSpread = p.on && !this.hidden.has(l.family) && !quiet;
         if (!showSpread) {
           p.arcEl.style.display = 'none';
           p.arrowEl.style.display = 'none';
@@ -469,7 +637,7 @@ export class WorldView {
 
     // Pass 3: markers.
     for (const l of this.langs) {
-      const show = l.homeShown && l.state !== 'off';
+      const show = l.homeShown && l.state !== 'off' && !l.areaShown;
       l.el.style.display = show ? '' : 'none';
       if (show) {
         l.el.setAttribute('transform', `translate(${l.sx.toFixed(1)},${l.sy.toFixed(1)})`);
@@ -480,8 +648,10 @@ export class WorldView {
         l.el.classList.toggle('is-dim', !!focus && !focus.has(l.id));
       }
       for (const p of l.places) {
-        p.el.style.display = p.on && !this.hidden.has(l.family) ? '' : 'none';
-        if (p.on) {
+        // In the areas view a place keeps its dot only if it has no area.
+        const on = p.on && !this.hidden.has(l.family) && (!l.areaShown || p.area === false);
+        p.el.style.display = on ? '' : 'none';
+        if (on) {
           p.el.setAttribute('transform', `translate(${p.sx.toFixed(1)},${p.sy.toFixed(1)})`);
           p.el.classList.toggle('is-dim', !!focus && !focus.has(l.id));
           p.el.classList.toggle('is-new', year - p.from < 60);
@@ -495,10 +665,14 @@ export class WorldView {
   placeLabels(word) {
     const year = this.year;
     const focus = this.lineage;
+    const { k, x: tx, y: ty } = this.camera;
+    const cxw = (this.viewport().cx - tx) / k;
+    const cellPx = (CELL * k) ** 2;
     const placed = [];
     for (const l of this.langs) {
       if (l.el.style.display !== 'none') placed.push({ x: l.sx - 6, y: l.sy - 6, w: 12, h: 12, owner: l.id });
       for (const p of l.places) if (p.el.style.display !== 'none') placed.push({ x: p.sx - 4, y: p.sy - 4, w: 8, h: 8, owner: l.id });
+      for (const extra of l.extraLabels || []) extra.style.display = 'none';
     }
 
     const candidates = [];
@@ -508,8 +682,6 @@ export class WorldView {
         label.style.display = 'none';
         continue;
       }
-      const anchor = l.state === 'ghost' ? l : this.anchorAt(l, year);
-      const pos = anchor === l ? { x: l.sx, y: l.sy } : { x: anchor.sx, y: anchor.sy };
       const wordText = word && l.night ? l.night.form : '';
       const key = `${l.name}|${wordText}`;
       if (l.labelKey !== key) {
@@ -531,32 +703,53 @@ export class WorldView {
       if (focus && focus.has(l.id)) priority += 5000;
       if (l.id === this.hovered) priority += 20000;
       if (l.id === this.selected) priority += 50000;
-      candidates.push({ l, pos, w: this.widthCache.get(key), priority });
+      const w = this.widthCache.get(key);
+      if (l.areaShown) {
+        // Label each sizeable part of the area at its widest point; the
+        // largest part gets the full label.
+        l.areaInfo.parts.forEach((part, slot) => {
+          const size = part.cells * cellPx;
+          if (slot > 0 && (size < MIN_LABEL_PX || slot > 3)) return;
+          const pos = { x: wrapNear(part.x, cxw) * k + tx, y: part.y * k + ty };
+          const bonus = Math.min(150, Math.sqrt(size) / 2);
+          candidates.push({ l, pos, slot, area: true, w: slot ? this.nameWidth(l) : w, priority: priority + bonus - (slot ? 120 : 0) });
+        });
+        continue;
+      }
+      const anchor = l.state === 'ghost' ? l : this.anchorAt(l, year);
+      const pos = anchor === l ? { x: l.sx, y: l.sy } : { x: anchor.sx, y: anchor.sy };
+      candidates.push({ l, pos, slot: 0, area: false, w, priority });
     }
 
     candidates.sort((a, b) => b.priority - a.priority);
     const h = FONT * 1.3;
     for (const c of candidates) {
-      const { l, pos, w } = c;
+      const { l, pos, w, slot } = c;
       const r = l.kind === 'proto' ? 9 : 8;
-      const options = [
-        { x: pos.x + r, y: pos.y - h / 2, anchor: 'start', tx: pos.x + r },
-        { x: pos.x - r - w, y: pos.y - h / 2, anchor: 'end', tx: pos.x - r },
-        { x: pos.x - w / 2, y: pos.y + r - 2, anchor: 'middle', tx: pos.x },
-        { x: pos.x - w / 2, y: pos.y - r - h + 2, anchor: 'middle', tx: pos.x },
-      ];
-      const force = l.id === this.selected || l.id === this.hovered;
+      const options = c.area
+        ? [
+          { x: pos.x - w / 2, y: pos.y - h / 2, anchor: 'middle', tx: pos.x },
+          { x: pos.x - w / 2, y: pos.y - h * 1.4, anchor: 'middle', tx: pos.x },
+          { x: pos.x - w / 2, y: pos.y + h * 0.4, anchor: 'middle', tx: pos.x },
+        ]
+        : [
+          { x: pos.x + r, y: pos.y - h / 2, anchor: 'start', tx: pos.x + r },
+          { x: pos.x - r - w, y: pos.y - h / 2, anchor: 'end', tx: pos.x - r },
+          { x: pos.x - w / 2, y: pos.y + r - 2, anchor: 'middle', tx: pos.x },
+          { x: pos.x - w / 2, y: pos.y - r - h + 2, anchor: 'middle', tx: pos.x },
+        ];
+      const force = slot === 0 && (l.id === this.selected || l.id === this.hovered);
       let chosen = null;
       for (const o of options) {
         const box = { x: o.x - 2, y: o.y, w: w + 4, h };
         if (box.x < 2 || box.x + box.w > this.width - 2 || box.y < 2 || box.y + box.h > this.height - 2) continue;
-        if (!force && placed.some((p) => p.owner !== l.id && overlaps(box, p))) continue;
+        if (!force && placed.some((p) => (c.area || p.owner !== l.id) && overlaps(box, p))) continue;
         chosen = { ...o, box };
         break;
       }
-      const label = l.labelEl;
+      const label = slot ? this.extraLabel(l, slot) : l.labelEl;
       if (!chosen) {
-        label.style.display = 'none';
+        if (!slot) label.style.display = 'none';
         continue;
       }
       placed.push(chosen.box);
@@ -564,10 +757,29 @@ export class WorldView {
       label.setAttribute('x', chosen.tx.toFixed(1));
       label.setAttribute('y', (chosen.y + FONT * 0.98).toFixed(1));
       label.setAttribute('text-anchor', chosen.anchor);
+      label.classList.toggle('is-area', c.area);
       label.classList.toggle('is-ghost', l.state === 'ghost');
       label.classList.toggle('is-dim', !!this.lineage && !this.lineage.has(l.id));
       label.classList.toggle('is-selected', l.id === this.selected);
     }
+  }
+
+  /** Width of an extra label: the name without any bracketed part. */
+  nameWidth(l) {
+    const name = l.name.replace(/\s*\(.*\)$/, '');
+    return name === l.name ? this.widthCache.get(`${l.name}|`) ?? name.length * 6.6 : name.length * 6.8;
+  }
+
+  /** Extra labels for further parts of a language's area (English in Britain, North America…). */
+  extraLabel(l, slot) {
+    l.extraLabels ||= [];
+    while (l.extraLabels.length < slot) {
+      const t = svgEl('text', { class: `w-label fam-${l.family}`, 'data-id': l.id }, this.layers.labels);
+      t.textContent = l.name.replace(/\s*\(.*\)$/, '');
+      t.style.display = 'none';
+      l.extraLabels.push(t);
+    }
+    return l.extraLabels[slot - 1];
   }
 
   resize() {
@@ -626,7 +838,18 @@ export class WorldView {
       if (this.pointers.has(e.pointerId)) this.pointers.set(e.pointerId, p);
       const g = this.gesture;
       if (!g) {
-        if (e.pointerType === 'mouse' && this.hovered) this.onHover(this.hovered, e, this.hoverPlace);
+        if (e.pointerType !== 'mouse') return;
+        if (this.mode === 'areas' && !this.hitTarget(e.target)) {
+          const id = this.areaAt(p);
+          svg.classList.toggle('is-over-area', !!id);
+          if (id !== this.hovered) {
+            this.hoverPlace = null;
+            this.setHover(id);
+            this.onHover(id, e, null);
+            return;
+          }
+        }
+        if (this.hovered) this.onHover(this.hovered, e, this.hoverPlace);
         return;
       }
       if (g.type === 'pinch' && this.pointers.size >= 2) {
@@ -667,7 +890,9 @@ export class WorldView {
       }
       this.gesture = null;
       if (e.type === 'pointercancel' || g.moved) return;
+      const area = g.hit ? null : this.areaAt(g.start);
       if (g.hit) this.onSelect(g.hit.id, { source: 'map', place: g.hit.place });
+      else if (area) this.onSelect(area, { source: 'map' });
       else this.onBackground();
     };
     svg.addEventListener('pointerup', end);
@@ -705,6 +930,7 @@ export class WorldView {
       this.onHover(null);
     });
     svg.addEventListener('pointerleave', () => {
+      svg.classList.remove('is-over-area');
       this.setHover(null);
       this.onHover(null);
     });
